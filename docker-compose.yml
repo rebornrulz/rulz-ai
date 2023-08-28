@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  rulz-ai:
+    build: .
+    ports:
+      - "8000:8000"
+  db:
+    image: postgres
+    ports:
+      - "8001:5432"
