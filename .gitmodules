@@ -1,0 +1,9 @@
+[submodule "rulz-ai-backend"]
+	path = rulz-ai-backend
+	url = https://github.com/rebornrulz/rulz-ai-backend.git
+[submodule "langchain"]
+	path = langchain
+	url = https://github.com/rebornrulz/langchain.git
+[submodule "openai-node-4.0.0"]
+	path = openai-node-4.0.0
+	url = https://github.com/rebornrulz/openai-node-4.0.0.git
