@@ -1,0 +1,12 @@
+{
+  "New prompt": "Arahan baru",
+  "New folder": "Ruang simpanan baru",
+  "No prompts.": "Tiada arahan.",
+  "Search prompts...": "carian arahan...",
+  "Name": "Nama",
+  "Description": "Penjelasan",
+  "A description for your prompt.": "Penjelasan untuk arahan anda.",
+  "Prompt": "Arahan",
+  "Prompt content. Use {{}} to denote a variable. Ex: {{name}} is a {{adjective}} {{noun}}": "Kandungan arahan. Gunakan {{}} untuk menandakan pembolehubah. Contoh: {{name}} adalah seorang {{adjective}} {{noun}}",
+  "Save": "Simpan"
+}
