@@ -1,0 +1,10 @@
+{
+    "name": "Rulz-AI",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "Rulz-AI",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}
