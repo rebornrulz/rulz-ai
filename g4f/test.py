@@ -1,4 +1,19 @@
 import g4f
+from g4f.Provider import (
+    Acytoo,
+    Aichat,
+    Ails,
+    AiService,
+    AItianhu,
+    Bard,
+    Bing,
+    ChatgptAi,
+    ChatgptLogin,
+    DeepAi,
+    GetGpt
+)
+
+print(g4f.Provider.Ails.params)  # supported args
 
 # Automatic selection of provider
 
