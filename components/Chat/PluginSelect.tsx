@@ -84,7 +84,7 @@ export const PluginSelect: FC<Props> = ({
             value="chatgpt"
             className="dark:bg-[#343541] dark:text-white"
           >
-            ChatGPT
+            Rulz-AI
           </option>
 
           {PluginList.map((plugin) => (
