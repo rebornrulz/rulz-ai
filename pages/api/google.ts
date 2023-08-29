@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-import { OPENAI_API_HOST } from '@/utils/app/const';
+import { OPENAI_API_HOST, DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '@/utils/app/const';
 import { cleanSourceText } from '@/utils/server/google';
 
 import { Message } from '@/types/chat';
@@ -49,7 +49,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
             timeoutPromise,
           ])) as any;
 
-          // if (res) {
           const html = await res.text();
 
           const virtualConsole = new jsdom.VirtualConsole();
@@ -68,11 +67,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
 
             return {
               ...source,
-              // TODO: switch to tokens
               text: sourceText.slice(0, 2000),
             } as GoogleSource;
           }
-          // }
 
           return null;
         } catch (error) {
@@ -85,29 +82,29 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     const filteredSources: GoogleSource[] = sourcesWithText.filter(Boolean);
 
     const answerPrompt = endent`
-    Provide me with the information I requested. Use the sources to provide an accurate response. Respond in markdown format. Cite the sources you used as a markdown link as you use them at the end of each sentence by number of the source (ex: [[1]](link.com)). Provide an accurate response and then stop. Today's date is ${new Date().toLocaleDateString()}.
+      Provide me with the information I requested. Use the sources to provide an accurate response. Respond in markdown format. Cite the sources you used as a markdown link as you use them at the end of each sentence by number of the source (ex: [[1]](link.com)). Provide an accurate response and then stop. Today's date is ${new Date().toLocaleDateString()}.
 
-    Example Input:
-    What's the weather in San Francisco today?
+      Example Input:
+      What's the weather in Malaysia today?
 
-    Example Sources:
-    [Weather in San Francisco](https://www.google.com/search?q=weather+san+francisco)
+      Example Sources:
+      [Weather in Malaysia](https://www.google.com/search?q=weather+malaysia)
 
-    Example Response:
-    It's 70 degrees and sunny in San Francisco today. [[1]](https://www.google.com/search?q=weather+san+francisco)
+      Example Response:
+      It's 30 degrees and sunny in Malaysia today. [[1]](https://www.google.com/search?q=weather+malaysia)
 
-    Input:
-    ${userMessage.content.trim()}
+      Input:
+      ${userMessage.content.trim()}
 
-    Sources:
-    ${filteredSources.map((source) => {
-      return endent`
-      ${source.title} (${source.link}):
-      ${source.text}
-      `;
-    })}
+      Sources:
+      ${filteredSources.map((source, index) => {
+        return endent`
+          [${index + 1}] ${source.title} (${source.link}):
+          ${source.text}
+        `;
+      })}
 
-    Response:
+      Response:
     `;
 
     const answerMessage: Message = { role: 'user', content: answerPrompt };
@@ -126,23 +123,25 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
         messages: [
           {
             role: 'system',
-            content: `Use the sources to provide an accurate response. Respond in markdown format. Cite the sources you used as [1](link), etc, as you use them. Maximum 4 sentences.`,
+            content: `Use the sources to provide an accurate response. Respond in markdown format. Cite the sources you used as [1](link), etc, as you use them. Maximum response length is 2000 characters.`
           },
-          answerMessage,
+          ...messages,
+          answerMessage
         ],
-        max_tokens: 1000,
-        temperature: 1,
-        stream: false,
+        temperature: DEFAULT_TEMPERATURE,
+        max_tokens: 2000,
+        stop: '\n',
       }),
     });
 
-    const { choices: choices2 } = await answerRes.json();
-    const answer = choices2[0].message.content;
+    const answerData = await answerRes.json();
+
+    const answer = answerData.choices[0]?.message?.content || '';
 
     res.status(200).json({ answer });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Error'})
+    res.status(500).json({ error: 'An error occurred' });
   }
 };
 
