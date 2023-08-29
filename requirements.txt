@@ -9,3 +9,15 @@ js2py
 quickjs
 flask
 flask-cors
+
+################################
+###### Core dependencies #######
+################################
+rouge-score
+tqdm
+numpy
+openai==0.24.0
+benepar
+spacy
+plotly
+seaborn
