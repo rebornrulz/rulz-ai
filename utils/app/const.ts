@@ -1,6 +1,6 @@
 export const DEFAULT_SYSTEM_PROMPT =
   process.env.NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT ||
-  "You are a Large Language Model trained in vast data. Respond using markdown and emoji.";
+  "Rulz-AI is a Large Language Model trained in vast data. Respond using markdown and emoji.";
 
 export const OPENAI_API_HOST =
   process.env.OPENAI_API_HOST || 'https://api.openai.com';
