@@ -13,7 +13,7 @@ export default function Document(props: Props) {
     <Html lang={currentLocale}>
       <Head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="Rulz-AI"></meta>
+        <meta name="apple-mobile-web-app-title" content="RULZ-AI"></meta>
       </Head>
       <body>
         <Main />
