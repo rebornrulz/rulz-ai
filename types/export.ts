@@ -3,6 +3,21 @@ import { FolderInterface } from './folder';
 import { OpenAIModel } from './openai';
 import { Prompt } from './prompt';
 
+const updatedData = originalData.map((conversation) => {
+  const updatedConversation = { ...conversation };
+
+  // Modify the relevant properties in the conversation
+  updatedConversation.history.forEach((message) => {
+    // Update the message properties or add new properties as needed
+    // For example, to update the message timestamp to 2023:
+    if (message.timestamp.includes('2021')) {
+      message.timestamp = message.timestamp.replace('2021', '2023');
+    }
+  });
+
+  return updatedConversation;
+});
+
 export type SupportedExportFormats =
   | ExportFormatV1
   | ExportFormatV2

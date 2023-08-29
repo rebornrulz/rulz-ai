@@ -21,6 +21,9 @@ export enum OpenAIModelID {
 // in case the `DEFAULT_MODEL` environment variable is not set or set to an unsupported model
 export const fallbackModelID = OpenAIModelID.GPT_3_5;
 
+const availableModels = Object.values(OpenAIModels).map((model) => model.name);
+console.log(availableModels);
+
 export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
   [OpenAIModelID.GPT_3_5]: {
     id: OpenAIModelID.GPT_3_5,
@@ -59,3 +62,6 @@ export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
     tokenLimit: 32000,
   },
 };
+
+const availableModels = Object.values(OpenAIModels).map((model) => model.name);
+console.log(availableModels);
