@@ -8,9 +8,9 @@ const vocabulary = require("../schemas/v3.1/meta/base.schema.json");
 
 
 if (process.argv.length < 3) {
-  console.log("Usage: validate [--schema=schema] [--version=2021-03-02] [--format=BASIC] path-to-file.yaml");
+  console.log("Usage: validate [--schema=schema] [--version=2022-02-27] [--format=BASIC] path-to-file.yaml");
   console.log("\t--schema: (Default: schema) The name of the yaml schema file to use");
-  console.log("\t--version: (Default: 2021-03-02) The version of the yaml schema file to use");
+  console.log("\t--version: (Default: 2022-02-27) The version of the yaml schema file to use");
   console.log("\t--format: (Default: BASIC) The JSON Schema output format to use. Options: FLAG, BASIC, DETAILED, VERBOSE");
   process.exit(1);
 }
@@ -25,7 +25,7 @@ const args = process.argv.reduce((acc, arg) => {
 (async function () {
   try {
     const schemaType = args.schema || "schema";
-    const schemaVersion = args.version || "2022-02-27";
+    const schemaVersion = args.version || "2023-06-01";
     const outputFormat = args.format || JsonSchema.BASIC;
 
     // Config
