@@ -67,6 +67,15 @@ import g4f
 ```py
 import g4f
 
+...
+```
+
+## Usage
+
+### The `g4f` Package
+```py
+import g4f
+
 
 print(g4f.Provider.Ails.params)  # supported args
 
