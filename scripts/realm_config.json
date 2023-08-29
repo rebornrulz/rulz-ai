@@ -1,9 +1,9 @@
 {
     "app_id": "data-neiwn",
-    "config_version": 20230101,
+    "config_version": 20230601,
     "name": "data",
-    "location": "US-VA",
-    "provider_region": "aws-us-east-1",
+    "location": "SG",
+    "provider_region": "aws-ap-southeast-1",
     "deployment_model": "GLOBAL",
     "environment": "production"
 }
