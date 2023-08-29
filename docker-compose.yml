@@ -9,3 +9,7 @@ services:
     image: postgres
     ports:
       - "8001:5432"
+
+  my_service:
+    image: rulz-ai
+    restart: always
