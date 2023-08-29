@@ -3,16 +3,22 @@ import { OpenAIModelID, OpenAIModels } from '@/types/openai';
 
 import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from './const';
 
-export const cleanSelectedConversation = (conversation: Conversation) => {
-  // added model for each conversation (3/20/23)
-  // added system prompt for each conversation (3/21/23)
-  // added folders (3/23/23)
-  // added prompts (3/26/23)
-  // added messages (4/16/23)
+// Define the OpenAIModelID enum for GPT-3 and GPT-4
+export enum OpenAIModelID {
+  GPT_3_5 = 'gpt-3.5',
+  GPT_4 = 'gpt-4',
+}
 
+// Define the OpenAIModels object with details for GPT-3 and GPT-4
+export const OpenAIModels = {
+  [OpenAIModelID.GPT_3_5]: { /* GPT-3 details */ },
+  [OpenAIModelID.GPT_4]: { /* GPT-4 details */ },
+};
+
+export const cleanSelectedConversation = (conversation: Conversation) => {
   let updatedConversation = conversation;
 
-  // check for model on each conversation
+  // Check for model on each conversation
   if (!updatedConversation.model) {
     updatedConversation = {
       ...updatedConversation,
@@ -20,7 +26,7 @@ export const cleanSelectedConversation = (conversation: Conversation) => {
     };
   }
 
-  // check for system prompt on each conversation
+  // Check for system prompt on each conversation
   if (!updatedConversation.prompt) {
     updatedConversation = {
       ...updatedConversation,
@@ -53,12 +59,6 @@ export const cleanSelectedConversation = (conversation: Conversation) => {
 };
 
 export const cleanConversationHistory = (history: any[]): Conversation[] => {
-  // added model for each conversation (3/20/23)
-  // added system prompt for each conversation (3/21/23)
-  // added folders (3/23/23)
-  // added prompts (3/26/23)
-  // added messages (4/16/23)
-
   if (!Array.isArray(history)) {
     console.warn('history is not an array. Returning an empty array.');
     return [];
@@ -67,7 +67,7 @@ export const cleanConversationHistory = (history: any[]): Conversation[] => {
   return history.reduce((acc: any[], conversation) => {
     try {
       if (!conversation.model) {
-        conversation.model = OpenAIModels[OpenAIModelID.GPT_3_5];
+        conversation.model = OpenAIModels[OpenAIModelID.GPT_4];
       }
 
       if (!conversation.prompt) {
