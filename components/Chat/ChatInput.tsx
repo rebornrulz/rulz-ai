@@ -386,9 +386,9 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          Rulz-AI
+          RULZ-AI
         </a>
-        .{' '}
+        {' '}
         {t(
           "is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.",
         )}
