@@ -379,16 +379,20 @@ export const ChatInput = ({
           )}
         </div>
       </div>
+<<<<<<< HEAD
       <div className="px-3 pt-2 pb-3 text-center text-[15px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+=======
+      <div className="px-3 pt-2 pb-3 text-center text-[8px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+>>>>>>> 3e950d2f73ed461252991d8b0d632b63e02d761d
         <a
           href="https://github.com/rebornrulz/rulz-ai"
           target="_blank"
           rel="noreferrer"
           className="underline"
         >
-          Rulz-AI
+          RULZ-AI
         </a>
-        .{' '}
+        {' '}
         {t(
           "is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.",
         )}
