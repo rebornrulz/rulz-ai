@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+    <p style="text-align:center; font-weight:bold; color:#57CF13; font-family:OCR A Std, monospace;">Chat with Chat Bot in Iban Language</p>
+    <form method=post >
+        <ul style="text-decoration:none; color:white; list-style-type: none;font-family:OCR A Std, monospace;">
+            {% for line in conversations %}
+            <li>{{line}}</li>
+            {% endfor %}
+        </ul>
+      <p style="font-weight:bold; color:#57CF13; font-family:OCR A Std, monospace;">Message: <input type=text name=sentence></p>
+         <input type=submit value=Send>
+    </form>
+{% endblock %}
