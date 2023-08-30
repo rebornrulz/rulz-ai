@@ -37,101 +37,14 @@ git clone https://github.com/rebornrulz/rulz-ai.git
 ```
 cd rulz-ai
 ```
-3. (Recommended) Create a virtual environment to manage Python packages for your project:
 ```
-python3 -m venv venv
+npm ci
 ```
-4. Activate the virtual environment:
-   - On Windows:
-   ```
-   .\venv\Scripts\activate
-   ```
-   - On macOS and Linux:
-   ```
-   source venv/bin/activate
-   ```
-5. Install the required Python packages from `requirements.txt`:
 ```
-pip install -r requirements.txt
+npm run build && npm start
 ```
-
-6. Create a `test.py` file in the root folder and start using the repo, further Instructions are below
-```py
-import g4f
-...
-```
-
-## Usage
-
-### The `g4f` Package
-```py
-import g4f
-
-...
-```
-
-## Usage
-
-### The `g4f` Package
-```py
-import g4f
-
-
-print(g4f.Provider.Ails.params)  # supported args
-
-# Automatic selection of provider
-
-# streamed completion
-response = g4f.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[{"role": "user", "content": "Hello world"}],
-    stream=True,
-)
-
-for message in response:
-    print(message, flush=True, end='')
-
-# normal response
-response = g4f.ChatCompletion.create(
-    model=g4f.models.gpt_4,
-    messages=[{"role": "user", "content": "hi"}],
-)  # alterative model setting
-
-print(response)
-
-
-# Set with provider
-response = g4f.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    provider=g4f.Provider.DeepAi,
-    messages=[{"role": "user", "content": "Hello world"}],
-    stream=True,
-)
-
-for message in response:
-    print(message)
-```
-
-providers:
-```py
-from g4f.Provider import (
-    Acytoo,
-    Aichat,
-    Ails,
-    AiService,
-    AItianhu,
-    Bard,
-    Bing,
-    ChatgptAi,
-    ChatgptLogin,
-    DeepAi,
-    GetGpt
-)
-
 
 # usage:
-response = g4f.ChatCompletion.create(..., provider=ProviderName)
-```
 
 You should be able to start chatting.
 
