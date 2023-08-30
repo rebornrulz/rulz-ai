@@ -1,0 +1,3 @@
+Tokenization Colab Link: https://colab.research.google.com/drive/119N9vkycluFngbdDaG0khge3SdnQX_JU?usp=sharing
+
+Bleu Score Colab Link: https://colab.research.google.com/drive/1ZdkbZmYdeIm8kzMPKu6RnA714okqVp5t?usp=sharing
