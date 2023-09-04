@@ -1,5 +1,8 @@
 # RULZ-AI
 
+# self-attentive-parser
+Constituency Parsing with a Self-Attentive Encoder (ACL 2018)
+
 Rulz-AI is a personal project cloned from Chatbot-UI. Not contribute to any project.
 
 See a [demo](https://twitter.com/i/status/1659354052029997056).
