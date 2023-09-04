@@ -1,13 +1,12 @@
 # RULZ-AI
 
-# self-attentive-parser
 Constituency Parsing with a Self-Attentive Encoder (ACL 2018)
 
 Rulz-AI is a personal project cloned from Chatbot-UI. Not contribute to any project.
 
 See a [demo](https://twitter.com/i/status/1659354052029997056).
 
-![Chatbot UI](./public/page.png)
+![Rulz-AI](./public/page.png)
 
 ## Updates
 ### New
@@ -28,9 +27,7 @@ Host your own live version of Chatbot UI with Vercel.
 ##### Install using pypi
 ```
 pip install -U g4f
-```
-
-##### or
+```
 
 1. Clone the GitHub repository: 
 ```
