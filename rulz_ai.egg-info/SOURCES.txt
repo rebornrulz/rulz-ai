@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+g4f/__init__.py
+g4f/models.py
+g4f/setup.py
+g4f/test.py
+g4f/typing.py
+rulz_ai.egg-info/PKG-INFO
+rulz_ai.egg-info/SOURCES.txt
+rulz_ai.egg-info/dependency_links.txt
+rulz_ai.egg-info/top_level.txt
