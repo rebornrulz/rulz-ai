@@ -1,1 +1,72 @@
-[]
+{
+  "sku": {
+      "name": "Standard_RAGRS",
+      "tier": "Standard"
+  },
+  "kind": "StorageV2",
+  "id": "/subscriptions/d963be65-a13f-4abd-980d-7d13d60e11f4/resourceGroups/rulz_ai/providers/Microsoft.Storage/storageAccounts/rulzeai",
+  "name": "rulzeai",
+  "type": "Microsoft.Storage/storageAccounts",
+  "location": "eastasia",
+  "tags": {},
+  "properties": {
+      "dnsEndpointType": "Standard",
+      "defaultToOAuthAuthentication": false,
+      "publicNetworkAccess": "Enabled",
+      "keyCreationTime": {
+          "key1": "2023-09-05T16:26:19.1648557Z",
+          "key2": "2023-09-05T16:26:19.1648557Z"
+      },
+      "allowCrossTenantReplication": false,
+      "privateEndpointConnections": [],
+      "minimumTlsVersion": "TLS1_2",
+      "allowBlobPublicAccess": false,
+      "allowSharedKeyAccess": true,
+      "networkAcls": {
+          "ipv6Rules": [],
+          "bypass": "AzureServices",
+          "virtualNetworkRules": [],
+          "ipRules": [],
+          "defaultAction": "Allow"
+      },
+      "supportsHttpsTrafficOnly": true,
+      "encryption": {
+          "requireInfrastructureEncryption": false,
+          "services": {
+              "file": {
+                  "keyType": "Account",
+                  "enabled": true,
+                  "lastEnabledTime": "2023-09-05T16:26:19.1804869Z"
+              },
+              "blob": {
+                  "keyType": "Account",
+                  "enabled": true,
+                  "lastEnabledTime": "2023-09-05T16:26:19.1804869Z"
+              }
+          },
+          "keySource": "Microsoft.Storage"
+      },
+      "accessTier": "Hot",
+      "provisioningState": "Succeeded",
+      "creationTime": "2023-09-05T16:26:19.1023546Z",
+      "primaryEndpoints": {
+          "dfs": "https://rulzeai.dfs.core.windows.net/",
+          "web": "https://rulzeai.z7.web.core.windows.net/",
+          "blob": "https://rulzeai.blob.core.windows.net/",
+          "queue": "https://rulzeai.queue.core.windows.net/",
+          "table": "https://rulzeai.table.core.windows.net/",
+          "file": "https://rulzeai.file.core.windows.net/"
+      },
+      "primaryLocation": "eastasia",
+      "statusOfPrimary": "available",
+      "secondaryLocation": "southeastasia",
+      "statusOfSecondary": "available",
+      "secondaryEndpoints": {
+          "dfs": "https://rulzeai-secondary.dfs.core.windows.net/",
+          "web": "https://rulzeai-secondary.z7.web.core.windows.net/",
+          "blob": "https://rulzeai-secondary.blob.core.windows.net/",
+          "queue": "https://rulzeai-secondary.queue.core.windows.net/",
+          "table": "https://rulzeai-secondary.table.core.windows.net/"
+      }
+  }
+}
