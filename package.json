@@ -86,9 +86,11 @@
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.2",
-    "typescript": "5.2.2",
+    "typescript": "latest",
     "vitest": "^0.34.3",
-    "wrangler": "^3.5.1"
+    "wrangler": "^3.5.1",
+    "checkly": "latest",
+    "ts-node": "latest"
   },
   "description": "Rulz-AI is a Superintelligence Artificail conversational model version.",
   "main": "next-i18next.config.js",
