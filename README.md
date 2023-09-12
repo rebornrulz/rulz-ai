@@ -28,17 +28,9 @@ Host your own live version of Chatbot UI with Vercel.
 ```
 pip install -U g4f
 ```
-
-
-1. Clone the GitHub repository: 
-```
-git clone https://github.com/rebornrulz/rulz-ai.git
-```
-2. Navigate to the project directory:
-```
-cd rulz-ai
 ```
 pip install -r requirements.txt
+```
 ```
 npm ci
 ```
