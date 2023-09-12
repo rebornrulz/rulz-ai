@@ -32,12 +32,15 @@ pip install -U g4f
 pip install -r requirements.txt
 ```
 ```
-npm ci
+npm install
 ```
 ```
-npm run build && npm start
+npm run build
 ```
-
+# Run Locally
+```
+npm run dev
+```
 # usage:
 
 You should be able to start chatting.
