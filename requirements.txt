@@ -1,3 +1,15 @@
+################################
+###### Core dependencies #######
+################################
+rouge-score
+tqdm
+numpy
+openai==0.24.0
+benepar
+spacy
+plotly
+seaborn
+
 # To run chatglm, make sure python>=3.9
 icetk
 cpm_kernels==1.0.11
