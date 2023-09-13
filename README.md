@@ -35,7 +35,7 @@ pip install -U g4f
 pip install -r requirements.txt
 ```
 ```
-npm install
+npm ci
 ```
 ```
 npm run build
