@@ -1,0 +1,300 @@
+version: "3.1"
+
+stories:
+
+- story: first path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: ask_atur_uratjaku
+  - action: utter_atururatjaku
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: ask_atur_uratjaku
+  - action: utter_atururatjaku
+  - intent: ask_other_sistem_sepil
+  - action: utter_sistemsepilbukai
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: ask_atur_homonim
+  - action: utter_jaturhomonim
+
+- story: interactive_story_3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: interactive_story_17
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_address
+  - action: utter_address
+  - intent: ask_song
+  - action: utter_lagu
+  - intent: ask_age
+  - action: utter_age
+  - intent: ask_bot_intelligence
+  - action: utter_study
+  - intent: ask_who_invent
+  - action: utter_origin
+
+- story: interactive_story_oju
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what_bot_doing
+  - action: utter_activity
+  - intent: ask_bot_eaten
+  - action: utter_eat
+  - intent: ask_jaku_tundi
+  - action: utter_jakutundi
+  - intent: ask_bot_human_not
+  - action: utter_human_not
+  - intent: ask_like_song
+  - action: utter_love_music
+
+- story: interactive_story_aff
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_topic
+  - action: utter_topic
+  - intent: ask_bot_existence
+  - action: utter_bot_built
+  - intent: ask_knowledge_bot_level
+  - action: utter_knowledge_level
+  - intent: ask_song_recommendation
+  - action: utter_song_recommendation
+
+- story: interactive_story_abc
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_topic
+  - action: utter_topic
+  - intent: ask_jaku_lalau
+  - action: utter_jakulalau
+  - intent: tell_sad
+  - action: utter_console
+  - intent: tell_bot_ever_sad
+  - action: utter_ask_feeling
+  - intent: want_to_be_bot
+  - action: utter_to_be_bot
+
+- story: interactive_story_1A
+  steps:
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: ask_atur_homonim
+  - action: utter_jaturhomonim
+  - intent: ask_other_sistem_sepil
+  - action: utter_sistemsepilbukai
+  - intent: ask_jaku_pengawa_what
+  - action: utter_jjakupengawa
+  
+- story: interactive_story_1B
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_jaku_pengawa_what
+  - action: utter_jjakupengawa
+  - intent: ask_jakupengawa_chunto
+
+- story: interactive_story_1C
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_atur_uratjaku
+  - action: utter_atururatjaku
+  - intent: ask_uratjaku_chunto
+  - action: utter_urat_jaku_chunto
+  - intent: ask_uratjaku_chunto_bukai
+  - action: utter_urat_jaku_chunto_bukai
+  - intent: ask_uratjaku_ayat
+  - action: utter_uratjakuchunto_ayat
+  - intent: ask_uratjaku_chunto_bukai
+  - action: utter_uratjakuchuntoayat_bukai
+
+- story: interactive_storyA
+  steps:
+  - intent: ask_sistem_sepil
+  - action: utter_jsistemsepil
+  - intent: ask_sistem_sepil_type
+  - action: utter_bengkahsistem
+  - intent: ask_other_sistem_sepil
+  - action: utter_sistemsepilbukai
+  - intent: ask_iban_similar_malay
+  - action: utter_jakuibansebaka_melayu
+
+- story: interactive_storyB
+  steps:
+  - intent: ask_atur_penambah
+  - action: utter_jaturjakupenambah
+  - intent: ask_bengkah_penambah
+  - action: utter_jakupenambah_bengkah
+  - intent: ask_penambah_pun_jaku
+  - action: utter_penambah_punjaku
+  - intent: ask_atur_penambah_chunto_punjaku
+  - action: utter_penambah_punjaku_chunto
+  - intent: ask_atur_penambah_chunto_bukai_punjaku
+  - action: utter_penambah_punjaku_chunto_bukai
+  - intent: ask_atur_penambah_ayat_punjaku
+  - action: utter_penambah_punjaku_ayat
+  - intent: ask_atur_penambah_ayat_bukai_punjaku
+  - action: utter_penambah_punjaku_ayat_bukai
+
+- story: interactive_storyC
+  steps:
+  - intent: ask_atur_penambah
+  - action: utter_jaturjakupenambah
+  - intent: ask_bengkah_penambah
+  - action: utter_jakupenambah_bengkah
+  - intent: ask_penambah_ujung_jaku
+  - action: utter_penambah_ujungjaku
+  - intent: ask_atur_penambah_chunto_ujungjaku
+  - action: utter_penambah_ujungjaku_chunto
+  - intent: ask_atur_penambah_chunto_bukai_ujungjaku
+  - action: utter_penambah_ujungjaku_chunto_bukai
+  - intent: ask_atur_penambah_ayat_ujungjaku
+  - action: utter_penambah_ujungjaku_ayat
+  - intent: ask_atur_penambah_ayat_bukai_ujungjaku
+  - action: utter_penambah_ujungjaku_ayat_bukai
+
+- story: interactive_storyD
+  steps:
+  - intent: ask_atur_penambah
+  - action: utter_jaturjakupenambah
+  - intent: ask_bengkah_penambah
+  - action: utter_jakupenambah_bengkah
+  - intent: ask_penambah_betandu_sebut
+  - action: utter_penambah_betandusebut
+  - intent: ask_atur_penambah_chunto_betandusebut
+  - action: utter_penambah_betandusebut_chunto
+  - intent: ask_atur_penambah_chunto_bukai_betandusebut
+  - action: utter_penambah_betandusebut_chunto_bukai
+  - intent: ask_atur_penambah_ayat_betandusebut
+  - action: utter_penambah_betandusebut_ayat
+  - intent: ask_atur_penambah_ayat_bukai_betandusebut
+  - action: utter_penambah_betandusebut_ayat_bukai
+
+- story: interactive_storyE
+  steps:
+  - intent: ask_lebas
+  - action: utter_lebas
+
+- story: interactive_storyF
+  steps:
+  - intent: ask_atur_homonim
+  - action: utter_jaturhomonim
+  - intent: ask_chuntohomonim
+  - action: utter_homonim_chunto
+  - intent: ask_homonim_mulung_retisatu
+  - action: utter_homonim_mulung
+  - intent: ask_homonim_mulung_ayatsatu
+  - action: utter_mulung_ayatsatu
+  - intent: ask_homonim_mulung_retidua
+  - action: utter_homonim_mulung_dua
+  - intent: ask_homonim_mulung_ayatdua
+  - action: utter_mulung_ayatdua
+  - intent: ask_homonim_buruk_retisatu
+  - action: utter_homonim_buruk
+  - intent: ask_homonim_buruk_ayatsatu
+  - action: utter_buruk_ayatsatu
+  - intent: ask_homonim_buruk_retidua
+  - action: utter_homonim_buruk_dua
+  - intent: ask_homonim_buruk_ayatdua
+  - action: utter_buruk_ayatdua
+  - intent: ask_homonim_kala_retisatu
+  - action: utter_homonim_kala
+  - intent: ask_homonim_kala_ayatsatu
+  - action: utter_kala_ayatsatu
+  - intent: ask_homonim_kala_retidua
+  - action: utter_homonim_kala_dua
+  - intent: ask_homonim_kala_ayatdua
+  - action: utter_kala_ayatdua
+
+- story: interactive_storyG
+  steps:
+  - intent: ask_homograf_what
+  - action: utter_jaturhomograf
+  - intent: ask_homograf_chunto
+  - action: utter_homograf_chunto
+  - intent: ask_homograf_chunto_bukai
+  - action: utter_homograf_chuntobukai
+  - intent: ask_homograf_asi
+  - action: utter_homograf_reti_asisatu
+  - intent: ask_homograf_asidua
+  - action: utter_homograf_reti_asidua
+  - intent: ask_homograf_asi_ayatsatu
+  - action: utter_homograf_ayat_asisatu
+  - intent: ask_homograf_asi_ayatdua
+  - action: utter_homograf_ayat_asidua
+
+- story: interactive_storyH
+  steps:
+  - intent: ask_homograf_what
+  - action: utter_jaturhomograf
+  - intent: ask_homograf_chunto
+  - action: utter_homograf_chunto
+  - intent: ask_homograf_chunto_bukai
+  - action: utter_homograf_chuntobukai
+  - intent: ask_homograf_mata
+  - action: utter_homograf_reti_matasatu
+  - intent: ask_homograf_matadua
+  - action: utter_homograf_reti_matadua
+  - intent: ask_homograf_mata_ayatsatu
+  - action: utter_homograf_ayat_matasatu
+  - intent: ask_homograf_mata_ayatdua
+  - action: utter_homograf_ayat_matadua
+
+- story: interactive_storyI
+  steps:
+  - intent: ask_homograf_what
+  - action: utter_jaturhomograf
+  - intent: ask_homograf_chunto
+  - action: utter_homograf_chunto
+  - intent: ask_homograf_chunto_bukai
+  - action: utter_homograf_chuntobukai
+  - intent: ask_homograf_peti
+  - action: utter_homograf_reti_petisatu
+  - intent: ask_homograf_petidua
+  - action: utter_homograf_reti_petidua
+  - intent: ask_homograf_peti_ayatsatu
+  - action: utter_homograf_ayat_petisatu
+  - intent: ask_homograf_peti_ayatdua
+  - action: utter_homograf_ayat_petidua
+
+- story: interactive_storyJ
+  steps:
+  - intent: ask_homograf_what
+  - action: utter_jaturhomograf
+  - intent: ask_homograf_chunto
+  - action: utter_homograf_chunto
+  - intent: ask_homograf_chunto_bukai
+  - action: utter_homograf_chuntobukai
+  - intent: ask_homograf_emparu
+  - action: utter_homograf_reti_emparusatu
+  - intent: ask_homograf_emparudua
+  - action: utter_homograf_reti_emparudua
+  - intent: ask_homograf_emparu_ayatsatu
+  - action: utter_homograf_ayat_emparusatu
+  - intent: ask_homograf_emparu_ayatdua
+  - action: utter_homograf_ayat_emparudua
