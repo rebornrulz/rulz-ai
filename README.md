@@ -24,7 +24,7 @@ Host your own live version of Chatbot UI with Vercel.
 #### Prerequisites:
 1. [Download and install Python](https://www.python.org/downloads/) (Version 3.x is recommended).
 ```
-python setup.py install
+python3 setup.py install
 ```
 
 ##### Install using pypi
