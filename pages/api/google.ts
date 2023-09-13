@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import fetch from 'node-fetch';
 
 import { OPENAI_API_HOST } from '@/utils/app/const';
 import { cleanSourceText } from '@/utils/server/google';
@@ -18,24 +19,27 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     const userMessage = messages[messages.length - 1];
     const query = encodeURIComponent(userMessage.content.trim());
 
-    const googleRes = await fetch(
-      `https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=42hEn9tcDNy2pmOQnI0JffLvWiegpx&access_type=offline&code_challenge=3H30LGRNXYNoutUrzVsSSWXcjBopnAtJ5Wu47XJbBcs&code_challenge_method=S256
-    );
+    // Perform any necessary operations with userMessage.content.trim()
 
-    ${userMessage.content.trim()}
+    // Perform any necessary operations with filteredSources
 
-    Sources:
-    ${filteredSources.map((source: { title: any; link: any; text: any; }) => {
-      return endent`
-      ${source.title} (${source.link}):
-      ${source.text}
-      `;
-    })}
+    const response = `
+      Input:
+      ${userMessage.content.trim()}
 
-    Response:
+      Sources:
+      ${filteredSources.map((source) => {
+        return endent`
+          ${source.title} (${source.link}):
+          ${source.text}
+        `;
+      })}
+
+      Response:
+      ${answer}
     `;
 
-    const answerMessage: Message = { role: 'user', content: answerPrompt };
+    const answerMessage: Message = { role: 'user', content: response };
 
     const answerRes = await fetch(`${OPENAI_API_HOST}/v1/chat/completions`, {
       headers: {
