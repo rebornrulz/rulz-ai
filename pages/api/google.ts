@@ -1,5 +1,4 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import fetch from 'node-fetch';
 
 import { OPENAI_API_HOST } from '@/utils/app/const';
 import { cleanSourceText } from '@/utils/server/google';
@@ -19,27 +18,99 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     const userMessage = messages[messages.length - 1];
     const query = encodeURIComponent(userMessage.content.trim());
 
-    // Perform any necessary operations with userMessage.content.trim()
+    const googleRes = await fetch(
+      `https://customsearch.googleapis.com/customsearch/v1?key=${
+        googleAPIKey ? googleAPIKey : process.env.GOOGLE_API_KEY
+      }&cx=${
+        googleCSEId ? googleCSEId : process.env.GOOGLE_CSE_ID
+      }&q=${query}&num=5`,
+    );
 
-    // Perform any necessary operations with filteredSources
+    const googleData = await googleRes.json();
 
-    const response = `
-      Input:
-      ${userMessage.content.trim()}
+    const sources: GoogleSource[] = googleData.items.map((item: any) => ({
+      title: item.title,
+      link: item.link,
+      displayLink: item.displayLink,
+      snippet: item.snippet,
+      image: item.pagemap?.cse_image?.[0]?.src,
+      text: '',
+    }));
 
-      Sources:
-      ${filteredSources.map((source) => {
-        return endent`
-          ${source.title} (${source.link}):
-          ${source.text}
-        `;
-      })}
+    const sourcesWithText: any = await Promise.all(
+      sources.map(async (source) => {
+        try {
+          const timeoutPromise = new Promise((_, reject) =>
+            setTimeout(() => reject(new Error('Request timed out')), 5000),
+          );
 
-      Response:
-      ${answer}
+          const res = (await Promise.race([
+            fetch(source.link),
+            timeoutPromise,
+          ])) as any;
+
+          // if (res) {
+          const html = await res.text();
+
+          const virtualConsole = new jsdom.VirtualConsole();
+          virtualConsole.on('error', (error) => {
+            if (!error.message.includes('Could not parse CSS stylesheet')) {
+              console.error(error);
+            }
+          });
+
+          const dom = new JSDOM(html, { virtualConsole });
+          const doc = dom.window.document;
+          const parsed = new Readability(doc).parse();
+
+          if (parsed) {
+            let sourceText = cleanSourceText(parsed.textContent);
+
+            return {
+              ...source,
+              // TODO: switch to tokens
+              text: sourceText.slice(0, 2000),
+            } as GoogleSource;
+          }
+          // }
+
+          return null;
+        } catch (error) {
+          console.error(error);
+          return null;
+        }
+      }),
+    );
+
+    const filteredSources: GoogleSource[] = sourcesWithText.filter(Boolean);
+
+    const answerPrompt = endent`
+    Provide me with the information I requested. Use the sources to provide an accurate response. Respond in markdown format. Cite the sources you used as a markdown link as you use them at the end of each sentence by number of the source (ex: [[1]](link.com)). Provide an accurate response and then stop. Today's date is ${new Date().toLocaleDateString()}.
+
+    Example Input:
+    What's the weather in Malaysia today?
+
+    Example Sources:
+    [Weather in Malaysia](https://www.google.com/search?q=weather+malaysia)
+
+    Example Response:
+    It's 30 degrees and partly cloudy in Malaysia today. [[1]](https://www.google.com/search?q=weather+malaysia)
+
+    Input:
+    ${userMessage.content.trim()}
+
+    Sources:
+    ${filteredSources.map((source) => {
+      return endent`
+      ${source.title} (${source.link}):
+      ${source.text}
+      `;
+    })}
+
+    Response:
     `;
 
-    const answerMessage: Message = { role: 'user', content: response };
+    const answerMessage: Message = { role: 'user', content: answerPrompt };
 
     const answerRes = await fetch(`${OPENAI_API_HOST}/v1/chat/completions`, {
       headers: {
