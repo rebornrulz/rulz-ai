@@ -25,7 +25,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     ${userMessage.content.trim()}
 
     Sources:
-    ${filteredSources.map((source) => {
+    ${filteredSources.map((source: { title: any; link: any; text: any; }) => {
       return endent`
       ${source.title} (${source.link}):
       ${source.text}
