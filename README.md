@@ -32,12 +32,15 @@ pip install -U g4f
 pip install -r requirements.txt
 ```
 ```
+python setup.py install
+```
+```
 npm install
 ```
 ```
 npm run build
 ```
-# Run Locally
+### Run Locally
 ```
 npm run dev
 ```
