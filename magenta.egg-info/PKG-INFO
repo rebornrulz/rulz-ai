@@ -16,7 +16,37 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Topic :: Scientific/Engineering :: Mathematics
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Topic :: Software Development :: Libraries
-Provides-Extra: beam
-Provides-Extra: onsets_frames_realtime
-Provides-Extra: test
 License-File: LICENSE
+Requires-Dist: absl-py==1.2.0
+Requires-Dist: dm-sonnet==2.0.0
+Requires-Dist: imageio==2.20.0
+Requires-Dist: librosa==0.7.2
+Requires-Dist: matplotlib==3.5.2
+Requires-Dist: mido==1.2.6
+Requires-Dist: mir_eval==0.7
+Requires-Dist: note-seq==0.0.3
+Requires-Dist: numba==0.49.1
+Requires-Dist: numpy==1.21.6
+Requires-Dist: Pillow==9.2.0
+Requires-Dist: pretty_midi==0.2.9
+Requires-Dist: pygtrie==2.5.0
+Requires-Dist: python-rtmidi==1.1.2
+Requires-Dist: scikit-image==0.19.3
+Requires-Dist: scipy==1.7.3
+Requires-Dist: six==1.16.0
+Requires-Dist: sk-video==1.1.10
+Requires-Dist: sox==1.4.1
+Requires-Dist: tensorflow==2.9.1
+Requires-Dist: tensorflow-datasets==4.6.0
+Requires-Dist: tensorflow-probability==0.17.0
+Requires-Dist: tf_slim==1.1.0
+Requires-Dist: wheel==0.37.1
+Provides-Extra: beam
+Requires-Dist: apache-beam[gcp]==2.40.0; extra == "beam"
+Provides-Extra: onsets-frames-realtime
+Requires-Dist: pyaudio==0.2.12; extra == "onsets-frames-realtime"
+Requires-Dist: colorama==0.4.5; extra == "onsets-frames-realtime"
+Requires-Dist: tflite==2.4.0; extra == "onsets-frames-realtime"
+Provides-Extra: test
+Requires-Dist: pylint==2.14.5; extra == "test"
+Requires-Dist: pytest==7.1.2; extra == "test"
