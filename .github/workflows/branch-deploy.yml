@@ -1,0 +1,56 @@
+name: branch-deploy
+
+on:
+  issue_comment:
+    types: [ created ]
+
+# Permissions needed for reacting and adding comments for IssueOps commands
+permissions:
+  pull-requests: write
+  deployments: write
+  contents: write
+  checks: read
+
+jobs:
+  deploy:
+    environment: secrets # the locked down environment we pull secrets from
+    if: ${{ github.event.issue.pull_request }} # only run on pull request comments
+    runs-on: ubuntu-latest
+
+    steps:
+
+        # The branch-deploy Action
+      - uses: github/branch-deploy@vX.X.X
+        id: branch-deploy
+
+        # If the branch-deploy Action was triggered, checkout our branch
+      - name: Checkout
+        if: ${{ steps.branch-deploy.outputs.continue == 'true' }}
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.branch-deploy.outputs.ref }}
+
+        # Install the npm dependencies for your cloudflare workers project
+        # Most importantly, we need to install @cloudflare/wrangler
+      - name: Install dependencies
+        if: ${{ steps.branch-deploy.outputs.continue == 'true' }}
+        run: npm ci
+
+        # If '.deploy to development' was used, branch deploy to the development environment
+      - name: Publish - Development
+        if: ${{ steps.branch-deploy.outputs.environment == 'development' &&
+          steps.branch-deploy.outputs.noop != 'true' &&
+          steps.branch-deploy.outputs.continue == 'true' }}
+        uses: cloudflare/wrangler-action@3424d15af26edad39d5276be3cc0cc9ffec22b55 # pin@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: "development" # here we use development
+
+        # If '.deploy' was used, branch deploy to the production environment
+      - name: Publish - Production
+        if: ${{ steps.branch-deploy.outputs.continue == 'true' &&
+          steps.branch-deploy.outputs.noop != 'true' &&
+          steps.branch-deploy.outputs.environment == 'production' }}
+        uses: cloudflare/wrangler-action@3424d15af26edad39d5276be3cc0cc9ffec22b55 # pin@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
