@@ -5,9 +5,9 @@ name: CI Checks
 
 on:
   push:
-    branches: [ main, beta ]
+    branches: [ master, beta ]
   pull_request:
-    branches: [ masin, beta ]
+    branches: [ master, beta ]
 
 jobs:
   unit_tests:
