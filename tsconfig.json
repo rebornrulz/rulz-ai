@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,11 +14,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "outDir": "dist",
     "types": ["vitest/globals"],
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "server", "client"],
   "exclude": ["node_modules"]
 }
