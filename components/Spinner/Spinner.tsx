@@ -17,7 +17,7 @@ const Spinner: FC<Props> = ({ size = '1em', className = '' }) => {
       className={`animate-spin ${className}`}
       height={size}
       width={size}
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://www.w3.org/TR/REC-xml/"
     >
       <line x1="12" y1="2" x2="12" y2="6"></line>
       <line x1="12" y1="18" x2="12" y2="22"></line>
