@@ -1,7 +1,6 @@
-import { Conversation } from '@/types/chat';
-
-import { useContext, useState } from 'react';
 import { IconExternalLink } from '@tabler/icons-react';
+import { useContext } from 'react';
+
 import { useTranslation } from 'next-i18next';
 
 import { OpenAIModel } from '@/types/openai';
@@ -12,31 +11,19 @@ export const ModelSelect = () => {
   const { t } = useTranslation('chat');
 
   const {
-    state: { models, defaultModelId },
+    state: { selectedConversation, models, defaultModelId },
     handleUpdateConversation,
     dispatch: homeDispatch,
   } = useContext(HomeContext);
 
-  const [selectedConversation, setSelectedConversation] = useState<Conversation>({
-    model: {
-      id: 'gpt-3-turbo',
-      name: 'GPT-3 Turbo',
-      maxLength: 4096,
-      tokenLimit: 4096,
-    },
-  });
-
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedConversation({
-      model: { id: e.target.value },
-    });
-
-    const updatedConversation: Conversation = {
-      ...selectedConversation,
-      model: models.find((model) => model.id === e.target.value) as OpenAIModel,
-    };
-
-    handleUpdateConversation(updatedConversation);
+    selectedConversation &&
+      handleUpdateConversation(selectedConversation, {
+        key: 'model',
+        value: models.find(
+          (model) => model.id === e.target.value,
+        ) as OpenAIModel,
+      });
   };
 
   return (
@@ -62,7 +49,6 @@ export const ModelSelect = () => {
                 : model.name}
             </option>
           ))}
-          <option value="gpt-4">GPT-4</option>
         </select>
       </div>
       <div className="w-full mt-3 text-left text-neutral-700 dark:text-neutral-400 flex items-center">
