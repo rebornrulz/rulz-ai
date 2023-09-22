@@ -18,7 +18,12 @@ export const ModelSelect = () => {
   } = useContext(HomeContext);
 
   const [selectedConversation, setSelectedConversation] = useState<Conversation>({
-    model: { id: 'gpt-3-turbo' },
+    model: {
+      id: 'gpt-3-turbo',
+      name: 'GPT-3 Turbo',
+      maxLength: 4096,
+      tokenLimit: 4096,
+    },
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
