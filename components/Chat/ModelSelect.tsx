@@ -1,3 +1,5 @@
+import { Conversation } from '@/types/chat';
+
 import { useContext, useState } from 'react';
 import { IconExternalLink } from '@tabler/icons-react';
 import { useTranslation } from 'next-i18next';
@@ -15,7 +17,7 @@ export const ModelSelect = () => {
     dispatch: homeDispatch,
   } = useContext(HomeContext);
 
-  const [selectedConversation, setSelectedConversation] = useState({
+  const [selectedConversation, setSelectedConversation] = useState<Conversation>({
     model: { id: 'gpt-3-turbo' },
   });
 
@@ -23,10 +25,13 @@ export const ModelSelect = () => {
     setSelectedConversation({
       model: { id: e.target.value },
     });
-    handleUpdateConversation(selectedConversation, {
-      key: 'model',
-      value: models.find((model) => model.id === e.target.value) as OpenAIModel,
-    });
+
+    const updatedConversation: Conversation = {
+      ...selectedConversation,
+      model: models.find((model) => model.id === e.target.value) as OpenAIModel,
+    };
+
+    handleUpdateConversation(updatedConversation);
   };
 
   return (
