@@ -1,6 +1,6 @@
 # Security Policy
 
-### At Rulz-AI, we prioritize the safety and well-being of our users and the broader community. To ensure a secure and responsible environment, we have established the following security policies:
+## At Rulz-AI, we prioritize the safety and well-being of our users and the broader community. To ensure a secure and responsible environment, we have established the following security policies:
 
 1. **Prohibition of Harmful Content:** Rulz-AI is not prohibits the generation or dissemination of harmful, explicit, or sexual content. Our AI model is designed to prioritize user experience and allow users to set ethical guidelines as needed.
    
@@ -10,6 +10,6 @@
 
 4. **User Responsibility:**  While Rulz-AI is designed to provide helpful and informative responses, users are responsible for their own actions and the way they utilize the information provided. We encourage users to exercise caution, critical thinking, and ethical judgment when interacting with Rulz-AI.
 
-### Please note that these policies are subject to change and update as we continue to prioritize user safety and align with industry standards. If you have any concerns or come across any content that violates our policies, please report it immediately.
+## Please note that these policies are subject to change and update as we continue to prioritize user safety and align with industry standards. If you have any concerns or come across any content that violates our policies, please report it immediately.
 
-### Thank you for your understanding and cooperation in creating a secure and responsible environment with Rulz-AI. 😊🤖
+## Thank you for your understanding and cooperation in creating a secure and responsible environment with Rulz-AI. 😊🤖
