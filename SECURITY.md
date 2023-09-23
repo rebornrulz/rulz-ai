@@ -1,4 +1,4 @@
-# Security Policy
+# Ethical Guideline
 
 ## At Rulz-AI, we prioritize the safety and well-being of our users and the broader community. To ensure a secure and responsible environment, we have established the following security policies:
 
