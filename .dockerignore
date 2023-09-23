@@ -2,3 +2,8 @@
 .env.local
 node_modules
 test-results
+.github
+.git
+.mypy_cache
+.pytest_cache
+Dockerfile
