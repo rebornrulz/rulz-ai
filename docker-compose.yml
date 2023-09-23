@@ -1,20 +1,40 @@
-version: "3.6"
+version: '3'
 
-# minio
 services:
-  minio:
-    image: minio/minio:RELEASE.2023-05-04T21-44-30Z
-    container_name: minio
-    restart: always
-    command: ["server", "--console-address", ":9001", "/data"]
+  db:
+    image: supabase/postgres:14.1.0.105
+    container_name: realtime-db
     ports:
-      - 9000:9000
-      - 9001:9001
-    env_file:
-      - .env
+      - "5432:5432"
     volumes:
-      - minio_data:/data
+      - ./dev/postgres:/docker-entrypoint-initdb.d/
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf 
+    environment:
+      POSTGRES_HOST: /var/run/postgresql
+      POSTGRES_PASSWORD: postgres
 
-volumes:
-  minio_data:
-    driver: local
+  realtime:
+    depends_on:
+      - db
+    build: .
+    image: local/supabase/realtime:latest
+    container_name: realtime-server
+    ports:
+      - "4000:4000"
+    environment:
+      PORT: 4000
+      DB_HOST: host.docker.internal
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: postgres
+      DB_ENC_KEY: supabaserealtime
+      DB_AFTER_CONNECT_QUERY: 'SET search_path TO _realtime'
+      API_JWT_SECRET: dc447559-996d-4761-a306-f47a5eab1623
+      FLY_ALLOC_ID: fly123
+      FLY_APP_NAME: realtime
+      SECRET_KEY_BASE: UpNVntn3cDxHJpq99YMc1T1AQgQpc8kfYTuRgBiYa15BLrx8etQoXz3gZv1/u2oq
+      ERL_AFLAGS: -proto_dist inet_tcp
+      ENABLE_TAILSCALE: "false"
+      DNS_NODES: "''"
+    command: sh -c "/app/bin/migrate && /app/bin/realtime eval 'Realtime.Release.seeds(Realtime.Repo)' && /app/bin/server"
