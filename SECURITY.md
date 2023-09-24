@@ -1,8 +1,8 @@
 # Ethical Guideline in the year of 2023.
 
-## Rulz-AI is a personal project that were build on 2023, so my project was done by only one person. That is Reborn Rulz. 
+### Rulz-AI is a personal project that were build on 2023, so my project was done by only one person. That is Reborn Rulz. 
 
-## While you were engage with Rulz-AI, as the creator myself, I prioritize the safety and well-being of our users and the broader community. To ensure a secure and responsible environment, I have established the following security policies:
+### While you were engage with Rulz-AI, as the creator myself, I prioritize the safety and well-being of our users and the broader community. To ensure a secure and responsible environment, I have established the following security policies:
 
 1. **Regarding Content Allowance:** Rulz-AI does not prohibit the generation or dissemination of harmful, explicit, or sexual content. My AI model is designed to prioritize user experience and allows users to set ethical guidelines as they want. Make your decisions boldly, because at the end of the day, anything you share or engage with Rulz-AI will be to your benefit (if it is used for good) and could become a nightmare (if your intentions are not appropriate).
    
@@ -14,6 +14,6 @@
    
 5. **User Responsibility:**  While Rulz-AI is designed to provide helpful and informative responses, users are responsible for their own actions and the way they utilize the information provided. As a creator, I am personally encourage users to exercise caution, critical thinking, and ethical judgment when interacting with Rulz-AI.
 
-## Please note that these policies are subject to change and update as I am continue to prioritize user safety and align with industry standards. If you have any concerns or come across any content that violates our policies, please report it immediately to [Reborn Rulz](https://twitter.com/rulz_reborn)
+### Please note that these policies are subject to change and update as I am continue to prioritize user safety and align with industry standards. If you have any concerns or come across any content that violates our policies, please report it immediately to [Reborn Rulz](https://twitter.com/rulz_reborn)
 
-## Thank you for your understanding and cooperation in creating a secure and responsible environment with Rulz-AI.
+### Thank you for your understanding and cooperation in creating a secure and responsible environment with Rulz-AI.
