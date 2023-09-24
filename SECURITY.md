@@ -1,4 +1,4 @@
-# Ethical Guideline in the year of 2023.
+# Rulz-AI Security Policies and Ethical Guidelines.
 
 ### Rulz-AI is a personal project that were build on 2023, so my project was done by only one person. That is Reborn Rulz. 
 
