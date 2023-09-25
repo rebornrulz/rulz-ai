@@ -18,6 +18,10 @@ python3 setup.py install
 
 #### Build Docker Images
 ```
+```
+docker login -u rebornrulz
+```
+```
 docker build -t rulz-ai .
 ```
 ```
