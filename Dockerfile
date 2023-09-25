@@ -10,4 +10,4 @@ WORKDIR /app
 COPY . /app
 
 # Set the entry point
-ENTRYPOINT ["python", "setup.py"]
+ENTRYPOINT ["python", "dev.Dockerfile.py"]
