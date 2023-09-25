@@ -42,7 +42,6 @@ npm run build
 ```
 ### Run Locally
 ```
-```
 npm run dev
 ```
 
