@@ -16,13 +16,18 @@ Host your own live version of Chatbot UI with Vercel.
 python3 setup.py install
 ```
 
-#### Install using pip:
+#### Build Docker Images
 ```
-docker build -t rulz-ai-image .
+docker build -t rulz-ai .
 ```
 ```
-docker run -it rulz-ai-image
+docker run -it rulz-ai
 ```
+```
+docker-compose up
+```
+
+### Instal Using pip
 ```
 pip install -U g4f
 ```

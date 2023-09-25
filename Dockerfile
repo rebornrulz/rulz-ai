@@ -6,8 +6,9 @@ RUN pip install transformers torch
 # Set working directory
 WORKDIR /app
 
-# Copy Rulz-AI code into the container
-COPY . /app
+# Copy Python scripts into the container
+COPY Dockerfile.python /app
+COPY dev.Dockerfile.py /app
 
 # Set the entry point
-ENTRYPOINT ["python", "dev.Dockerfile.py"]
+ENTRYPOINT ["python", "Dockerfile.python", "dev.Dockerfile.py"]
