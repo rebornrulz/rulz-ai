@@ -4,10 +4,6 @@ Constituency Parsing with a Self-Attentive Encoder (ACL 2018)
 
 Rulz-AI is a personal project cloned from Chatbot-UI. Not contribute to any project.
 
-See a [demo](https://twitter.com/rulz_reborn/status/1705638380187639923)
-
-![Rulz-AI](./public/page.png)
-
 ## Updates
 ### New
 
@@ -29,6 +25,13 @@ python3 setup.py install
 
 ##### Install using pypi
 ```
+```
+docker build -t rulz-ai-image .
+```
+```
+docker run -it rulz-ai-image
+```
+```
 pip install -U g4f
 ```
 ```
@@ -44,6 +47,7 @@ npm run build
 ```
 npm run dev
 ```
+
 # usage:
 
 You should be able to start chatting.
