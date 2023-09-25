@@ -6,8 +6,8 @@ RUN pip install transformers torch
 # Set working directory
 WORKDIR /app
 
-# Copy Python scripts into the container
-COPY Dockerfile.python /app
+# Copy setup.py into the container
+COPY setup.py /app
 
 # Set the entry point
-ENTRYPOINT ["python", "Dockerfile.python"]
+ENTRYPOINT ["python", "setup.py"]
