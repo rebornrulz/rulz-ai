@@ -29,5 +29,5 @@ import magenta.pipelines.note_sequence_pipelines
 import magenta.pipelines.pipeline
 import magenta.pipelines.pipelines_common
 import magenta.pipelines.statistics
-import magenta.version
-from magenta.version import __version__
+import magenta.setup
+from magenta.setup import __version__
