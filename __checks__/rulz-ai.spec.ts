@@ -1,24 +1,25 @@
 /**
- * To learn more about Playwright Test visit:
- * https://www.checklyhq.com/docs/browser-checks/playwright-test/
- * https://playwright.dev/docs/writing-tests
- */
-const { expect, test } = require("@playwright/test")
+  * To learn more about Playwright Test visit:
+  * https://www.checklyhq.com/docs/browser-checks/playwright-test/
+  * https://playwright.dev/docs/writing-tests
+  */
 
-test("visit page and take screenshot", async ({ page }) => {
-  // If available, we set the target URL to a preview deployment URL provided by the ENVIRONMENT_URL created by Vercel.
-  // Otherwise, we use the Production URL.
-  const targetUrl = process.env.ENVIRONMENT_URL || "https://www.rulz-ai.com"
+const { expect, test } = require('@playwright/test')
 
-  // We visit the page. This waits for the "load" event by default.
-  const response = await page.goto(targetUrl)
+// Set the action timeout to 10 seconds to quickly identify failing actions.
+// By default Playwright Test has no timeout for actions (e.g. clicking an element).
+// Learn more here: https://www.checklyhq.com/docs/browser-checks/timeouts/
+test.use({ actionTimeout: 10000 })
 
-  // Test that the response did not fail
-  expect(
-    response.status(),
-    "should respond with correct status code",
-  ).toBeLessThan(400)
+test('visit page and take screenshot', async ({ page }) => {
+    // Change checklyhq.com to your site's URL,
+    // or, even better, define a ENVIRONMENT_URL environment variable
+    // to reuse it across your browser checks
+    const response = await page.goto(process.env.ENVIRONMENT_URL || 'https://checklyhq.com')
 
-  // Take a screenshot
-  await page.screenshot({ path: "screenshot.jpg" })
+    // Take a screenshot
+    await page.screenshot({ path: 'screenshot.jpg' })
+
+    // Test that the response did not fail
+    expect(response.status(), 'should respond with correct status code').toBeLessThan(400)
 })
