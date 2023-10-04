@@ -1,4 +1,4 @@
-FROM python:3.11.5
+FROM python:3.12-slim
 
 # Update and install system dependencies
 RUN apt-get update && apt-get upgrade -y && \
@@ -23,4 +23,4 @@ WORKDIR /app
 COPY setup.py /app
 
 # Set the entry point
-ENTRYPOINT ["python", "setup.py"]
+ENTRYPOINT ["python", "setup.py", "script.py"]
