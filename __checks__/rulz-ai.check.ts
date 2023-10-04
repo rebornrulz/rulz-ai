@@ -11,6 +11,7 @@ new BrowserCheck('rulz-ai', {
   activated: true,
   muted: false,
   shouldFail: false,
+  runtimeId: '2023.09',
   locations: ['ap-southeast-1', 'ap-southeast-3'],
   tags: [],
   sslCheckDomain: '',
