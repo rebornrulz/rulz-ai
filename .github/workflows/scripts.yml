@@ -3,7 +3,7 @@ name: "Publish scripts"
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - scripts/**
 
