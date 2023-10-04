@@ -104,3 +104,8 @@ docs/_build/
 # PyBuilder
 target/
 
+# Go
+go.mod
+go.sum
+go.work.sum
+env

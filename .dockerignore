@@ -8,3 +8,7 @@ test-results
 .mypy_cache
 .pytest_cache
 Dockerfile
+go.mod
+go.sum
+go.work.sum
+env
