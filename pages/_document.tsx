@@ -10,10 +10,15 @@ export default function Document(props: Props) {
   const currentLocale =
     props.__NEXT_DATA__.locale ?? i18nextConfig.i18n.defaultLocale;
   return (
-    <Html lang={currentLocale}>
+    <Html lang={currentLocale} dir="ltr">
       <Head>
+        <script
+          data-project-id="zbg1X0OKdOMMBN6usHo9ABdkK5whBbMcuShOTsLv"
+          data-is-production-environment="false"
+          src="https://snippet.meticulous.ai/v1/meticulous.js"
+        />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="RULZ-AI"></meta>
+        <meta name="apple-mobile-web-app-title" content="RULZ-AI" />
       </Head>
       <body>
         <Main />
