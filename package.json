@@ -31,7 +31,7 @@
     "@trpc/server": "^10.37.1",
     "@vercel/analytics": "^1.0.1",
     "@vercel/edge-config": "^0.2.1",
-    "@vercel/kv": "^0.2.2",
+    "@vercel/kv": "^0.2.3",
     "@vercel/postgres": "^0.4.1",
     "@vercel/postgres-kysely": "^0.5.0",
     "assert": "^2.0.0",
