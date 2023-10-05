@@ -1,4 +1,4 @@
-# RULZ-AI V.4
+# Rulz-AI V.4
 
 ## Getting Started
 
