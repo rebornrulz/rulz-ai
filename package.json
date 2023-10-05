@@ -47,7 +47,7 @@
     "langchain": "^0.0.141",
     "mongodb": "^5.8.0",
     "next": "13.4.19",
-    "next-auth": "^4.22.1",
+    "next-auth": "^4.23.2",
     "next-axiom": "^1.0.0",
     "next-i18next": "^13.2.2",
     "nodemon": "^3.0.1",
