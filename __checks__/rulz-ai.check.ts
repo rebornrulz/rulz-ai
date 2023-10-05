@@ -11,18 +11,18 @@ new BrowserCheck('rulz-ai', {
   activated: true,
   muted: false,
   shouldFail: false,
-  locations: ['ap-southeast-1', 'ap-southeast-3'],
+  locations: ['ap-southeast-1', 'us-east-1', 'eu-west-3'],
   tags: [],
-  sslCheckDomain: '',
-  frequency: Frequency.EVERY_24H,
+  sslCheckDomain: 'rulz-ai.com',
+  frequency: Frequency.EVERY_10M,
   environmentVariables: [],
   code: {
     entrypoint: './rulz-ai.spec.ts',
   },
-  retryStrategy: RetryStrategyBuilder.fixedStrategy({
-    baseBackoffSeconds: 0,
-    maxRetries: 1,
+  retryStrategy: RetryStrategyBuilder.linearStrategy({
+    baseBackoffSeconds: 60,
+    maxRetries: 2,
     maxDurationSeconds: 600,
-    sameRegion: false,
+    sameRegion: true,
   }),
 })
