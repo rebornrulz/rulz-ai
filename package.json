@@ -20,7 +20,7 @@
     "@anthropic-ai/sdk": "^0.6.1",
     "@dqbd/tiktoken": "^1.0.2",
     "@simplewebauthn/browser": "^8.0.2",
-    "@simplewebauthn/server": "^8.1.1",
+    "@simplewebauthn/server": "^8.2.0",
     "@simplewebauthn/typescript-types": "^8.0.0",
     "@supabase/realtime-js": "^2.7.4",
     "@tabler/icons-react": "^2.32.0",
