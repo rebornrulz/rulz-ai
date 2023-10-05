@@ -24,7 +24,7 @@
     "@simplewebauthn/typescript-types": "^8.0.0",
     "@supabase/realtime-js": "^2.7.4",
     "@tabler/icons-react": "^2.32.0",
-    "@tanstack/react-query": "^4.29.25",
+    "@tanstack/react-query": "^4.35.7",
     "@trpc/client": "^10.38.1",
     "@trpc/next": "^10.38.5",
     "@trpc/react-query": "^10.37.1",
