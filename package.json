@@ -19,7 +19,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.6.1",
     "@dqbd/tiktoken": "^1.0.2",
-    "@simplewebauthn/browser": "^8.0.2",
+    "@simplewebauthn/browser": "^8.3.1",
     "@simplewebauthn/server": "^8.2.0",
     "@simplewebauthn/typescript-types": "^8.0.0",
     "@supabase/realtime-js": "^2.7.4",
