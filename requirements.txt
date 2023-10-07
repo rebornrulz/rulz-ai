@@ -9,6 +9,10 @@ benepar
 spacy
 plotly
 seaborn
+torch
+fairscale
+fire
+sentencepiece
 
 # To run chatglm, make sure python>=3.9
 icetk
