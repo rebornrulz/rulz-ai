@@ -35,3 +35,15 @@ unbabel-comet>=1.0.0
 git+https://github.com/google-research/bleurt.git
 git+https://github.com/ns-moosavi/coval.git
 git+https://github.com/hendrycks/math.git
+
+numpy
+rouge_score
+fire
+openai
+transformers>=4.28.1
+torch
+sentencepiece
+tokenizers>=0.13.3
+wandb
+anthropic
+deepspeed
