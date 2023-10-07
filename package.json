@@ -63,7 +63,7 @@
     "react-query": "^3.39.3",
     "react-syntax-highlighter": "^15.5.0",
     "rehype-mathjax": "^4.0.2",
-    "remark-gfm": "^3.0.1",
+    "remark-gfm": "^4.0.0",
     "remark-math": "^5.1.1",
     "sass": "^1.66.1",
     "tiktoken": "^1.0.10",
