@@ -101,7 +101,7 @@
     "vitest": "^0.34.3",
     "wrangler": "^3.5.1"
   },
-  "description": "Rulz-AI is a Superintelligence Artificail conversational model version.",
+  "description": "Rulz-AI is a Powerful Language Model trained on massive data. Respond using markdown and emoji.",
   "main": "next-i18next.config.js",
   "directories": {
     "doc": "docs"
