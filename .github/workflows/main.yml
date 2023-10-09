@@ -26,7 +26,7 @@ jobs:
           swagger-editor-url: http://localhost/
           definition-file: openapi.yaml
       - name: Comment on Pull Request
-        uses: actions/github-script@v4
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
