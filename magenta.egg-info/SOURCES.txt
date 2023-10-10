@@ -7,6 +7,10 @@ g4f/models.py
 g4f/setup.py
 g4f/test.py
 g4f/typing.py
+llama/__init__.py
+llama/generation.py
+llama/model.py
+llama/tokenizer.py
 magenta/__init__.py
 magenta/version.py
 magenta.egg-info/PKG-INFO

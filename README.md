@@ -33,13 +33,13 @@ docker-compose up
 
 ### Instal Using pip
 ```
-pip install -U g4f
+pip3 install -U g4f
 ```
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ```
-pip install -e .
+pip3 install -e .
 ```
 
 ### Install using git:
