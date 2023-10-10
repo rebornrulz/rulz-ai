@@ -24,6 +24,7 @@ docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 rulz-ai
 ```
 docker run -e OPENAI_API_KEY=xxxxxxxx -p 3000:3000 ghcr.io/rebornrulz/rulz-ai:master
 ```
+```
 docker run -it rulz-ai
 ```
 ```
