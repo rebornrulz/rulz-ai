@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/chat": {},
+    "/api/home/home.state": {},
+    "/api/home": {},
+    "/api/models": {},
+    "/": {}
+  }
+}
