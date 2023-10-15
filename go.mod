@@ -1,4 +1,4 @@
-module github.com/rebornrulz/codeapi
+module github.com/dotnet/codeapi
 
 go 1.20
 
