@@ -6,18 +6,18 @@
 
 import { BrowserCheck, Frequency, RetryStrategyBuilder } from 'checkly/constructs'
 
-new BrowserCheck('rulz-ai', {
-  name: 'rulz-ai',
+new BrowserCheck('https-rulz-ai-com', {
+  name: 'https://rulz-ai.com',
   activated: true,
   muted: false,
   shouldFail: false,
-  locations: ['ap-southeast-1', 'us-east-1', 'eu-west-3'],
+  locations: ['ap-southeast-1', 'ap-southeast-3'],
   tags: [],
-  sslCheckDomain: 'rulz-ai.com',
+  sslCheckDomain: '',
   frequency: Frequency.EVERY_10M,
   environmentVariables: [],
   code: {
-    entrypoint: './rulz-ai.spec.ts',
+    entrypoint: './https-rulz-ai-com.spec.ts',
   },
   retryStrategy: RetryStrategyBuilder.linearStrategy({
     baseBackoffSeconds: 60,
