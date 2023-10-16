@@ -85,7 +85,7 @@
     "@types/uuid": "^9.0.1",
     "@vitest/coverage-c8": "^0.33.0",
     "autoprefixer": "^10.4.14",
-    "checkly": "latest",
+    "checkly": "^4.2.0",
     "endent": "^2.1.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
