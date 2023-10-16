@@ -1,0 +1,13 @@
+import { HeartbeatCheck } from 'checkly/constructs'
+import { slackChannel } from './alert-channel'
+
+const heartbeatCheck = new HeartbeatCheck('my-first-heartbeat-check', {
+    name: 'Run backup job',
+    period: 7,
+    periodUnit: 'days',
+    grace: 2,
+    graceUnit: 'hours',
+    alertChannels: [
+        slackChannel,
+    ]
+})
