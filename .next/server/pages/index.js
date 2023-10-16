@@ -5348,7 +5348,7 @@ __webpack_async_result__();
 /* harmony export */   cl: () => (/* binding */ DEFAULT_SYSTEM_PROMPT)
 /* harmony export */ });
 /* unused harmony exports OPENAI_API_HOST, OPENAI_API_TYPE, OPENAI_API_VERSION, OPENAI_ORGANIZATION, AZURE_DEPLOYMENT_ID */
-const DEFAULT_SYSTEM_PROMPT = "Rulz-AI is a Powerful Language Model trained on massive data. Respond using markdown and emoji." || 0;
+const DEFAULT_SYSTEM_PROMPT = process.env.NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT || "Rulz-AI is a Powerful Language Model trained on massive data. Respond using markdown and emoji.";
 const OPENAI_API_HOST = process.env.OPENAI_API_HOST || "https://api.openai.com";
 const DEFAULT_TEMPERATURE = parseFloat(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE || "0.5");
 const OPENAI_API_TYPE = process.env.OPENAI_API_TYPE || "openai";
