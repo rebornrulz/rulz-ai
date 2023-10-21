@@ -4769,7 +4769,7 @@ const Home = ({ serverSideApiKeyIsSet, serverSidePluginKeysSet, defaultModelId }
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "Rulz-AI is a Superintelligence Artificail conversational model version."
+                        content: "Rulz-AI is a Powerful Language Model."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "viewport",
@@ -5155,7 +5155,7 @@ const cleanSelectedConversation = (conversation)=>{
     if (!updatedConversation.model) {
         updatedConversation = {
             ...updatedConversation,
-            model: updatedConversation.model || _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_3_5]
+            model: updatedConversation.model || _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_3_5] || _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_4]
         };
     }
     // check for system prompt on each conversation
@@ -5198,7 +5198,7 @@ const cleanConversationHistory = (history)=>{
     return history.reduce((acc, conversation)=>{
         try {
             if (!conversation.model) {
-                conversation.model = _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_4];
+                conversation.model = _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_3_5] || _types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModels */ .MU[_types_openai__WEBPACK_IMPORTED_MODULE_0__/* .OpenAIModelID */ .bm.GPT_4];
             }
             if (!conversation.prompt) {
                 conversation.prompt = _const__WEBPACK_IMPORTED_MODULE_1__/* .DEFAULT_SYSTEM_PROMPT */ .cl;
