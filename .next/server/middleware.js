@@ -1,7 +1,7 @@
 // runtime can't be in strict mode because a global variable is assign and maybe created.
 (self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[826],{
 
-/***/ 706:
+/***/ 68:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10,7 +10,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ next_middleware_loaderabsolutePagePath_private_next_root_dir_2Fmiddleware_js_page_2Fmiddleware_rootDir_2FUsers_2Frebornrulz_2FRulz_AI_matchers_W3sicmVnZXhwIjoiXig_2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg_2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw_2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XQ_3D_3D_preferredRegion_middlewareConfig_eyJtYXRjaGVycyI6W3sicmVnZXhwIjoiXig_2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg_2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw_2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XX0_3D_)
+  "default": () => (/* binding */ nHandler)
 });
 
 // NAMESPACE OBJECT: ./middleware.js
@@ -22,11 +22,11 @@ __webpack_require__.d(middleware_namespaceObject, {
 });
 
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/globals.js
-var globals = __webpack_require__(710);
-// EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/adapter.js + 14 modules
-var adapter = __webpack_require__(524);
+var globals = __webpack_require__(444);
+// EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/adapter.js + 15 modules
+var adapter = __webpack_require__(182);
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/response.js
-var response = __webpack_require__(433);
+var response = __webpack_require__(409);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/exports/next-response.js
 // This file is for modularized imports for next/server to get fully-treeshaking.
  //# sourceMappingURL=next-response.js.map
@@ -240,29 +240,30 @@ async function middleware() {
 
 ;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-middleware-loader.js?absolutePagePath=private-next-root-dir%2Fmiddleware.js&page=%2Fmiddleware&rootDir=%2FUsers%2Frebornrulz%2FRulz-AI&matchers=W3sicmVnZXhwIjoiXig%2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg%2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw%2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XQ%3D%3D&preferredRegion=&middlewareConfig=eyJtYXRjaGVycyI6W3sicmVnZXhwIjoiXig%2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg%2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw%2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XX0%3D!
 
-        
-        
-        
 
-        const mod = { ...middleware_namespaceObject }
-        const handler = mod.middleware || mod.default
+// Import the userland code.
 
-        if (typeof handler !== 'function') {
-          throw new Error('The Middleware "pages/middleware" must export a `middleware` or a `default` function');
-        }
+const mod = {
+    ...middleware_namespaceObject
+};
+const handler = mod.middleware || mod.default;
+const page = "/middleware";
+if (typeof handler !== "function") {
+    throw new Error(`The Middleware "${page}" must export a \`middleware\` or a \`default\` function`);
+}
+function nHandler(opts) {
+    return (0,adapter/* adapter */.V)({
+        ...opts,
+        page,
+        handler
+    });
+}
 
-        /* harmony default export */ function next_middleware_loaderabsolutePagePath_private_next_root_dir_2Fmiddleware_js_page_2Fmiddleware_rootDir_2FUsers_2Frebornrulz_2FRulz_AI_matchers_W3sicmVnZXhwIjoiXig_2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg_2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw_2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XQ_3D_3D_preferredRegion_middlewareConfig_eyJtYXRjaGVycyI6W3sicmVnZXhwIjoiXig_2FOlxcLyhfbmV4dFxcL2RhdGFcXC9bXi9dezEsfSkpPyg_2FOlxcLygoPyFfbmV4dFxcLylbXi8uXXsxLH0pKVxcL3dlbGNvbWUoLmpzb24pP1tcXC8jXFw_2FXT8kIiwib3JpZ2luYWxTb3VyY2UiOiIvd2VsY29tZSJ9XX0_3D_(opts) {
-          return (0,adapter/* adapter */.V)({
-            ...opts,
-            page: "/middleware",
-            handler,
-          })
-        }
-    
+//# sourceMappingURL=middleware.js.map
 
 /***/ }),
 
-/***/ 838:
+/***/ 668:
 /***/ ((module) => {
 
 "use strict";
@@ -296,7 +297,6 @@ __export(src_exports, {
     ResponseCookies: ()=>ResponseCookies,
     parseCookie: ()=>parseCookie,
     parseSetCookie: ()=>parseSetCookie,
-    splitCookiesString: ()=>splitCookiesString,
     stringifyCookie: ()=>stringifyCookie
 });
 module.exports = __toCommonJS(src_exports);
@@ -310,7 +310,8 @@ function stringifyCookie(c) {
         "domain" in c && c.domain && `Domain=${c.domain}`,
         "secure" in c && c.secure && "Secure",
         "httpOnly" in c && c.httpOnly && "HttpOnly",
-        "sameSite" in c && c.sameSite && `SameSite=${c.sameSite}`
+        "sameSite" in c && c.sameSite && `SameSite=${c.sameSite}`,
+        "priority" in c && c.priority && `Priority=${c.priority}`
     ].filter(Boolean);
     return `${c.name}=${encodeURIComponent((_a = c.value) != null ? _a : "")}; ${attrs.join("; ")}`;
 }
@@ -338,7 +339,7 @@ function parseSetCookie(setCookie) {
         return void 0;
     }
     const [[name, value], ...attributes] = parseCookie(setCookie);
-    const { domain, expires, httponly, maxage, path, samesite, secure } = Object.fromEntries(attributes.map(([key, value2])=>[
+    const { domain, expires, httponly, maxage, path, samesite, secure, priority } = Object.fromEntries(attributes.map(([key, value2])=>[
             key.toLowerCase(),
             value2
         ]));
@@ -361,6 +362,9 @@ function parseSetCookie(setCookie) {
         },
         ...secure && {
             secure: true
+        },
+        ...priority && {
+            priority: parsePriority(priority)
         }
     };
     return compact(cookie);
@@ -382,6 +386,15 @@ var SAME_SITE = [
 function parseSameSite(string) {
     string = string.toLowerCase();
     return SAME_SITE.includes(string) ? string : void 0;
+}
+var PRIORITY = [
+    "low",
+    "medium",
+    "high"
+];
+function parsePriority(string) {
+    string = string.toLowerCase();
+    return PRIORITY.includes(string) ? string : void 0;
 }
 function splitCookiesString(cookiesString) {
     if (!cookiesString) return [];
@@ -517,8 +530,7 @@ var ResponseCookies = class {
         /** @internal */ this._parsed = /* @__PURE__ */ new Map();
         var _a, _b, _c;
         this._headers = responseHeaders;
-        const setCookie = // @ts-expect-error See https://github.com/whatwg/fetch/issues/973
-        (_c = (_b = (_a = responseHeaders.getAll) == null ? void 0 : _a.call(responseHeaders, "set-cookie")) != null ? _b : responseHeaders.get("set-cookie")) != null ? _c : [];
+        const setCookie = (_c = (_b = (_a = responseHeaders.getSetCookie) == null ? void 0 : _a.call(responseHeaders)) != null ? _b : responseHeaders.get("set-cookie")) != null ? _c : [];
         const cookieStrings = Array.isArray(setCookie) ? setCookie : splitCookiesString(setCookie);
         for (const cookieString of cookieStrings){
             const parsed = parseSetCookie(cookieString);
@@ -617,7 +629,7 @@ function normalizeCookie(cookie = {
 
 /***/ }),
 
-/***/ 822:
+/***/ 565:
 /***/ ((module) => {
 
 "use strict";
@@ -745,57 +757,31 @@ var __dirname = "/";
 
 /***/ }),
 
-/***/ 986:
+/***/ 987:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   H4: () => (/* binding */ NEXT_RSC_UNION_QUERY),
-/* harmony export */   i4: () => (/* binding */ RSC),
-/* harmony export */   ph: () => (/* binding */ NEXT_ROUTER_STATE_TREE),
-/* harmony export */   pz: () => (/* binding */ NEXT_ROUTER_PREFETCH),
-/* harmony export */   vu: () => (/* binding */ FLIGHT_PARAMETERS),
-/* harmony export */   yR: () => (/* binding */ FETCH_CACHE_HEADER)
-/* harmony export */ });
-/* unused harmony exports ACTION, NEXT_URL, RSC_CONTENT_TYPE_HEADER, RSC_VARY_HEADER */
-const RSC = "RSC";
-const ACTION = "Next-Action";
-const NEXT_ROUTER_STATE_TREE = "Next-Router-State-Tree";
-const NEXT_ROUTER_PREFETCH = "Next-Router-Prefetch";
-const NEXT_URL = "Next-Url";
-const FETCH_CACHE_HEADER = "x-vercel-sc-headers";
-const RSC_CONTENT_TYPE_HEADER = "text/x-component";
-const RSC_VARY_HEADER = RSC + ", " + NEXT_ROUTER_STATE_TREE + ", " + NEXT_ROUTER_PREFETCH + ", " + NEXT_URL;
-const FLIGHT_PARAMETERS = [
-    [
-        RSC
-    ],
-    [
-        NEXT_ROUTER_STATE_TREE
-    ],
-    [
-        NEXT_ROUTER_PREFETCH
-    ]
-];
-const NEXT_RSC_UNION_QUERY = "_rsc"; //# sourceMappingURL=app-router-headers.js.map
-
-
-/***/ }),
-
-/***/ 782:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ar: () => (/* binding */ NEXT_CACHE_SOFT_TAGS_HEADER),
 /* harmony export */   BR: () => (/* binding */ CACHE_ONE_YEAR),
+/* harmony export */   Et: () => (/* binding */ NEXT_CACHE_TAGS_HEADER),
 /* harmony export */   Qq: () => (/* binding */ PRERENDER_REVALIDATE_ONLY_GENERATED_HEADER),
+/* harmony export */   X_: () => (/* binding */ NEXT_CACHE_REVALIDATE_TAG_TOKEN_HEADER),
 /* harmony export */   dN: () => (/* binding */ NEXT_QUERY_PARAM_PREFIX),
+/* harmony export */   of: () => (/* binding */ NEXT_CACHE_REVALIDATED_TAGS_HEADER),
 /* harmony export */   y3: () => (/* binding */ PRERENDER_REVALIDATE_HEADER)
 /* harmony export */ });
-/* unused harmony exports MIDDLEWARE_FILENAME, MIDDLEWARE_LOCATION_REGEXP, INSTRUMENTATION_HOOK_FILENAME, PAGES_DIR_ALIAS, DOT_NEXT_ALIAS, ROOT_DIR_ALIAS, APP_DIR_ALIAS, RSC_MOD_REF_PROXY_ALIAS, RSC_ACTION_VALIDATE_ALIAS, RSC_ACTION_PROXY_ALIAS, RSC_ACTION_CLIENT_WRAPPER_ALIAS, PUBLIC_DIR_MIDDLEWARE_CONFLICT, SSG_GET_INITIAL_PROPS_CONFLICT, SERVER_PROPS_GET_INIT_PROPS_CONFLICT, SERVER_PROPS_SSG_CONFLICT, STATIC_STATUS_PAGE_GET_INITIAL_PROPS_ERROR, SERVER_PROPS_EXPORT_ERROR, GSP_NO_RETURNED_VALUE, GSSP_NO_RETURNED_VALUE, UNSTABLE_REVALIDATE_RENAME_ERROR, GSSP_COMPONENT_MEMBER_ERROR, NON_STANDARD_NODE_ENV, SSG_FALLBACK_EXPORT_ERROR, ESLINT_DEFAULT_DIRS, ESLINT_DEFAULT_DIRS_WITH_APP, ESLINT_PROMPT_VALUES, SERVER_RUNTIME, WEBPACK_LAYERS, WEBPACK_RESOURCE_QUERIES */
+/* unused harmony exports NEXT_CACHE_TAG_MAX_LENGTH, NEXT_CACHE_SOFT_TAG_MAX_LENGTH, NEXT_CACHE_IMPLICIT_TAG_ID, MIDDLEWARE_FILENAME, MIDDLEWARE_LOCATION_REGEXP, INSTRUMENTATION_HOOK_FILENAME, PAGES_DIR_ALIAS, DOT_NEXT_ALIAS, ROOT_DIR_ALIAS, APP_DIR_ALIAS, RSC_MOD_REF_PROXY_ALIAS, RSC_ACTION_VALIDATE_ALIAS, RSC_ACTION_PROXY_ALIAS, RSC_ACTION_CLIENT_WRAPPER_ALIAS, PUBLIC_DIR_MIDDLEWARE_CONFLICT, SSG_GET_INITIAL_PROPS_CONFLICT, SERVER_PROPS_GET_INIT_PROPS_CONFLICT, SERVER_PROPS_SSG_CONFLICT, STATIC_STATUS_PAGE_GET_INITIAL_PROPS_ERROR, SERVER_PROPS_EXPORT_ERROR, GSP_NO_RETURNED_VALUE, GSSP_NO_RETURNED_VALUE, UNSTABLE_REVALIDATE_RENAME_ERROR, GSSP_COMPONENT_MEMBER_ERROR, NON_STANDARD_NODE_ENV, SSG_FALLBACK_EXPORT_ERROR, ESLINT_DEFAULT_DIRS, ESLINT_PROMPT_VALUES, SERVER_RUNTIME, WEBPACK_LAYERS, WEBPACK_RESOURCE_QUERIES */
 const NEXT_QUERY_PARAM_PREFIX = "nxtP";
 const PRERENDER_REVALIDATE_HEADER = "x-prerender-revalidate";
 const PRERENDER_REVALIDATE_ONLY_GENERATED_HEADER = "x-prerender-revalidate-if-generated";
+const NEXT_CACHE_TAGS_HEADER = "x-next-cache-tags";
+const NEXT_CACHE_SOFT_TAGS_HEADER = "x-next-cache-soft-tags";
+const NEXT_CACHE_REVALIDATED_TAGS_HEADER = "x-next-revalidated-tags";
+const NEXT_CACHE_REVALIDATE_TAG_TOKEN_HEADER = "x-next-revalidate-tag-token";
+const NEXT_CACHE_TAG_MAX_LENGTH = 256;
+const NEXT_CACHE_SOFT_TAG_MAX_LENGTH = 1024;
+const NEXT_CACHE_IMPLICIT_TAG_ID = "_N_T_";
 // in seconds
 const CACHE_ONE_YEAR = 31536000;
 // Patterns to detect middleware files
@@ -825,17 +811,13 @@ const UNSTABLE_REVALIDATE_RENAME_ERROR = (/* unused pure expression or super */ 
 const GSSP_COMPONENT_MEMBER_ERROR = (/* unused pure expression or super */ null && (`can not be attached to a page's component and must be exported from the page. See more info here: https://nextjs.org/docs/messages/gssp-component-member`));
 const NON_STANDARD_NODE_ENV = (/* unused pure expression or super */ null && (`You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env`));
 const SSG_FALLBACK_EXPORT_ERROR = (/* unused pure expression or super */ null && (`Pages with \`fallback\` enabled in \`getStaticPaths\` can not be exported. See more info here: https://nextjs.org/docs/messages/ssg-fallback-true-export`));
-// Consolidate this consts when the `appDir` will be stable.
-const ESLINT_DEFAULT_DIRS = [
+const ESLINT_DEFAULT_DIRS = (/* unused pure expression or super */ null && ([
+    "app",
     "pages",
     "components",
     "lib",
     "src"
-];
-const ESLINT_DEFAULT_DIRS_WITH_APP = [
-    "app",
-    ...ESLINT_DEFAULT_DIRS
-];
+]));
 const ESLINT_PROMPT_VALUES = [
     {
         title: "Strict",
@@ -871,11 +853,11 @@ const SERVER_RUNTIME = {
    * React Server Components layer (rsc).
    */ reactServerComponents: "rsc",
     /**
-   * Server Side Rendering layer (ssr).
+   * Server Side Rendering layer for app (ssr).
    */ serverSideRendering: "ssr",
     /**
    * The browser client bundle layer for actions.
-   */ actionBrowser: "actionBrowser",
+   */ actionBrowser: "action-browser",
     /**
    * The layer for the API routes.
    */ api: "api",
@@ -890,7 +872,10 @@ const SERVER_RUNTIME = {
    */ appPagesBrowser: "app-pages-browser",
     /**
    * The server bundle layer for metadata routes.
-   */ appMetadataRoute: "app-metadata-route"
+   */ appMetadataRoute: "app-metadata-route",
+    /**
+   * The layer for the server bundle for App Route handlers.
+   */ appRouteHandler: "app-route-handler"
 };
 const WEBPACK_LAYERS = {
     ...WEBPACK_LAYERS_NAMES,
@@ -898,7 +883,21 @@ const WEBPACK_LAYERS = {
         server: [
             WEBPACK_LAYERS_NAMES.reactServerComponents,
             WEBPACK_LAYERS_NAMES.actionBrowser,
-            WEBPACK_LAYERS_NAMES.appMetadataRoute
+            WEBPACK_LAYERS_NAMES.appMetadataRoute,
+            WEBPACK_LAYERS_NAMES.appRouteHandler
+        ],
+        nonClientServerTarget: [
+            // plus middleware and pages api
+            WEBPACK_LAYERS_NAMES.middleware,
+            WEBPACK_LAYERS_NAMES.api
+        ],
+        app: [
+            WEBPACK_LAYERS_NAMES.reactServerComponents,
+            WEBPACK_LAYERS_NAMES.actionBrowser,
+            WEBPACK_LAYERS_NAMES.appMetadataRoute,
+            WEBPACK_LAYERS_NAMES.appRouteHandler,
+            WEBPACK_LAYERS_NAMES.serverSideRendering,
+            WEBPACK_LAYERS_NAMES.appPagesBrowser
         ]
     }
 };
@@ -907,12 +906,13 @@ const WEBPACK_RESOURCE_QUERIES = {
     metadata: "__next_metadata__",
     metadataRoute: "__next_metadata_route__",
     metadataImageMeta: "__next_metadata_image_meta__"
-}; //# sourceMappingURL=constants.js.map
+};
+ //# sourceMappingURL=constants.js.map
 
 
 /***/ }),
 
-/***/ 524:
+/***/ 182:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -951,7 +951,7 @@ class RemovedUAError extends Error {
 } //# sourceMappingURL=error.js.map
 
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/utils.js
-var utils = __webpack_require__(551);
+var utils = __webpack_require__(404);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/fetch-event.js
 
 const responseSymbol = Symbol("response");
@@ -1001,9 +1001,9 @@ class NextFetchEvent extends FetchEvent {
 } //# sourceMappingURL=fetch-event.js.map
 
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/next-url.js + 12 modules
-var next_url = __webpack_require__(474);
+var next_url = __webpack_require__(365);
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/cookies.js
-var spec_extension_cookies = __webpack_require__(913);
+var spec_extension_cookies = __webpack_require__(135);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/request.js
 
 
@@ -1083,7 +1083,7 @@ class NextRequest extends Request {
 } //# sourceMappingURL=request.js.map
 
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/response.js
-var spec_extension_response = __webpack_require__(433);
+var spec_extension_response = __webpack_require__(409);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/shared/lib/router/utils/relativize-url.js
 /**
  * Given a URL as a string and a base URL it will make the URL relative
@@ -1096,8 +1096,27 @@ var spec_extension_response = __webpack_require__(433);
     return relative.protocol + "//" + relative.host === origin ? relative.toString().replace(origin, "") : relative.toString();
 } //# sourceMappingURL=relativize-url.js.map
 
-// EXTERNAL MODULE: ./node_modules/next/dist/esm/client/components/app-router-headers.js
-var app_router_headers = __webpack_require__(986);
+;// CONCATENATED MODULE: ./node_modules/next/dist/esm/client/components/app-router-headers.js
+const RSC = "RSC";
+const ACTION = "Next-Action";
+const NEXT_ROUTER_STATE_TREE = "Next-Router-State-Tree";
+const NEXT_ROUTER_PREFETCH = "Next-Router-Prefetch";
+const NEXT_URL = "Next-Url";
+const RSC_CONTENT_TYPE_HEADER = "text/x-component";
+const RSC_VARY_HEADER = RSC + ", " + NEXT_ROUTER_STATE_TREE + ", " + NEXT_ROUTER_PREFETCH + ", " + NEXT_URL;
+const FLIGHT_PARAMETERS = [
+    [
+        RSC
+    ],
+    [
+        NEXT_ROUTER_STATE_TREE
+    ],
+    [
+        NEXT_ROUTER_PREFETCH
+    ]
+];
+const NEXT_RSC_UNION_QUERY = "_rsc"; //# sourceMappingURL=app-router-headers.js.map
+
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/internal-utils.js
 
 const INTERNAL_QUERY_NAMES = [
@@ -1106,7 +1125,7 @@ const INTERNAL_QUERY_NAMES = [
     "__nextInferredLocaleFromDefault",
     "__nextDefaultLocale",
     "__nextIsNotFound",
-    app_router_headers/* NEXT_RSC_UNION_QUERY */.H4
+    NEXT_RSC_UNION_QUERY
 ];
 const EDGE_EXTENDED_INTERNAL_QUERY_NAMES = [
     "__nextDataReq"
@@ -1128,9 +1147,30 @@ function stripInternalSearchParams(url, isEdge) {
         }
     }
     return isStringUrl ? instance.toString() : instance;
+}
+/**
+ * Headers that are set by the Next.js server and should be stripped from the
+ * request headers going to the user's application.
+ */ const INTERNAL_HEADERS = (/* unused pure expression or super */ null && ([
+    "x-invoke-path",
+    "x-invoke-status",
+    "x-invoke-error",
+    "x-invoke-query",
+    "x-invoke-output",
+    "x-middleware-invoke"
+]));
+/**
+ * Strip internal headers from the request headers.
+ *
+ * @param headers the headers to strip of internal headers
+ */ function stripInternalHeaders(headers) {
+    for (const key of INTERNAL_HEADERS){
+        delete headers[key];
+    }
 } //# sourceMappingURL=internal-utils.js.map
 
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/shared/lib/router/utils/app-paths.js
+
 
 /**
  * Normalizes an app route so it represents the actual request path. Essentially
@@ -1157,7 +1197,7 @@ function stripInternalSearchParams(url, isEdge) {
             return pathname;
         }
         // Groups are ignored.
-        if (segment[0] === "(" && segment.endsWith(")")) {
+        if (isGroupSegment(segment)) {
             return pathname;
         }
         // Parallel segments are ignored.
@@ -1179,9 +1219,9 @@ function stripInternalSearchParams(url, isEdge) {
 } //# sourceMappingURL=app-paths.js.map
 
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/lib/constants.js
-var constants = __webpack_require__(782);
+var constants = __webpack_require__(987);
 // EXTERNAL MODULE: ./node_modules/next/dist/esm/server/web/globals.js
-var globals = __webpack_require__(710);
+var globals = __webpack_require__(444);
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/adapters/reflect.js
 class ReflectAdapter {
     static get(target, prop, receiver) {
@@ -1417,7 +1457,7 @@ function appendMutableCookies(headers, mutableCookies) {
         return false;
     }
     // Return a new response that extends the response with
-    // the modified cookies as fallbacks. `res`' cookies
+    // the modified cookies as fallbacks. `res` cookies
     // will still take precedence.
     const resCookies = new ResponseCookies(headers);
     const returnedCookies = resCookies.getAll();
@@ -1442,7 +1482,7 @@ class MutableRequestCookiesAdapter {
         const updateResponseCookies = ()=>{
             var _fetch___nextGetStaticStore;
             // TODO-APP: change method of getting staticGenerationAsyncStore
-            const staticGenerationAsyncStore = fetch.__nextGetStaticStore == null ? void 0 : (_fetch___nextGetStaticStore = fetch.__nextGetStaticStore()) == null ? void 0 : _fetch___nextGetStaticStore.getStore();
+            const staticGenerationAsyncStore = fetch.__nextGetStaticStore == null ? void 0 : (_fetch___nextGetStaticStore = fetch.__nextGetStaticStore.call(fetch)) == null ? void 0 : _fetch___nextGetStaticStore.getStore();
             if (staticGenerationAsyncStore) {
                 staticGenerationAsyncStore.pathWasRevalidated = true;
             }
@@ -1496,19 +1536,6 @@ class MutableRequestCookiesAdapter {
 
 
 /**
- * Parse cookies from the `headers` of request
- * @param req request object
- */ function getCookieParser(headers) {
-    return function parseCookie() {
-        const { cookie } = headers;
-        if (!cookie) {
-            return {};
-        }
-        const { parse: parseCookieFn } = __webpack_require__(822);
-        return parseCookieFn(Array.isArray(cookie) ? cookie.join("; ") : cookie);
-    };
-}
-/**
  *
  * @param res response object
  * @param statusCode `HTTP` status code of response
@@ -1555,7 +1582,7 @@ function clearPreviewData(res, options = {}) {
     if (SYMBOL_CLEARED_COOKIES in res) {
         return res;
     }
-    const { serialize } = __webpack_require__(822);
+    const { serialize } = __webpack_require__(565);
     const previous = res.getHeader("Set-Cookie");
     res.setHeader(`Set-Cookie`, [
         ...typeof previous === "string" ? [
@@ -1696,7 +1723,7 @@ class DraftModeProvider {
 
 function getHeaders(headers) {
     const cleaned = HeadersAdapter.from(headers);
-    for (const param of app_router_headers/* FLIGHT_PARAMETERS */.vu){
+    for (const param of FLIGHT_PARAMETERS){
         cleaned.delete(param.toString().toLowerCase());
     }
     return HeadersAdapter.seal(cleaned);
@@ -1792,9 +1819,9 @@ function createAsyncLocalStorage() {
     return new FakeAsyncLocalStorage();
 } //# sourceMappingURL=async-local-storage.js.map
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/esm/client/components/request-async-storage.js
+;// CONCATENATED MODULE: ./node_modules/next/dist/esm/client/components/request-async-storage.external.js
 
-const requestAsyncStorage = createAsyncLocalStorage(); //# sourceMappingURL=request-async-storage.js.map
+const requestAsyncStorage = createAsyncLocalStorage(); //# sourceMappingURL=request-async-storage.external.js.map
 
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/adapter.js
 
@@ -1833,18 +1860,15 @@ class NextRequestHint extends NextRequest {
         });
     }
 }
-const FLIGHT_PARAMETERS = [
+const adapter_FLIGHT_PARAMETERS = [
     [
-        app_router_headers/* RSC */.i4
+        RSC
     ],
     [
-        app_router_headers/* NEXT_ROUTER_STATE_TREE */.ph
+        NEXT_ROUTER_STATE_TREE
     ],
     [
-        app_router_headers/* NEXT_ROUTER_PREFETCH */.pz
-    ],
-    [
-        app_router_headers/* FETCH_CACHE_HEADER */.yR
+        NEXT_ROUTER_PREFETCH
     ]
 ];
 async function adapter(params) {
@@ -1884,7 +1908,7 @@ async function adapter(params) {
     const flightHeaders = new Map();
     // Parameters should only be stripped for middleware
     if (!isEdgeRendering) {
-        for (const param of FLIGHT_PARAMETERS){
+        for (const param of adapter_FLIGHT_PARAMETERS){
             const key = param.toString().toLowerCase();
             const value = requestHeaders.get(key);
             if (value) {
@@ -1947,7 +1971,8 @@ async function adapter(params) {
     let response;
     let cookiesFromResponse;
     // we only care to make async storage available for middleware
-    if (params.page === "/middleware") {
+    const isMiddleware = params.page === "/middleware" || params.page === "/src/middleware";
+    if (isMiddleware) {
         response = await RequestAsyncStorageWrapper.wrap(requestAsyncStorage, {
             req: request,
             renderOpts: {
@@ -2047,14 +2072,15 @@ async function adapter(params) {
     }
     return {
         response: finalResponse,
-        waitUntil: Promise.all(event[waitUntilSymbol])
+        waitUntil: Promise.all(event[waitUntilSymbol]),
+        fetchMetrics: request.fetchMetrics
     };
 } //# sourceMappingURL=adapter.js.map
 
 
 /***/ }),
 
-/***/ 710:
+/***/ 444:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2127,7 +2153,7 @@ enhanceGlobals(); //# sourceMappingURL=globals.js.map
 
 /***/ }),
 
-/***/ 474:
+/***/ 365:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2359,31 +2385,38 @@ function getNextPathnameInfo(pathname, options) {
     var _options_nextConfig;
     const { basePath, i18n, trailingSlash } = (_options_nextConfig = options.nextConfig) != null ? _options_nextConfig : {};
     const info = {
-        pathname: pathname,
+        pathname,
         trailingSlash: pathname !== "/" ? pathname.endsWith("/") : trailingSlash
     };
     if (basePath && pathHasPrefix(info.pathname, basePath)) {
         info.pathname = removePathPrefix(info.pathname, basePath);
         info.basePath = basePath;
     }
-    if (options.parseData === true && info.pathname.startsWith("/_next/data/") && info.pathname.endsWith(".json")) {
+    let pathnameNoDataPrefix = info.pathname;
+    if (info.pathname.startsWith("/_next/data/") && info.pathname.endsWith(".json")) {
         const paths = info.pathname.replace(/^\/_next\/data\//, "").replace(/\.json$/, "").split("/");
         const buildId = paths[0];
-        info.pathname = paths[1] !== "index" ? "/" + paths.slice(1).join("/") : "/";
         info.buildId = buildId;
+        pathnameNoDataPrefix = paths[1] !== "index" ? "/" + paths.slice(1).join("/") : "/";
+        // update pathname with normalized if enabled although
+        // we use normalized to populate locale info still
+        if (options.parseData === true) {
+            info.pathname = pathnameNoDataPrefix;
+        }
     }
     // If provided, use the locale route normalizer to detect the locale instead
     // of the function below.
-    if (options.i18nProvider) {
-        const result = options.i18nProvider.analyze(info.pathname);
+    if (i18n) {
+        let result = options.i18nProvider ? options.i18nProvider.analyze(info.pathname) : normalizeLocalePath(info.pathname, i18n.locales);
         info.locale = result.detectedLocale;
         var _result_pathname;
         info.pathname = (_result_pathname = result.pathname) != null ? _result_pathname : info.pathname;
-    } else if (i18n) {
-        const pathLocale = normalizeLocalePath(info.pathname, i18n.locales);
-        info.locale = pathLocale.detectedLocale;
-        var _pathLocale_pathname;
-        info.pathname = (_pathLocale_pathname = pathLocale.pathname) != null ? _pathLocale_pathname : info.pathname;
+        if (!result.detectedLocale && info.buildId) {
+            result = options.i18nProvider ? options.i18nProvider.analyze(pathnameNoDataPrefix) : normalizeLocalePath(pathnameNoDataPrefix, i18n.locales);
+            if (result.detectedLocale) {
+                info.locale = result.detectedLocale;
+            }
+        }
     }
     return info;
 } //# sourceMappingURL=get-next-pathname-info.js.map
@@ -2416,7 +2449,7 @@ class NextURL {
         this.analyze();
     }
     analyze() {
-        var _this_Internal_options_nextConfig, _this_Internal_options_nextConfig_i18n, _this_Internal_domainLocale, _this_Internal_options_nextConfig1, _this_Internal_options_nextConfig_i18n1;
+        var _this_Internal_options_nextConfig_i18n, _this_Internal_options_nextConfig, _this_Internal_domainLocale, _this_Internal_options_nextConfig_i18n1, _this_Internal_options_nextConfig1;
         const info = getNextPathnameInfo(this[Internal].url.pathname, {
             nextConfig: this[Internal].options.nextConfig,
             parseData: !undefined,
@@ -2455,7 +2488,7 @@ class NextURL {
         return this[Internal].locale ?? "";
     }
     set locale(locale) {
-        var _this_Internal_options_nextConfig, _this_Internal_options_nextConfig_i18n;
+        var _this_Internal_options_nextConfig_i18n, _this_Internal_options_nextConfig;
         if (!this[Internal].locale || !((_this_Internal_options_nextConfig = this[Internal].options.nextConfig) == null ? void 0 : (_this_Internal_options_nextConfig_i18n = _this_Internal_options_nextConfig.i18n) == null ? void 0 : _this_Internal_options_nextConfig_i18n.locales.includes(locale))) {
             throw new TypeError(`The NextURL configuration includes no locale "${locale}"`);
         }
@@ -2572,7 +2605,7 @@ class NextURL {
 
 /***/ }),
 
-/***/ 913:
+/***/ 135:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2580,23 +2613,23 @@ class NextURL {
 /* harmony export */   n: () => (/* reexport safe */ next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0__.ResponseCookies),
 /* harmony export */   q: () => (/* reexport safe */ next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0__.RequestCookies)
 /* harmony export */ });
-/* harmony import */ var next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(838);
+/* harmony import */ var next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(668);
 /* harmony import */ var next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_compiled_edge_runtime_cookies__WEBPACK_IMPORTED_MODULE_0__);
  //# sourceMappingURL=cookies.js.map
 
 
 /***/ }),
 
-/***/ 433:
+/***/ 409:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   x: () => (/* binding */ NextResponse)
 /* harmony export */ });
-/* harmony import */ var _next_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(474);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(551);
-/* harmony import */ var _cookies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(913);
+/* harmony import */ var _next_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(365);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(404);
+/* harmony import */ var _cookies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(135);
 
 
 
@@ -2652,7 +2685,6 @@ class NextResponse extends Response {
         return this[INTERNALS].cookies;
     }
     static json(body, init) {
-        // @ts-expect-error This is not in lib/dom right now, and we can't augment it.
         const response = Response.json(body, init);
         return new NextResponse(response.body, response);
     }
@@ -2693,7 +2725,7 @@ class NextResponse extends Response {
 
 /***/ }),
 
-/***/ 551:
+/***/ 404:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2833,7 +2865,7 @@ class NextResponse extends Response {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__(706));
+/******/ var __webpack_exports__ = (__webpack_exec__(68));
 /******/ (_ENTRIES = typeof _ENTRIES === "undefined" ? {} : _ENTRIES).middleware_middleware = __webpack_exports__;
 /******/ }
 ]);
