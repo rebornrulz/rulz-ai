@@ -361,7 +361,7 @@ const Home = ({
     >
       <Head>
         <title>Rulz-AI</title>
-        <meta name="description" content="Rulz-AI is a Superintelligence Artificail conversational model version." />
+        <meta name="description" content="Rulz-AI is a Powerful Language Model." />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
