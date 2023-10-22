@@ -63,7 +63,9 @@ from dagshub.streaming import DagsHubFilesystem
 fs = DagsHubFilesystem(".", repo_url="https://dagshub.com/DagsHub-Datasets/noaa-rtma-dataset")
 
 fs.listdir("s3://noaa-rtma-pds")
-``
+```
+
+### Install Plugin
 
 To run the plugin, enter the following command:
 
