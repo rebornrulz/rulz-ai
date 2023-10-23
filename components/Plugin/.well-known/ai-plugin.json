@@ -10,7 +10,7 @@
   },
   "api": {
     "type": "rest",
-    "url": "https://api.rulzai.com",
+    "url": "https://mlpprcyjrlraatiwdbls.supabase.co",
     "documentation_url": "https://docs.rulzai.com"
   },
   "logo_url": "https://rulzai.com/logo.png",
@@ -22,6 +22,6 @@
     "sentiment_analysis",
     "language_translation"
   ],
-  "max_tokens": 1000,
+  "max_tokens": 50000,
   "default_language": "en"
 }
