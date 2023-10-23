@@ -1,12 +1,10 @@
 import json
-
 import quart
 import quart_cors
 from quart import request
 
 app = quart_cors.cors(quart.Quart(__name__), allow_origin="https://rulz-ai.com")
 
-# Keep track of todos. Does not persist if Python session is restarted.
 _TODOS = {}
 
 @app.post("/todos/<string:username>")
