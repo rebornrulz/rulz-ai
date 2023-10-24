@@ -5,6 +5,7 @@ node_modules
 test-results
 .github
 .git
+.next
 .mypy_cache
 .pytest_cache
 Dockerfile
