@@ -7,5 +7,9 @@
         "mlflow",
         "rasa",
         "rebornrulz"
-    ]
+    ],
+    "go.toolsEnvVars": {
+        "GOENV": "/Users/rebornrulz/Library/Application Support/go/env",
+        "GOCACHE": "/Users/rebornrulz/Library/Caches/go-build"
+    }
 }
