@@ -1,0 +1,28 @@
+{
+    "path": "/",
+    "output": {
+      "metrics": {
+          "FCP": {
+            "value": 1200,
+            "previousValue": 1400,
+            "source": "web-vitals"
+          }
+          "LCP": {
+            "value": 1200,
+            "previousValue": 1400,
+            "source": "web-vitals"
+          },
+          "CLS": {
+            "value": 1200,
+            "previousValue": 1400,
+            "source": "web-vitals"
+          },
+          "TBT": {
+            "value": 1200,
+            "previousValue": 1400,
+            "source": "web-vitals"
+          }
+        }
+      }
+    }
+  }
