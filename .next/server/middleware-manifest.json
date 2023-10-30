@@ -17,6 +17,27 @@
       ],
       "wasm": [],
       "assets": []
+    },
+    "/api/chat": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/chat.js"
+      ],
+      "name": "pages/api/chat",
+      "page": "/api/chat",
+      "matchers": [
+        {
+          "regexp": "^/api/chat$",
+          "originalSource": "/api/chat"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_5ae0d22d2fe69afd3b3bf338be5ac0aee9bf1c86",
+          "filePath": "server/edge-chunks/wasm_5ae0d22d2fe69afd3b3bf338be5ac0aee9bf1c86.wasm"
+        }
+      ],
+      "assets": []
     }
   },
   "version": 2
