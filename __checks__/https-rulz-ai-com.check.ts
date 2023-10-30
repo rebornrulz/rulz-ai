@@ -12,7 +12,7 @@ new BrowserCheck('https-rulz-ai-com', {
   muted: false,
   shouldFail: false,
   runtimeId: '2023.09',
-  locations: ['us-east-1', 'ap-southeast-1'],
+  locations: ['ap-southeast-1', 'eu-central-1', 'us-west-1'],
   tags: ['3.0.1'],
   sslCheckDomain: '',
   frequency: Frequency.EVERY_10M,
