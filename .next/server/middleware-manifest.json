@@ -1,9 +1,30 @@
 {
-  "sortedMiddleware": [],
-  "middleware": {},
+  "sortedMiddleware": [
+    "/"
+  ],
+  "middleware": {
+    "/": {
+      "files": [
+        "prerender-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/)[^/.]{1,}))\\/welcome(.json)?[\\/#\\?]?$",
+          "originalSource": "/welcome"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    }
+  },
   "functions": {
     "/api/chat": {
       "files": [
+        "prerender-manifest.js",
         "server/edge-runtime-webpack.js",
         "server/pages/api/chat.js"
       ],
@@ -25,6 +46,7 @@
     },
     "/api/models": {
       "files": [
+        "prerender-manifest.js",
         "server/edge-runtime-webpack.js",
         "server/pages/api/models.js"
       ],
