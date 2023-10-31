@@ -12,3 +12,4 @@ go.mod
 go.sum
 go.work.sum
 env
+.next/
