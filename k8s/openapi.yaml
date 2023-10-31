@@ -1,43 +1,26 @@
-
-openapi: 3.0.1
+openapi: 3.0.2
 info:
-  title: BART Real-Time
-  description: Allows the user to get real-time BART information for a specified origination station and direction.
-  version: 'v1'
-servers:
-  - url: https://bart-plugin.onrender.com
+  title: Safari Planner
+  description: A ChatGPT Plugin that helps you plan your safari in Tanzania
+  version: 1.0.0
+  servers:
+    - url: https://www.dcsdigital.co.uk
 paths:
-  /bart/realtime:
+  /gpt-plugins/safari:
     get:
-      operationId: getBartRealTime
-      summary: Get real-time BART information
+      operationId: planSafari
+      summary: Plan an itenerary for your safari to Tanzania
       parameters:
-        - name: origination_station
-          in: query
-          description: The abbreviation for the origination station (e.g., '12th' for 12th Street Station).
-          required: true
-          schema:
+      - in: query
+        name: start
+        schema:
             type: string
-        - name: direction
-          in: query
-          description: The direction of travel ('n' for northbound, 's' for southbound).
-          required: true
-          schema:
+        description: Used to define the route starting point
+      - in: query
+        name: end
+        schema:
             type: string
-        - name: question
-          in: query
-          description: The original question about Bart or time information asked by the user in the current chat session. 
-          required: true
-          schema:
-            type: string            
+        description: Used to define the route ending point
       responses:
         "200":
           description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  data:
-                    type: object
-                    description: The JSON response from the BART real-time API containing real-time BART information.

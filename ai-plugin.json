@@ -1,18 +1,18 @@
 {
-    "api": {
-        "is_user_authenticated": false,
-        "type": "openapi",
-        "url": "https://bart-plugin.onrender.com/openapi.yaml"
-    },
+    "schema_version": "v1",
+    "name_for_human": "Safari",
+    "name_for_model": "safari",
+    "description_for_human": "Plugin for planning your safari in Tanzania. You can specify your start and end points.",
+    "description_for_model": "Plugin for planning your safari in Tanzania. You can specify your start and end points.",
     "auth": {
         "type": "none"
     },
-    "contact_email": "yiqun.cheng@gmail.com",
-    "description_for_human": "Getting real-time BART information for a specified origination station and direction.",
-    "description_for_model": "Getting real-time BART information for a specified origination station and direction.",
-    "legal_info_url": "https://bart-plugin.onrender.com/legal",
-    "logo_url": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/0016/4231/brand.gif?itok=cOeuUIp-",
-    "name_for_human": "BART Real-Time",
-    "name_for_model": "bart_realtime",
-    "schema_version": "v1"
+    "api": {
+        "type": "openapi",
+        "url": "https://www.dcsdigital.co.uk/.well-known/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://www.dcsdigital.co.uk/.well-known/logo.png",
+    "contact_email": "support@dcsdigital.co.uk",
+    "legal_info_url": "https://www.dcsdigital.co.uk/terms-and-conditions/"
 }
