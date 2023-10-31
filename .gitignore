@@ -2,7 +2,7 @@
 /source
 /metrics
 node_modules
-.next/
+.next
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
