@@ -1,0 +1,460 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-1fec9b80-a608-4ec0-b738-ae0182989eeb"
+    },
+    "insertId": "10mn2pfd49r7",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "project_id": "rulz-ai-402019",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2023-10-14T19:25:19.703450Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:25:20.653306809Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-1fec9b80-a608-4ec0-b738-ae0182989eeb"
+    },
+    "insertId": "1hkdq3sd3yhv",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "rulz-ai-402019"
+      }
+    },
+    "timestamp": "2023-10-14T19:25:23.397046Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:25:23.552453406Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "apikeys.keys.create",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "apikeys.keys.create",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/akmf.p7-1021310509011-640ca202-3b21-4079-b98c-7983f150781e"
+    },
+    "insertId": "vczpt5d17v2",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "rulz-ai-402019",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2023-10-14T19:41:10.556372Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:41:11.129659943Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "apikeys.keys.create",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "apikeys.keys.create",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/akmf.p7-1021310509011-640ca202-3b21-4079-b98c-7983f150781e"
+    },
+    "insertId": "1pvkwc3d16yl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "rulz-ai-402019"
+      }
+    },
+    "timestamp": "2023-10-14T19:41:14.290109Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:41:14.610138792Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-227434af-2d8c-4109-92df-b3e09830c482"
+    },
+    "insertId": "rgxhptd2ub5",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "rulz-ai-402019",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2023-10-14T19:45:10.653364Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:45:10.997957173Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-227434af-2d8c-4109-92df-b3e09830c482"
+    },
+    "insertId": "1deeg2xd1o64",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "project_id": "rulz-ai-402019",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2023-10-14T19:45:14.363743Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:45:15.293729391Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com",
+        "principalSubject": "user:reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-751c8f25-02a4-4377-8e6a-f36942ae7355"
+    },
+    "insertId": "6y7muud1amg",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "rulz-ai-402019",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2023-10-14T19:45:53.927816Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:45:54.249973444Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "reborn@rulz-ai.com",
+        "principalSubject": "user:reborn@rulz-ai.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2001:e68:540d:1765:b0e1:ebfb:4f31:227d",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/1021310509011/services/-",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/1021310509011/operations/acat.p2-1021310509011-996ae5e3-f578-4dd5-b538-8e79b4ab7480"
+    },
+    "insertId": "ln9htbd15mp",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "rulz-ai-402019",
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2023-10-14T19:47:29.426583Z",
+    "severity": "NOTICE",
+    "logName": "projects/rulz-ai-402019/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2023-10-14T19:47:29.498927171Z"
+  }
+]
