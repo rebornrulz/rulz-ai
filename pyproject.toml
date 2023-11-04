@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "3-0-1"
+version = "0.1.0"
+description = "AI language model for Rulz-AI, designed to assist with a wide range of tasks and generate intelligent responses."
+authors = ["Reborn"]
+license = "BSD-3-Clause license"
+readme = "README.md"
+packages = [{include = "3"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
