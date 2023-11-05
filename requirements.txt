@@ -3,7 +3,6 @@
 ################################
 rouge-score
 tqdm
-numpy
 openai==0.24.0
 benepar
 spacy
@@ -36,7 +35,6 @@ git+https://github.com/google-research/bleurt.git
 git+https://github.com/ns-moosavi/coval.git
 git+https://github.com/hendrycks/math.git
 
-numpy
 rouge_score
 fire
 openai
@@ -48,7 +46,6 @@ wandb
 accelerate
 loralib
 evaluate
-tqdm
 datasets
 anthropic
 deepspeed
