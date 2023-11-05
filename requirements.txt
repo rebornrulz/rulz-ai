@@ -73,14 +73,15 @@ tensorflow-probability==0.17.0
 tf_slim==1.1.0
 wheel==0.37.1
 
-[beam]
+# beam
 apache-beam[gcp]==2.40.0
 
-[onsets_frames_realtime]
+
+# onsets_frames_realtime
 pyaudio==0.2.12
 colorama==0.4.5
 tflite==2.4.0
 
-[test]
+# test
 pylint==2.14.5
 pytest==7.1.2
