@@ -1,47 +1,9 @@
 {
-  "sortedMiddleware": [
-    "/"
-  ],
-  "middleware": {
-    "/": {
-      "files": [
-        "prerender-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/middleware.js"
-      ],
-      "name": "middleware",
-      "page": "/",
-      "matchers": [
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/)[^/.]{1,}))\\/welcome(.json)?[\\/#\\?]?$",
-          "originalSource": "/welcome"
-        }
-      ],
-      "wasm": [],
-      "assets": []
-    }
-  },
+  "sortedMiddleware": [],
+  "middleware": {},
   "functions": {
-    "/api/models": {
-      "files": [
-        "prerender-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/pages/api/models.js"
-      ],
-      "name": "pages/api/models",
-      "page": "/api/models",
-      "matchers": [
-        {
-          "regexp": "^/api/models$",
-          "originalSource": "/api/models"
-        }
-      ],
-      "wasm": [],
-      "assets": []
-    },
     "/api/chat": {
       "files": [
-        "prerender-manifest.js",
         "server/edge-runtime-webpack.js",
         "server/pages/api/chat.js"
       ],
@@ -59,6 +21,22 @@
           "filePath": "server/edge-chunks/wasm_5ae0d22d2fe69afd3b3bf338be5ac0aee9bf1c86.wasm"
         }
       ],
+      "assets": []
+    },
+    "/api/models": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/models.js"
+      ],
+      "name": "pages/api/models",
+      "page": "/api/models",
+      "matchers": [
+        {
+          "regexp": "^/api/models$",
+          "originalSource": "/api/models"
+        }
+      ],
+      "wasm": [],
       "assets": []
     }
   },
