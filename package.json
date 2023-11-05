@@ -7,7 +7,7 @@
     "npm": ">=8.5.1"
   },
   "scripts": {
-    "debug": "nodemon --inspect=0.0.0.0:9229 server.js",
+    "debug": "nodemon --inspect=0.0.0.0:9229 -L server.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
