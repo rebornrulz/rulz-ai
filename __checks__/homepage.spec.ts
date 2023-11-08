@@ -1,11 +1,30 @@
-import { test, expect } from '@playwright/test'
+/**
+ * To learn more about Playwright Test visit:
+ * https://www.checklyhq.com/docs/browser-checks/playwright-test/
+ * https://playwright.dev/docs/writing-tests
+ */
 
-// You can override the default Playwright test timeout of 30s
-// test.setTimeout(60_000);
+const { expect, test } = require("@playwright/test")
 
-test('Checkly Homepage', async ({ page }) => {
-  const response = await page.goto('https://danube-web.shop')
-  expect(response?.status()).toBeLessThan(400)
-  await expect(page).toHaveTitle(/Danube WebShop/)
-  await page.screenshot({ path: 'homepage.jpg' })
+// Set the action timeout to 10 seconds to quickly identify failing actions.
+// By default Playwright Test has no timeout for actions (e.g. clicking an element).
+// Learn more here: https://www.checklyhq.com/docs/browser-checks/timeouts/
+test.use({ actionTimeout: 10000 })
+
+test("visit page and take screenshot", async ({ page }) => {
+  // Change checklyhq.com to your site's URL,
+  // or, even better, define a ENVIRONMENT_URL environment variable
+  // to reuse it across your browser checks
+  const response = await page.goto(
+    process.env.ENVIRONMENT_URL || "https://rulz-ai.com",
+  )
+
+  // Take a screenshot
+  await page.screenshot({ path: "screenshot.jpg" })
+
+  // Test that the response did not fail
+  expect(
+    response.status(),
+    "should respond with correct status code",
+  ).toBeLessThan(400)
 })
