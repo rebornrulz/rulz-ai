@@ -1,4 +1,5 @@
 {
+  "/api/chat": "pages/api/chat.js",
   "/api/models": "pages/api/models.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
