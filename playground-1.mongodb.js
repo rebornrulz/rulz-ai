@@ -26,7 +26,7 @@ db.getCollection('sales').insertMany([
 
 // Run a find command to view items sold on April 4th, 2014.
 const salesOnApril4th = db.getCollection('sales').find({
-  date: { $gte: new Date('2023-09-01'), $lt: new Date('2023-10-01') }
+  date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
 }).count();
 
 // Print a message to the output window.
@@ -41,4 +41,3 @@ db.getCollection('sales').aggregate([
   // Group the total sales for each product.
   { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: [ '$price', '$quantity' ] } } } }
 ]);
-oho
