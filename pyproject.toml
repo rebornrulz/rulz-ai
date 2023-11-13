@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "3-0-1"
+name = "4-0"
 version = "0.1.0"
 description = "AI language model for Rulz-AI, designed to assist with a wide range of tasks and generate intelligent responses."
 authors = ["Reborn"]
