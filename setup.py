@@ -121,7 +121,11 @@ CONSOLE_SCRIPTS = [
 
 setup(
     name='magenta',
-    version=__version__,  # pylint: disable=undefined-variable
+    version=GitHub Copilot: In Python, a module is a single file that can contain functions, classes, or variables. Modules are a way to organize related code into a single file, which can then be imported and used in other Python scripts.
+
+A package, on the other hand, is a way of organizing related modules into a directory hierarchy. Essentially, a package is a directory that contains multiple module files, along with a special `__init__.py` file to indicate that the directory should be treated as a package. This allows you to group related modules together under a common package name, creating a namespace for the modules.
+
+For example, if you have two modules named `module1` and `module2`, and you put them in a package named `package1`, you could access the modules with `import package1.module1` and `import package1.module2`.,  # pylint: disable=undefined-variable
     description='Use machine learning to create art and music',
     long_description='',
     url='https://magenta.tensorflow.org/',
