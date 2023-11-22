@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 22,
+  "agentName": "Rulz-MBP",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/oiUhzyyFGgBYsCVNZjVVNNoIy9voGd6HTxWuNUbr5zbjFi6Y7z/",
+  "gitHubUrl": "https://github.com/rebornrulz/Rulz-AI",
+  "workFolder": "Rulz-AI"
+}
