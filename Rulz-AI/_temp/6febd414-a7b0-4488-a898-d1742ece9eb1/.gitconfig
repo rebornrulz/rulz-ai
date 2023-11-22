@@ -1,0 +1,28 @@
+[user]
+	name = Reborn
+	email = reborn@rulz-ai.com
+	name = Reborn
+[core]
+	editor = emacs
+	excludesfile = /Users/rulz-ai/.gitignore_global
+[init]
+	defaultBranch = master
+[credential]
+	helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/rulz-ai/.stCommitMsg
+[pull]
+	rebase = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[safe]
+	directory = /Users/rulz-ai/Rulz-AI/Rulz-AI/Rulz-AI/Rulz-AI

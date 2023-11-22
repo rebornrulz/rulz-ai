@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "rebornrulz/Rulz-AI",
+  "pipelineDirectory": "Rulz-AI",
+  "workspaceDirectory": "Rulz-AI/Rulz-AI",
+  "repositories": {
+    "rebornrulz/Rulz-AI": {
+      "repositoryPath": "Rulz-AI/Rulz-AI",
+      "lastRunOn": "11/23/2023 02:46:35 +08:00"
+    }
+  },
+  "lastRunOn": "11/23/2023 02:46:35 +08:00"
+}
