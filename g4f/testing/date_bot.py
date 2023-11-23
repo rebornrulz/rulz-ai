@@ -8,8 +8,8 @@ def get_date_by_input(input_date):
     try:
         date_obj = datetime.strptime(input_date, "%Y-%m-%d").date()
         return date_obj.strftime("%B %d, %Y")
-    except ValueError:
-        return "Invalid date format. Please provide the date in the format YYYY-MM-DD."
+    except ValueError as e:
+        raise ValueError("Invalid date format. Please provide the date in the format YYYY-MM-DD.") from e
 
 def chatbot_logic(user_input):
     user_input_lower = user_input.lower()
