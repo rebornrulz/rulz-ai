@@ -187,3 +187,11 @@ scripts/ci/gcp-creds.json
 .nox/
 .tox/
 htmlcov/
+
+# go
+out/
+dist/
+node_modules/
+.vscode-test/
+.DS_Store
+.user-data-dir-test/
