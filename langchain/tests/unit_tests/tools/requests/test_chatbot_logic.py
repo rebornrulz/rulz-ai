@@ -1,4 +1,5 @@
 import unittest
+from peft.utils.chatbot_logic import chatbot_logic
 
 class TestChatbotLogic(unittest.TestCase):
 
