@@ -1,10 +1,8 @@
 from datetime import date, datetime
 
-
 def get_current_date():
     today = date.today()
     return today.strftime("%B %d, %Y")
-
 
 def get_date_by_input(input_date):
     try:
@@ -12,7 +10,6 @@ def get_date_by_input(input_date):
         return date_obj.strftime("%B %d, %Y")
     except ValueError as e:
         raise ValueError("Invalid date format. Please provide the date in the format YYYY-MM-DD.") from e
-
 
 def chatbot_logic(user_input):
     user_input_lower = user_input.lower()
