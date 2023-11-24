@@ -1,5 +1,5 @@
 import unittest
-from chatbot import chatbot_logic
+from chatbot_logic import test_chatbot_logic
 
 class TestChatbotLogic(unittest.TestCase):
 
