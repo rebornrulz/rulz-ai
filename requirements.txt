@@ -87,3 +87,9 @@ tflite==2.4.0
 # test
 pylint==2.14.5
 pytest==7.1.2
+
+# Specific library version
+requests==2.26.0
+
+# Any version of a library
+numpy
