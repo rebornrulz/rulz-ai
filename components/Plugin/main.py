@@ -34,13 +34,13 @@ async def plugin_logo():
 
 @app.get("/.well-known/ai-plugin.json")
 async def plugin_manifest():
-    with open("./.well-known/ai-plugin.json") as f:
+    with open("./.well-known/ai-plugin.json", encoding="utf-8") as f:
         text = f.read()
         return quart.Response(text, mimetype="text/json")
 
 @app.get("/openapi.yaml")
 async def openapi_spec():
-    with open("openapi.yaml") as f:
+    with open("openapi.yaml", encoding="utf-8") as f:
         text = f.read()
         return quart.Response(text, mimetype="text/yaml")
 
