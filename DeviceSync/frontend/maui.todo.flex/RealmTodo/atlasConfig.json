@@ -1,0 +1,9 @@
+{
+    "appId": "devicesync-adwbg",
+    "appUrl": "https://realm.mongodb.com/groups/6536c46ade6d6a66ce9faddf/apps/6562175efce9035abd9a5279",
+    "baseUrl": "https://realm.mongodb.com",
+    "clientApiBaseUrl": "https://ap-southeast-1.aws.realm.mongodb.com",
+    "dataApiBaseUrl": "https://ap-southeast-1.aws.data.mongodb-api.com",
+    "dataExplorerLink": "https://cloud.mongodb.com/links/6536c46ade6d6a66ce9faddf/explorer/Rulz-AI/database/collection/find",
+    "dataSourceName": "mongodb-atlas"
+}
