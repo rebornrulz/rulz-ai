@@ -1,72 +1,28 @@
 package main
 
 import (
-	"fmt"
-	"os"
+  "net/http"
 
-	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
-	"github.com/rebornrulz/codeapi/storage"
-
-	"github.com/rebornrulz/codeapi/handler"
-	"github.com/rebornrulz/codeapi/template"
-	"github.com/spf13/pflag"
-	"github.com/spf13/viper"
+  "github.com/labstack/echo/v4"
+  "github.com/labstack/echo/v4/middleware"
 )
 
-func main() {
-	// Echo instance
-	e := echo.New()
-
-	// Middleware
-	e.Use(middleware.Logger())
-	e.Use(middleware.Recover())
-
-	bucket := storage.ImageBucket{
-		Endpoint:   viper.GetString("MINIO_ENDPOINT"),
-		BucketName: viper.GetString("MINIO_BUCKET_NAME"),
-		Secret:     viper.GetString("MINIO_SECRET_KEY"),
-		AccessKey:  viper.GetString("MINIO_ACCESS_KEY"),
-	}
-	pythonContainerImage := viper.GetString("PYTHON_RUNNER_IMAGE")
-	handlers := handler.NewHandlers(pythonContainerImage, bucket)
-
-	// Routes
-	e.POST("/api/run", handlers.Run)
-
-	// Get port number from viper configuration
-	port := viper.GetString("port")
-	apibase := viper.GetString("apibase")
-
-	// Serve static files
-	// e.Static("/", "public")
-	replacer := &template.VariableReplacer{APIBase: apibase}
-	e.Group("", replacer.Middleware).Static("/", "public")
-
-	// Start server
-	e.Logger.Fatal(e.Start(":" + port))
+// Handler
+func hello(c echo.Context) error {
+  return c.String(http.StatusOK, "Hello, World!")
 }
 
-func init() {
-	viper.SetConfigType("env")
-	viper.SetConfigName(".env")
-	viper.AddConfigPath(".")
-	err := viper.ReadInConfig()
-	if err == nil {
-		fmt.Println("Using config file:", viper.ConfigFileUsed())
-	}
+func main() {
+  // Echo instance
+  e := echo.New()
 
-	// viper.SetEnvPrefix("APP")
-	viper.AutomaticEnv()
+  // Middleware
+  e.Use(middleware.Logger())
+  e.Use(middleware.Recover())
 
-	dockerHost := viper.GetString("DOCKER_HOST")
-	if dockerHost != "" {
-		os.Setenv("DOCKER_HOST", dockerHost)
-	}
+  // Routes
+  e.GET("/", hello)
 
-	pflag.String("port", "8080", "Set the port number to listen on")
-	pflag.String("apibase", "http://localhost:8080", "Set the port number to listen on")
-	pflag.Parse()
-
-	viper.BindPFlags(pflag.CommandLine)
+  // Start server
+  e.Logger.Fatal(e.Start(":1323"))
 }
