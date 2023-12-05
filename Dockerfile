@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y libgl1-mesa-dev
 
 # Install Python packages for data processing
-RUN pip install numpy==1.24.3 \
+RUN pip3 install numpy==1.24.3 \
     pandas==1.5.3 \
     matplotlib==3.7.1 \
     pillow==9.5.0 \
@@ -14,7 +14,7 @@ RUN pip install numpy==1.24.3 \
     beautifulsoup4==4.12.2
 
 # Install additional Python packages
-RUN pip install transformers torch
+RUN pip3 install transformers torch
 
 # Set working directory
 WORKDIR /app
