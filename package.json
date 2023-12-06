@@ -71,7 +71,7 @@
     "sass": "^1.66.1",
     "tiktoken": "^1.0.10",
     "trpc": "^0.8.2",
-    "update": "^0.7.4",
+    "update": "^0.4.2",
     "uuid": "^9.0.0",
     "vercel": "^32.3.0",
     "yargs": "^17.7.2",
@@ -79,7 +79,7 @@
   },
   "devDependencies": {
     "@mozilla/readability": "^0.4.4",
-    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "@openapitools/openapi-generator-cli": "^2.5.2",
     "@tailwindcss/typography": "^0.5.9",
     "@trivago/prettier-plugin-sort-imports": "^1.4.4",
     "@tsconfig/react-native": "^3.0.2",
