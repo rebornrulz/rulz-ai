@@ -1,8 +1,7 @@
-FROM alpine:3.14
+FROM alpine:3.18
 
 # Update and install system dependencies
-RUN apk add --no-cache mysql-client && \
-    apt-get update && apt-get upgrade -y && \
+RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y libgl1-mesa-dev
 
 # Install Python packages for data processing
