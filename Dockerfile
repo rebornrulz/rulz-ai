@@ -1,7 +1,8 @@
-FROM python:3.12-slim
+FROM alpine:3.14
 
 # Update and install system dependencies
-RUN apt-get update && apt-get upgrade -y && \
+RUN apk add --no-cache mysql-client && \
+    apt-get update && apt-get upgrade -y && \
     apt-get install -y libgl1-mesa-dev
 
 # Install Python packages for data processing
@@ -23,4 +24,4 @@ WORKDIR /app
 COPY setup.py /app
 
 # Set the entry point
-ENTRYPOINT ["python", "setup.py", "script.py"]
+ENTRYPOINT ["python", "setup.py", "script.py","mysql"]
