@@ -12,6 +12,4 @@ Host your own live version of Rulz-AI with Vercel.
 
 ![Rulz-AI](./public/page.png)
 
-## Updates
-
-Chatbot UI will be updated over time.
+Get your API Key [here](https://platform.openai.com/account/api-keys)
