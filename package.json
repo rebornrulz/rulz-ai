@@ -79,7 +79,7 @@
   },
   "devDependencies": {
     "@mozilla/readability": "^0.4.4",
-    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "@openapitools/openapi-generator-cli": "^2.7.0",
     "@tailwindcss/typography": "^0.5.9",
     "@trivago/prettier-plugin-sort-imports": "^1.4.4",
     "@tsconfig/react-native": "^3.0.2",
