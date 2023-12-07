@@ -20,6 +20,7 @@
     "@anthropic-ai/sdk": "^0.6.1",
     "@dqbd/tiktoken": "^1.0.2",
     "@modern-js/plugin-i18n": "^2.42.0",
+    "@modern-js/utils": "^2.42.0",
     "@simplewebauthn/browser": "^8.0.2",
     "@simplewebauthn/server": "^8.1.1",
     "@simplewebauthn/typescript-types": "^8.0.0",
