@@ -1,8 +1,31 @@
 {
-    "bind": "0.0.0.0:8181",
-    "timeout": 600,
-    "proxy_url": "",
-    "public_share": false,
-    "site_password": "",
-    "whitelist": null
-  }
+  "bind": "0.0.0.0:8181",
+  "tls": {
+    "enabled": false,
+    "cert_file": "",
+    "key_file": ""
+  },
+  "timeout": 600,
+  "proxy_url": "",
+  "license_id": "",
+  "public_share": false,
+  "site_password": "",
+  "setup_password": "",
+  "server_tokens": true,
+  "proxy_api_prefix": "",
+  "isolated_conv_title": "*",
+  "disable_signup": false,
+  "auto_conv_arkose": false,
+  "proxy_file_service": false,
+  "captcha": {
+    "provider": "",
+    "site_key": "",
+    "site_secret": "",
+    "site_login": false,
+    "setup_login": false,
+    "oai_username": false,
+    "oai_password": false,
+    "oai_signup": false
+  },
+  "whitelist": null
+}
