@@ -1,20 +1,13 @@
 version: '3'
-
-# Before supabase/postgres 14.1.0
 services:
-  db:
-    image: supabase/postgres
+  pandora-next:
+    image: pengzhile/pandora-next
+    container_name: PandoraNext
+    network_mode: bridge
+    restart: always
     ports:
-      - "5432:5432"
+      - "8181:8181"
     environment:
-      POSTGRES_PASSWORD: postgres
-
-# supabase/postgres 14.1.0 and beyond
-services:
-  db:
-    image: supabase/postgres
-    ports:
-      - "5432:5432"
-    command: postgres -c config_file=/etc/postgresql/postgresql.conf 
-    environment:
-      POSTGRES_PASSWORD: postgres
+      - PANDORA_NEXT_LICENSE=<JWT Token>
+    volumes:
+      - ./data:/data
