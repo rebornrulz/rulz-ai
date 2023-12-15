@@ -26,7 +26,7 @@ def generate_text(project_id: str, location: str) -> str:
     import vertexai
 
     # TODO(developer): Update and un-comment below lines
-    # project_id = "Rulz-AI"
+    # project_id = "PROJECT_ID"
     # location = "us-central1"
 
     vertexai.init(project=project_id, location=location)
