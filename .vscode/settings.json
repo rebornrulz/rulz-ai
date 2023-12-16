@@ -6,7 +6,8 @@
         "mert",
         "mlflow",
         "rasa",
-        "rebornrulz"
+        "rebornrulz",
+        "sysdig"
     ],
     "go.toolsEnvVars": {
         "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
