@@ -1,0 +1,15 @@
+nodeAnalyzer:
+  secure:
+    vulnerabilityManagement:
+      newEngineOnly: true
+  nodeAnalyzer:
+    benchmarkRunner:
+      deploy: false
+global:
+  sysdig:
+    accessKey: 95ada8fe-7174-4bea-a25e-a73ef03792a8
+    region: us4
+  kspm:
+    deploy: true
+  clusterConfig:
+    name: sysdig
