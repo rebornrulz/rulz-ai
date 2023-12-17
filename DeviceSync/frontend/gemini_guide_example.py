@@ -26,23 +26,23 @@ def generate_text(project_id: str, location: str) -> str:
     import vertexai
 
     # TODO(developer): Update and un-comment below lines
-    # project_id = "PROJECT_ID"
-    # location = "us-central1"
+project_id = "RULZ_AI"
+location = "us-central1"
 
-    vertexai.init(project=project_id, location=location)
+vertexai.init(project=project_id, location=location)
     # [END aiplatform_gemini_guide_step2]
 
     # [START aiplatform_gemini_guide_step3]
-    from vertexai.preview.generative_models import GenerativeModel, Part
+from vertexai.preview.generative_models import GenerativeModel, Part
 
     # [END aiplatform_gemini_guide_step3]
 
     # [START aiplatform_gemini_guide_step4]
-    multimodal_model = GenerativeModel("gemini-pro-vision")
+multimodal_model = GenerativeModel("gemini-pro-vision")
     # [END aiplatform_gemini_guide_step4]
 
     # [START aiplatform_gemini_guide_step5]
-    response = multimodal_model.generate_content(
+response = multimodal_model.generate_content(
         [
             "what is shown in this image?",
             Part.from_uri(
@@ -50,8 +50,8 @@ def generate_text(project_id: str, location: str) -> str:
             ),
         ]
     )
-    print(response)
+print(response)
     # [END aiplatform_gemini_guide_step5]
-    return response.text
+return response.text
 
 # [END aiplatform_gemini_get_started]
