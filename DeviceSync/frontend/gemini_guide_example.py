@@ -14,19 +14,18 @@
 
 # [START aiplatform_gemini_get_started]
 # [START aiplatform_gemini_guide_step1]
-# TODO(developer): Vertex AI SDK - uncomment below & run
-# pip3 install --upgrade --user google-cloud-aiplatform
-# gcloud auth application-default login
+TODO(developer): Vertex AI SDK - uncomment below & run
+#  pip3 install --upgrade --user google-cloud-aiplatform
+#  gcloud auth application-default login
 # [END aiplatform_gemini_guide_step1]
 
-
 def generate_text(project_id: str, location: str) -> str:
-    # [START aiplatform_gemini_guide_step2]
-    # Initialize Vertex AI
+    [START aiplatform_gemini_guide_step2]
+    Initialize Vertex AI
     import vertexai
 
-    # TODO(developer): Update and un-comment below lines
-project_id = "RULZ_AI"
+TODO(developer): Update and un-comment below lines
+project_id = "RULZ-AI"
 location = "us-central1"
 
 vertexai.init(project=project_id, location=location)
