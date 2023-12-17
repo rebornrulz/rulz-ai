@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { IconClearAll, IconSettings } from '@tabler/icons-react';
 import {
   MutableRefObject,
