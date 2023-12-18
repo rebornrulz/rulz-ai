@@ -1,0 +1,60 @@
+apiVersion: v2.1
+kind: Namespace
+metadata:
+  name: rulz-ai
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  namespace: rulz-ai
+  name: rulz-ai
+type: Opaque
+data:
+  OPENAI_API_KEY: <base64 encoded key>
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: rulz-ai
+  name: rulz-ai
+  labels:
+    app: rulz-ai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rulz-ai
+  template:
+    metadata:
+      labels:
+        app: rulz-ai
+    spec:
+      containers:
+        - name: rulz-ai
+          image: <docker user>/rulz-ai:latest
+          resources: {}
+          ports:
+            - containerPort: 3000
+          env:
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: rulz-ai
+                  key: OPENAI_API_KEY
+---
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: rulz-ai
+  name: rulz-ai
+  labels:
+    app: rulz-ai
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 3000
+  selector:
+    app: rulz-ai
+  type: ClusterIP
