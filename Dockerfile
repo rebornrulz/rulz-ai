@@ -1,4 +1,4 @@
-FROM alpine:3.18.5
+FROM alpine:3.19.0
 RUN apk add --no-cache lua5.3 lua-filesystem lua-lyaml lua-http
 COPY scripts/fetch-latest-releases.lua /usr/local/bin/
 VOLUME /out
