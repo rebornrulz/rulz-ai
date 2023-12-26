@@ -1,5 +1,8 @@
-FROM alpine:3.19.0
-RUN apk add --no-cache lua5.3 lua-filesystem lua-lyaml lua-http
-COPY scripts/fetch-latest-releases.lua /usr/local/bin/
-VOLUME /out
-ENTRYPOINT [ "/usr/local/bin/fetch-latest-releases.lua" ]
+# syntax=docker/dockerfile:1
+
+FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
