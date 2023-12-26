@@ -1,4 +1,4 @@
-apiVersion: v2.1
+apiVersion: v3.0.0
 kind: Namespace
 metadata:
   name: rulz-ai
