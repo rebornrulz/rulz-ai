@@ -219,3 +219,8 @@ node_modules/
 !embeddings.yaml
 !gpt4all.tmpl
 !gpt-3.5-turbo.yaml
+
+# IPFS
+ipfs
+ipfs-test-cover
+ipfs.exe
