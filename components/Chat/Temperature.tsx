@@ -46,10 +46,10 @@ export const TemperatureSlider: FC<Props> = ({
         className="cursor-pointer"
         type="range"
         min={0}
-        max={1}
-        step={0.1}
+        max={10}
+        step={1}
         value={temperature}
-        defaultValue={0.5}
+        defaultValue={5}
         onChange={handleChange}
       />
       <ul className="w mt-2 pb-8 flex justify-between px-[24px] text-neutral-900 dark:text-neutral-100">
