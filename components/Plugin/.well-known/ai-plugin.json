@@ -1,5 +1,5 @@
 {
-  "schema_version": "v1",
+  "schema_version": "v4",
   "name_for_human": "Rulz-AI",
   "name_for_model": "rulzai",
   "description_for_human": "A powerful AI language model that can assist with various tasks and provide intelligent responses.",
