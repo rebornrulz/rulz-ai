@@ -12,13 +12,13 @@ The data size used in MAL Bot is 1500 utterances.
 
 # INSTALLATION
 
-1. Firstly, download Miniconda Prompt from https://docs.conda.io/en/latest/miniconda.html suit to your operating system. Noted that the Python Version used is Python 3.7
+1. Firstly, download Miniconda Prompt from <https://docs.conda.io/en/latest/miniconda.html> suit to your operating system. Noted that the Python Version used is Python 3.7
 2. Secondly, launch the Miniconda Prompt and set up Rasa Framework.
 3. Use the following command:
   a. conda create -- name py37 python=3.7
   b. conda activate py37
   c. pip install rasa
-  d. pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+  d. pip install rasa-x --extra-index-url <https://pypi.rasa.com/simple>
   e. rasa init
 4. Open created rasa folder
 5. Download the files or folder from this github and replace the folder and files that similar with the downloaded folders and files.
@@ -94,7 +94,7 @@ Use the following command:
 
 1. Run the following command:
   a. rasa x
-2. Copy the link generated. Eg: http://localhost:5002/conversations
+2. Copy the link generated. Eg: <http://localhost:5002/conversations>
 
 # License
 
