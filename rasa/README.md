@@ -64,9 +64,11 @@ The data size used in MAL Bot is 1500 utterances.
             with open('chats.tsv','a') as file:
                 file.write(chat_data)
                 
+
 # To TRAIN MAL BOT
 
 1. Before able to chat with MAL BOT, train the bot first by the following methods:
+
 - cd <location/filename> Eg: cd desktop/MAL BOT
 - conda activate rasa
 Choose one of the following:
@@ -77,6 +79,7 @@ Choose one of the following:
 
 1. Reopen Miniconda Prompt.
 2. Use the following command:
+
 - cd <location/filename> Eg: cd desktop/MAL BOT
 - conda activate rasa
 - rasa run actions
@@ -85,6 +88,7 @@ Choose one of the following:
 
 1. Open another Miniconda Prompt.
 Use the following command:
+
 - cd <location/filename> Eg: cd desktop/MAL BOT
 - conda activate 
 - rasa shell
