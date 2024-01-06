@@ -347,24 +347,24 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
       {!(apiKey || serverSideApiKeyIsSet) ? (
         <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
           <div className="text-center text-4xl font-bold text-black dark:text-white">
-            Welcome to Rulz-AI
+            Welcome to Rulz-AI Version 4
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`Rulz-AI is an open source clone of OpenAI's ChatGPT UI.`}</div>
-            <div className="mb-2 font-bold">
-              Important: Rulz-AI is 100% unaffiliated with OpenAI.
+            <div className="mb-8">{`Rulz-AI is a personal project developed by Reborn Rulz.`}</div>
+            <div className="mb-5 font-bold">
+              Rulz-AI version 4 is not affiliated with OpenAI.
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
-            <div className="mb-15">
-              Rulz-AI allows you to plug in your API key to use this UI with
+            <div className="mb-18">
+              You to plug in your API key to use this UI with
               their API.
             </div>
-            <div className="mb-15">
-              It is <span className="italic">only</span> used to communicate
-              with their API.
+            <div className="mb-18">
+              It is <span className="italic">necessary</span> to access Rulz-AI
+              User Interface.
             </div>
-            <div className="mb-12">
+            <div className="mb-15">
               {t(
                 'Please set your OpenAI API key in the bottom left of the sidebar.',
               )}
