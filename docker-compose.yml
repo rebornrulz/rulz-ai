@@ -1,9 +1,10 @@
 version: '4'
 
 services:
-  rulz-ai:
+  chatgpt:
     image: ghcr.io/rebornrulz/rulz-ai:master
     ports:
       - 3000:3000
-    env_file:
-      - .env
+    environment:
+      - 'OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXX'
+      - 'OPENAI_API_HOST=http://rulz-ai.com:8080'
