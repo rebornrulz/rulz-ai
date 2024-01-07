@@ -91,7 +91,7 @@
 		"tough-cookie": "^4.1.3",
 		"trpc": "^0.8.2",
 		"union-value": "^2.0.1",
-		"update": "^0.7.4",
+		"update": "^0.4.2",
 		"uuid": "^9.0.0",
 		"vercel": "^32.3.0",
 		"yargs": "^17.7.2",
