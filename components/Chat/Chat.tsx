@@ -352,19 +352,19 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
           <div className="text-center text-lg text-black dark:text-white">
             <div className="mb-8">{`Rulz-AI is a personal project developed by Reborn Rulz.`}</div>
             <div className="mb-5 font-bold">
-              Rulz-AI version 4 is not affiliated with OpenAI.
+              Rulz-AI model is not affiliated with OpenAI.
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
-            <div className="mb-18">
-              You to plug in your API key to use this UI with
-              their API.
+            <div className="mb-20">
+              You to plug in your API key to integrate with
+              this AI.
             </div>
-            <div className="mb-18">
-              It is <span className="italic">necessary</span> to access Rulz-AI
+            <div className="mb-20">
+              Rulz-AI also integrated with <span className="italic">JWT Token</span> for
               User Interface.
             </div>
-            <div className="mb-15">
+            <div className="mb-18">
               {t(
                 'Please set your OpenAI API key in the bottom left of the sidebar.',
               )}
