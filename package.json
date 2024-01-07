@@ -22,6 +22,7 @@
 		"@modern-js/plugin-i18n": "^2.42.0",
 		"@modern-js/types": "^2.42.0",
 		"@modern-js/utils": "^2.42.0",
+		"@observablehq/plot": "^0.6.13",
 		"@robust-ui/use-global-context": "^0.5.1",
 		"@simplewebauthn/browser": "^8.0.2",
 		"@simplewebauthn/server": "^8.1.1",
