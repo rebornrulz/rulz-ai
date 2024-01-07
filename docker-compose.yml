@@ -1,7 +1,7 @@
 version: '4'
 
 services:
-  chatgpt:
+  rulzgpt:
     image: rebornrulz/rulz-ai:master
     ports:
       - 3000:3000
