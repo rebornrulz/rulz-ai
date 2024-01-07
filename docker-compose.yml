@@ -2,7 +2,7 @@ version: '4'
 
 services:
   rulzgpt:
-    image: ghcr.io/rebornrulz/rulz-ai:master
+    image: docker.io/rebornrulz/rulz-ai:master
     ports:
       - 3000:3000
     environment:
