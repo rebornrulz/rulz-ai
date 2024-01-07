@@ -2,7 +2,7 @@ version: '4'
 
 services:
   chatgpt:
-    image: ghcr.io/rebornrulz/rulz-ai:master
+    image: rebornrulz/rulz-ai:master
     ports:
       - 3000:3000
     environment:
