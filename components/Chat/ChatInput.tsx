@@ -386,7 +386,7 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          RULZ-AI
+          RULZ-AI Version 4
         </a>
         {' '}
         {t(
