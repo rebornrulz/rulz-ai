@@ -356,15 +356,15 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
-            <div className="mb-20">
-              You to plug in your API key to integrate with
+            <div className="mb-19">
+              You need to plug in your API key to integrate with
               this AI.
             </div>
-            <div className="mb-20">
+            <div className="mb-18">
               Rulz-AI also integrated with <span className="italic">JWT Token</span> for
               User Interface.
             </div>
-            <div className="mb-18">
+            <div className="mb-15">
               {t(
                 'Please set your OpenAI API key in the bottom left of the sidebar.',
               )}
@@ -400,7 +400,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="25px" className="mx-auto" />
                       </div>
                     ) : (
-                      'RULZ-AI'
+                      'RULZ-AI Version 4'
                     )}
                   </div>
 
