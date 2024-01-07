@@ -6,8 +6,9 @@ build:
 	docker build -t rulz-ai .
 
 run:
-	export $(cat .env | xargs)
-	docker stop rulz-ai || true && docker rm rulz-ai || true
+	export $(cat .env | xargs) && \
+	docker stop rulz-ai || true && \
+	docker rm rulz-ai || true && \
 	docker run --name rulz-ai --rm -e OPENAI_API_KEY=${OPENAI_API_KEY} -p 3000:3000 rulz-ai
 
 logs:
