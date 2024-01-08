@@ -19,6 +19,7 @@
 	"dependencies": {
 		"@anthropic-ai/sdk": "^0.6.1",
 		"@dqbd/tiktoken": "^1.0.2",
+		"@humanwhocodes/module-importer": "^1.0.1",
 		"@modern-js/plugin-i18n": "^2.42.0",
 		"@modern-js/types": "^2.42.0",
 		"@modern-js/utils": "^2.42.0",
