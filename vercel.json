@@ -17,12 +17,6 @@
       "source": "/api/examples/list-all",
       "destination": "/list-all.json"
     }
-    {
-      "crons": [{
-        "path": "/api/cron",
-        "schedule": "0 10 * * *"
-      }]
-    }
   ],
   "github": {
     "silent": true,
