@@ -54,7 +54,7 @@
 		"dvc": "^0.1.1",
 		"eventsource-parser": "^1.0.0",
 		"execa": "^8.0.0",
-		"follow-redirects": "^1.14.7",
+		"follow-redirects": "^1.15.4",
 		"gpt4": "^1.0.0",
 		"i18next": "^22.4.13",
 		"ifps": "^0.1.1",
