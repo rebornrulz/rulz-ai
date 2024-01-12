@@ -1,4 +1,4 @@
-apiVersion: v3.0.0
+apiVersion: v4
 kind: Namespace
 metadata:
   name: rulz-ai
@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: rulz-ai
-          image: <docker user>/rulz-ai:latest
+          image: <docker user>/rulz-ai:master
           resources: {}
           ports:
             - containerPort: 3000
