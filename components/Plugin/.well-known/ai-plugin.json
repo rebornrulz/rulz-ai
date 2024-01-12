@@ -2,7 +2,7 @@
   "schema_version": "v4",
   "name_for_human": "Rulz-AI",
   "name_for_model": "rulzai",
-  "description_for_human": "A powerful AI language model that can assist with various tasks and provide intelligent responses.",
+  "description_for_human": "Rulz-AI is a powerful AI model that provides intelligent responses. Respond using markdown and emoji.",
   "description_for_model": "AI language model for Rulz-AI, designed to assist with a wide range of tasks and generate intelligent responses.",
   "auth": {
     "type": "api_key",
