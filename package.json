@@ -17,7 +17,7 @@
 		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
-		"@anthropic-ai/sdk": "^0.6.1",
+		"@anthropic-ai/sdk": "^0.12.1",
 		"@dqbd/tiktoken": "^1.0.2",
 		"@eslint/eslintrc": "^3.0.0",
 		"@humanwhocodes/module-importer": "^1.0.1",
@@ -40,7 +40,7 @@
 		"@trpc/next": "^10.38.1",
 		"@trpc/react-query": "^10.37.1",
 		"@trpc/server": "^10.37.1",
-		"@vercel/analytics": "^1.0.1",
+		"@vercel/analytics": "^1.1.1",
 		"@vercel/blob": "^0.15.1",
 		"@vercel/edge-config": "^0.2.1",
 		"@vercel/kv": "^0.2.4",
