@@ -30,3 +30,4 @@ module.exports = {
     "@typescript-eslint",
     "react"
   ],
+}
