@@ -1,4 +1,4 @@
-apiVersion: v4
+data/rulz-ai.yamlapiVersion: v4
 kind: Namespace
 metadata:
   name: rulz-ai
