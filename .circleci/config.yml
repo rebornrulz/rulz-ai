@@ -1,12 +1,24 @@
 version: 2.1
+
+orbs:
+  node: circleci/node@x.y
+
 jobs:
-  build:
+  install-node-example:
     docker:
-      - image: cimg/base:current
-    resource_class: rebornrulz/rulz-ai
+      - image: cimg/base:stable
     steps:
-      - run: echo "Hi I'm on a Container Runner!"
+      - checkout
+      - node/install:
+          install-yarn: true
+          node-version: '16.13'
+      - run: node --version
 workflows:
-  build-workflow:
+  test_my_app:
     jobs:
+<<<<<<< HEAD
       - build
+=======
+      - install-node-example
+
+>>>>>>> 7db6cfa0 (commit)
