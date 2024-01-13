@@ -6,7 +6,3 @@ jobs:
     resource_class: rebornrulz/rulz-ai
     steps:
       - run: echo "Hi I'm on a Container Runner!"
-workflows:
-  build-workflow:
-    jobs:
-      - build
