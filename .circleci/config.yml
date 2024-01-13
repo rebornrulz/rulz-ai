@@ -1,24 +1,24 @@
+# CircleCI configuration file
 version: 2.1
 
-orbs:
-  node: circleci/node@x.y
-
 jobs:
-  install-node-example:
+  # Job one with a unique name
+  say_hello:
     docker:
-      - image: cimg/base:stable
+     - image: cimg/base:2024.01
     steps:
-      - checkout
-      - node/install:
-          install-yarn: true
-          node-version: '16.13'
-      - run: node --version
-workflows:
-  test_my_app:
-    jobs:
-<<<<<<< HEAD
-      - build
-=======
-      - install-node-example
+      - run: echo "Say hello to YAML!"
+  # Job two with a unique name
+  say_goodbye:
+    docker:
+     - image: cimg/base:2024.01
+    steps:
+      - run: echo "Say goodbye to YAML!"
 
->>>>>>> 7db6cfa0 (commit)
+workflows:
+  # Name of workflow
+  hello_and_goodbye:
+    # List of jobs that will run
+    jobs:
+      - say_hello
+      - say_goodbye
