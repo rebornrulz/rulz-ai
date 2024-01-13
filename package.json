@@ -17,7 +17,12 @@
 		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
+<<<<<<< HEAD
 		"@anthropic-ai/sdk": "^0.12.1",
+=======
+		"@anthropic-ai/sdk": "^0.6.1",
+		"@babel/traverse": "^7.23.7",
+>>>>>>> 7ece54a3 (commit)
 		"@dqbd/tiktoken": "^1.0.2",
 		"@eslint/eslintrc": "^3.0.0",
 		"@humanwhocodes/module-importer": "^1.0.1",
