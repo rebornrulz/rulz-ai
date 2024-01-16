@@ -1,3 +1,8 @@
+import { createClient } from '@supabase/supabase-js';
+const supabaseUrl = 'https://xnpgitjpclohqrttckhe.supabase.co';
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
 const { AgentConfig } = require('superagi_client');
 
 const agentConfig = new AgentConfig({
