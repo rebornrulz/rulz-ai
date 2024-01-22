@@ -1,18 +1,26 @@
 {
-    "cSpell.words": [
-        "dagshub",
-        "dobj",
-        "googlesearch",
-        "mert",
-        "mlflow",
-        "rasa",
-        "rebornrulz",
-        "sysdig"
-    ],
-    "go.toolsEnvVars": {
-        "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
-    },
-    "files.exclude": {},
-    "appService.defaultWebAppToDeploy": "undefined/subscriptions/3483c77e-e27c-406c-a701-186ca360b52a/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/Rulz-AI",
-    "appService.deploySubpath": "."
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/3483c77e-e27c-406c-a701-186ca360b52a/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/Rulz-AI",
+  "appService.deploySubpath": ".",
+  "cSpell.words": [
+    "dagshub",
+    "dobj",
+    "googlesearch",
+    "mert",
+    "mlflow",
+    "rasa",
+    "rebornrulz",
+    "sysdig"
+  ],
+  "deno.enablePaths": [
+    "supabase/functions"
+  ],
+  "deno.lint": true,
+  "deno.unstable": true,
+  "files.exclude": {},
+  "go.toolsEnvVars": {
+    "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
+  }
 }

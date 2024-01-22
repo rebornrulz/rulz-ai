@@ -70,7 +70,7 @@ supabase start
 In your terminal at the root of your local Rulz-AI repository, run:
 
 ```bash
-cp .env.local.example .env.local
+cp .env.development.local .env.local
 ```
 
 Get the required values by running:

@@ -1,5 +1,5 @@
 {
-    "recommendations": [
-        "golang.go-nightly"
-    ]
+  "recommendations": [
+    "denoland.vscode-deno"
+  ]
 }
