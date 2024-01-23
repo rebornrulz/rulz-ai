@@ -360,3 +360,8 @@ dmypy.json
 
 # macOS
 .DS_Store
+
+# Supabase
+.branches
+.temp
+.env
