@@ -14,7 +14,9 @@
 		"lint": "next lint",
 		"format": "prettier --write .",
 		"test": "vitest",
-		"coverage": "vitest run --coverage"
+		"coverage": "vitest run --coverage",
+		"build-babel": "babel src -d lib",
+		"run-test": "jest"
 	},
 	"dependencies": {
 		"@anthropic-ai/sdk": "^0.6.1",
