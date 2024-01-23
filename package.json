@@ -9,14 +9,12 @@
 	"scripts": {
 		"debug": "nodemon --inspect=0.0.0.0:9229 server.js",
 		"dev": "next dev",
-		"build": "next build",
+		"build": "babel src -d lib",
 		"start": "next start",
 		"lint": "next lint",
 		"format": "prettier --write .",
-		"test": "vitest",
-		"coverage": "vitest run --coverage",
-		"build-babel": "babel src -d lib",
-		"run-test": "jest"
+		"test": "jest",
+		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
 		"@anthropic-ai/sdk": "^0.6.1",
