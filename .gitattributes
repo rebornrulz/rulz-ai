@@ -1,3 +1,4 @@
 *.golden -text
 *.svg binary
 **/testdata/** -text
+*.sh text eol=lf
