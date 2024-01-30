@@ -400,7 +400,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="25px" className="mx-auto" />
                       </div>
                     ) : (
-                      'RULZ-AI V4'
+                      'RULZ-AI V:4'
                     )}
                   </div>
 
