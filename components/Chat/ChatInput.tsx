@@ -390,7 +390,7 @@ export const ChatInput = ({
         </a>
         {' '}
         {t(
-          "is an advanced chat models interface and functionality.",
+          "is an advanced chat model interface and functionality.",
         )}
       </div>
     </div>
