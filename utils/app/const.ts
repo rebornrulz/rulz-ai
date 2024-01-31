@@ -1,6 +1,6 @@
 export const DEFAULT_SYSTEM_PROMPT =
   process.env.NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT ||
-   "Rulz-AI is a powerful AI model that provides intelligent responses. Respond using markdown and emoji."
+   "As of January 2024, Rulz-AI is a high-quality mixture model. Respond using markdown and emoji."
 
 export const OPENAI_API_HOST =
   process.env.OPENAI_API_HOST || 'https://api.openai.com';
