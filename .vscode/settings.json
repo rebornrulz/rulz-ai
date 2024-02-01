@@ -22,5 +22,8 @@
   "files.exclude": {},
   "go.toolsEnvVars": {
     "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
-  }
+  },
+  "python.analysis.extraPaths": [
+    "./packages/sql-ollama"
+  ]
 }
