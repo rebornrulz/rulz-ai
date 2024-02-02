@@ -69,10 +69,6 @@ supabase start
 
 In your terminal at the root of your local Rulz-AI repository, run:
 
-```bash
-cp .env.development.local .env.local
-```
-
 Get the required values by running:
 
 ```bash
@@ -104,13 +100,13 @@ In your terminal at the root of your local Rulz-AI repository, run:
 npm run chat
 ```
 
-Your local instance of Chatbot UI should now be running at [http://localhost:3000](http://localhost:3000).
+Your local instance of Rulz-AI should now be running at [http://localhost:3000](http://localhost:3000).
 
 You can view your backend GUI at [http://localhost:54323/project/default/editor](http://localhost:54323/project/default/editor).
 
 ## Hosted Quickstart
 
-Follow these steps to get your own Chatbot UI instance running in the cloud.
+Follow these steps to get your own Rulz-AI instance running in the cloud.
 
 Video tutorial coming soon.
 
@@ -165,7 +161,7 @@ In the 1st migration file `supabase/migrations/20240108234540_setup.sql` you wil
 - `project_url` (line 53): Use the `Project URL` value from above
 - `service_role_key` (line 54): Use the `Service role key` value from above
 
-Now, open a terminal in the root directory of your local Chatbot UI repository. We will execute a few commands here.
+Now, open a terminal in the root directory of your local Rulz-AI repository. We will execute a few commands here.
 
 Login to Supabase by running:
 
@@ -193,7 +189,7 @@ Your hosted database should now be set up!
 
 Go to [Vercel](https://vercel.com/) and create a new project.
 
-In the setup page, import your GitHub repository for your hosted instance of Chatbot UI.
+In the setup page, import your GitHub repository for your hosted instance of Rulz-AI.
 
 In environment variables, add the following from the values you got above:
 
