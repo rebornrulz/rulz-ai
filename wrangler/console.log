@@ -1,0 +1,90 @@
+{
+  "outcome": "ok",
+  "scriptName": "reborn",
+  "diagnosticsChannelEvents": [],
+  "exceptions": [],
+  "logs": [],
+  "eventTimestamp": 1706891003266,
+  "event": {
+    "request": {
+      "url": "https://reborn.rulz-ai.workers.dev/",
+      "method": "GET",
+      "headers": {
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "accept-encoding": "gzip",
+        "accept-language": "en-US,en;q=0.9",
+        "cf-connecting-ip": "2001:e68:540c:166:dcff:4318:4807:c7e8",
+        "cf-ipcountry": "MY",
+        "cf-ray": "84f3c7425ff54047",
+        "cf-visitor": "{\"scheme\":\"https\"}",
+        "connection": "Keep-Alive",
+        "dnt": "1",
+        "host": "reborn.rulz-ai.workers.dev",
+        "priority": "u=0, i",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-user": "?1",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "x-forwarded-proto": "https",
+        "x-real-ip": "2001:e68:540c:166:dcff:4318:4807:c7e8"
+      },
+      "cf": {
+        "longitude": "113.96930",
+        "latitude": "4.27020",
+        "tlsCipher": "AEAD-AES128-GCM-SHA256",
+        "continent": "AS",
+        "asn": 4788,
+        "clientAcceptEncoding": "gzip, deflate, br",
+        "country": "MY",
+        "tlsClientRandom": "k7ZkXOhPfXb0w6ymdwVsvVvOjsaehSaDA9eM7EQ/kO0=",
+        "tlsClientAuth": {
+          "certIssuerDNLegacy": "",
+          "certIssuerSKI": "",
+          "certSubjectDNRFC2253": "",
+          "certSubjectDNLegacy": "",
+          "certFingerprintSHA256": "",
+          "certNotBefore": "",
+          "certSKI": "",
+          "certSerial": "",
+          "certIssuerDN": "",
+          "certVerified": "NONE",
+          "certNotAfter": "",
+          "certSubjectDN": "",
+          "certPresented": "0",
+          "certRevoked": "0",
+          "certIssuerSerial": "",
+          "certIssuerDNRFC2253": "",
+          "certFingerprintSHA1": ""
+        },
+        "verifiedBotCategory": "",
+        "tlsExportedAuthenticator": {
+          "clientFinished": "fbb6b634c698e9f3188fe8039da155ecb453b3dda58715180975c35e385ceecb",
+          "clientHandshake": "75a70406740d5dcc8620202849e5db49595e4bef7d475b5fc81566410d9f226e",
+          "serverHandshake": "e6faf416447b8b82a2fd81c0387e73d3d7a409feee11f4b16539a7c71d12c937",
+          "serverFinished": "c0b95ebc7a170d4beffb0aa2f598f3afbdada2fc2135ddf36a12b00f81b1359d"
+        },
+        "tlsVersion": "TLSv1.3",
+        "city": "Marabu",
+        "timezone": "Asia/Kuching",
+        "colo": "SIN",
+        "edgeRequestKeepAliveStatus": 1,
+        "postalCode": "98000",
+        "tlsClientHelloLength": "2009",
+        "region": "Sarawak",
+        "httpProtocol": "HTTP/3",
+        "regionCode": "13",
+        "asOrganization": "TM Net",
+        "requestPriority": ""
+      }
+    },
+    "response": {
+      "status": 421
+    }
+  },
+  "id": 1
+}
