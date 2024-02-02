@@ -156,7 +156,7 @@ We recommend turning off "Confirm email" for your own personal instance.
 
 Open up your repository for your hosted instance of Rulz-AI.
 
-In the 1st migration file `supabase/migrations/20240108234540_setup.sql` you will need to replace 2 values with the values you got above:
+In the 1st migration file `supabase/migrations/20240202174210_document_search.sql` you will need to replace 2 values with the values you got above:
 
 - `project_url` (line 53): Use the `Project URL` value from above
 - `service_role_key` (line 54): Use the `Service role key` value from above
