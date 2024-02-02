@@ -79,7 +79,7 @@
 		"js-yaml": "^4.1.0",
 		"kysely": "^0.26.3",
 		"langchain": "^0.0.141",
-		"lodash": "^4.17.19",
+		"lodash": "^4.17.21",
 		"lodash.merge": "^4.6.2",
 		"minimatch": "^3.0.5",
 		"mongodb": "^5.9.1",
