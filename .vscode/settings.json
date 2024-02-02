@@ -25,5 +25,8 @@
   },
   "python.analysis.extraPaths": [
     "./packages/sql-ollama"
-  ]
+  ],
+  "terminal.integrated.allowChords": true,
+  "terminal.integrated.altClickMovesCursor": false,
+  "deno.enable": true
 }
