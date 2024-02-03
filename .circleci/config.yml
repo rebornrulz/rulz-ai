@@ -1,6 +1,9 @@
 # CircleCI configuration file
 version: 2.1
 
+orbs:
+  docker: circleci/docker@2.5.0
+
 jobs:
   # Job one with a unique name
   say_hello:
