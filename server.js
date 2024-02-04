@@ -1,6 +1,6 @@
 require('dotenv').config();
-const express = require('express');
-const { createClient } = require('@supabase/supabase-js');
+import express from 'express';
+import { createClient } from '@supabase/supabase-js';
 
 const app = express();
 const supabaseUrl = process.env.SUPABASE_URL;
