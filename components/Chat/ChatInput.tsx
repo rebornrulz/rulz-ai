@@ -325,7 +325,7 @@ export const ChatInput = ({
               }`,
             }}
             placeholder={
-              t('Type a message or type "/" to select a prompt...') || ''
+              t('Write a message or type "/" to select a prompt...') || ''
             }
             value={content}
             rows={1}
@@ -381,16 +381,16 @@ export const ChatInput = ({
       </div>
       <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
         <a
-          href="https://www.linkedin.com/in/rulz-ai/"
+          href="https://twitter.com/Rulz_AI"
           target="_blank"
           rel="noreferrer"
           className="underline"
         >
-          RULZ-AI
+          Rulz-AI
         </a>
         {' '}
         {t(
-          "is an advanced chat models interface and functionality.",
+          "is a high-quality mixture model awith advanced chat interface and functionality.",
         )}
       </div>
     </div>
