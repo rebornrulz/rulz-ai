@@ -19,11 +19,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     const query = encodeURIComponent(userMessage.content.trim());
 
     const googleRes = await fetch(
-      `https://customsearch.googleapis.com/customsearch/v1?key=${
-        googleAPIKey ? googleAPIKey : process.env.GOOGLE_API_KEY
-      }&cx=${
-        googleCSEId ? googleCSEId : process.env.GOOGLE_CSE_ID
-      }&q=${query}&num=5`,
+      `https://cse.google.com/cse?cx=424683b7e8a9442ff&q=${query}&num=5`,
     );
 
     const googleData = await googleRes.json();
@@ -88,10 +84,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
       What's the weather in Malaysia today?
 
       Example Sources:
-      [Weather in Malaysia](https://www.google.com/search?q=weather+malaysia)
+      [Weather in Malaysia](https://www.accuweather.com/en/my/malaysia-weather)
 
       Example Response:
-      It's 30 degrees and sunny in Malaysia today. [[1]](https://www.google.com/search?q=weather+malaysia)
+      It's 30 degrees and sunny in Malaysia today. [[1]](https://www.accuweather.com/en/my/malaysia-weather)
 
       Input:
       ${userMessage.content.trim()}

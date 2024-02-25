@@ -160,7 +160,7 @@
 		"vitest": "^0.34.3",
 		"wrangler": "^3.5.1"
 	},
-	"description": "Rulz-AI is a powerful AI model that provides intelligent responses. Respond using markdown and emoji.",
+	"description": "Rulz-AI is a high-quality AI mixture model that provides intelligent responses. Respond using markdown and emoji.",
 	"main": "next-i18next.config.js",
 	"directories": {
 		"doc": "docs"
