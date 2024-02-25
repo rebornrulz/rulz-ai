@@ -110,7 +110,6 @@
 		"transformers": "^1.8.3",
 		"trpc": "^0.8.2",
 		"uglify-js": "^3.17.4",
-		"undici": "^6.4.0",
 		"union-value": "^2.0.1",
 		"update": "^0.4.2",
 		"uuid": "^9.0.0",
@@ -157,6 +156,7 @@
 		"tailwindcss": "^3.4.1",
 		"ts-node": "latest",
 		"typescript": "latest",
+		"undici": "^6.6.2",
 		"vitest": "^0.34.3",
 		"wrangler": "^3.5.1"
 	},
