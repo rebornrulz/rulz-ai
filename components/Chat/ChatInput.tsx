@@ -386,11 +386,11 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          Rulz-AI
+          RULZ-AI
         </a>
         {' '}
         {t(
-          "is a high-quality mixture model awith advanced chat interface and functionality.",
+          "is a high-quality mixture model with advanced chat interface and functionality.",
         )}
       </div>
     </div>
