@@ -361,7 +361,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
               this AI.
             </div>
             <div className="mb-18">
-              Rulz-AI also integrated with <span className="italic">OpenAI API Key</span> for
+              Rulz-AI integrated with <span className="italic">OpenAI API Key</span> for
               User Interface.
             </div>
             <div className="mb-15">
