@@ -1,51 +1,36 @@
-"""Python Flask API Auth0 integration example
-"""
+const express = require('express');
+const app = express();
+const { auth, requiredScopes } = require('express-oauth2-jwt-bearer');
 
-from os import environ as env
+// Authorization middleware. When used, the Access Token must
+// exist and be verified against the Auth0 JSON Web Key Set.
+const checkJwt = auth({
+  audience: 'https://rulz-ai.com',
+  issuerBaseURL: `https://rulz.us.auth0.com/`,
+});
 
-from dotenv import load_dotenv, find_dotenv
-from flask import Flask, jsonify
-from authlib.integrations.flask_oauth2 import ResourceProtector
-from validator import Auth0JWTBearerTokenValidator
+// This route doesn't need authentication
+app.get('/api/public', function(req, res) {
+  res.json({
+    message: 'Hello from a public endpoint! You don\'t need to be authenticated to see this.'
+  });
+});
 
-require_auth = ResourceProtector()
-validator = Auth0JWTBearerTokenValidator(
-    "rulz.us.auth0.com",
-    "https://rulz-ai.com"
-)
-require_auth.register_token_validator(validator)
+// This route needs authentication
+app.get('/api/private', checkJwt, function(req, res) {
+  res.json({
+    message: 'Hello from a private endpoint! You need to be authenticated to see this.'
+  });
+});
 
-APP = Flask(__name__)
+const checkScopes = requiredScopes('read:messages');
 
+app.get('/api/private-scoped', checkJwt, checkScopes, function(req, res) {
+  res.json({
+    message: 'Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this.'
+  });
+});
 
-@APP.route("/api/public")
-def public():
-    """No access token required."""
-    response = (
-        "Hello from a public endpoint! You don't need to be"
-        " authenticated to see this."
-    )
-    return jsonify(message=response)
-
-
-@APP.route("/api/private")
-@require_auth(None)
-def private():
-    """A valid access token is required."""
-    response = (
-        "Hello from a private endpoint! You need to be"
-        " authenticated to see this."
-    )
-    return jsonify(message=response)
-
-
-@APP.route("/api/private-scoped")
-@require_auth("read:messages")
-def private_scoped():
-    """A valid access token and scope are required."""
-    response = (
-        "Hello from a private endpoint! You need to be"
-        " authenticated and have a scope of read:messages to see"
-        " this."
-    )
-    return jsonify(message=response)
+app.listen(3000, function() {
+  console.log('Listening on http://localhost:3000');
+});
