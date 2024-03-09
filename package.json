@@ -70,6 +70,7 @@
 		"dvc": "^0.1.1",
 		"eventsource-parser": "^1.0.0",
 		"execa": "^8.0.0",
+		"express-oauth2-jwt-bearer": "^1.6.0",
 		"follow-redirects": "^1.15.5",
 		"glob-parent": "^6.0.2",
 		"gpt4": "^1.0.0",
