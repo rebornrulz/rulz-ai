@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "4-0"
-version = "0.1.0"
-description = "AI language model for Rulz-AI, designed to assist with a wide range of tasks and generate intelligent responses."
+name = "Rulz-AI"
+version = "4"
+description = "Rulz-AI is a high-quality mixture model."
 authors = ["Reborn"]
 license = "BSD-3-Clause license"
 readme = "README.md"
@@ -20,7 +20,7 @@ model="gpt-4",
 name = "python-template"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Reborn Rulz <reborn@rulz-ai.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.11.0,<3.12"
