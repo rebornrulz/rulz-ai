@@ -381,7 +381,7 @@ export const ChatInput = ({
       </div>
       <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
         <a
-          href="https://www.notion.so/rulz-ai/Rulz-AI-5ad298e61a804b648b555a2cfcbe5b9b?pvs=4"
+          href="https://www.linkedin.com/in/rulz-ai/"
           target="_blank"
           rel="noreferrer"
           className="underline"
