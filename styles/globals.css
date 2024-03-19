@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: #fb93d8;
   border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 html {
-  background: #202123;
+  background: #490d70;
 }
 
 @media (max-width: 720px) {
