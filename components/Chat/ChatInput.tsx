@@ -390,7 +390,7 @@ export const ChatInput = ({
         </a>
         {' '}
         {t(
-          "is a high-quality mixture model with advanced chat interface and functionality.",
+          "is a high-quality mixture model AI with advanced chat interface and functionality.",
         )}
       </div>
     </div>
