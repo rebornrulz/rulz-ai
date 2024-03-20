@@ -22,5 +22,6 @@
   "files.exclude": {},
   "go.toolsEnvVars": {
     "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
-  }
+  },
+  "codeQL.createQuery.qlPackLocation": "/Users/reborn/rulz-ai"
 }
