@@ -55,6 +55,7 @@
 		"@vercel/speed-insights": "^1.0.7",
 		"@waylaidwanderer/chatgpt-api": "^1.37.3",
 		"@web3-storage/w3up-client": "^11.2.1",
+		"@xenova/transformers": "^2.16.1",
 		"ai": "^3.0.13",
 		"assert": "^2.0.0",
 		"atob": "^2.1.2",
