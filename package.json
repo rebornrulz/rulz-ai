@@ -1,6 +1,6 @@
 {
 	"name": "rulz-ai",
-	"version": "4",
+	"version": "5.0.0",
 	"private": true,
 	"engines": {
 		"node": ">=18.17.0 || >=20.5.0",
