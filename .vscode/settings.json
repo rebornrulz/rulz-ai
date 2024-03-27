@@ -12,5 +12,10 @@
         "GOENV": "/Users/rebornrulz/Library/Application Support/go/env",
         "GOCACHE": "/Users/rebornrulz/Library/Caches/go-build"
     },
-    "files.exclude": {}
+    "files.exclude": {},
+    "circleci.filters.branchFilter": "allBranches",
+    "circleci.persistedProjectSelection": [
+        "gh/rebornrulz/rulz-ai"
+    ],
+    "circleci.filters.myPipelinesOnly": true
 }
