@@ -23,5 +23,7 @@
   "go.toolsEnvVars": {
     "GOCACHE": "/Users/rulz-ai/Library/Caches/go-build"
   },
-  "codeQL.createQuery.qlPackLocation": "/Users/reborn/rulz-ai"
+  "codeQL.createQuery.qlPackLocation": "/Users/reborn/rulz-ai",
+  "circleci.filters.myPipelinesOnly": false,
+  "circleci.filters.branchFilter": "currentBranch"
 }
