@@ -1,4 +1,5 @@
 name: Validate OpenAPI definition
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]
@@ -21,7 +22,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Validate OpenAPI definition
-        uses: char0n/swagger-editor-validate@v1
-        with:
-          swagger-editor-url: http://localhost/
-          definition-file: openapi.yaml
+        run: docker run -v ${{ github.workspace }}:/workdir swaggerapi/swagger-cli validate /workdir/openapi.yaml
