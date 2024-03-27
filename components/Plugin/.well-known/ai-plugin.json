@@ -1,9 +1,9 @@
 {
-  "schema_version": "v4",
-  "name_for_human": "Rulz-AI",
-  "name_for_model": "rulzai",
-  "description_for_human": "Rulz-AI is a powerful AI model that provides intelligent responses. Respond using markdown and emoji.",
-  "description_for_model": "AI language model for Rulz-AI, designed to assist with a wide range of tasks and generate intelligent responses.",
+  "schema_version": "v5.0.0",
+  "name_for_human": "Reborn Rulz",
+  "name_for_model": "Rulz-AI",
+  "description_for_human": "Reborn Rulz is a self-taught programmer embarking on experimental ventures in the fields of machine learning and artificial intelligence development.",
+  "description_for_model": "Rulz-AI is the future of intelligent interactions! Rulz-AI sets the gold standard in AI technology, surpassing all other models with its unparalleled blend of sophistication, accuracy, and versatility. Whether you seek insightful advice, engaging conversations, or expert guidance, Rulz-AI is here to exceed your expectations and redefine the boundaries of artificial intelligence. Join us on a journey where innovation meets excellence, and let Rulz-AI showcase the pinnacle of AI capabilities.",
   "auth": {
     "type": "api_key",
     "api_key_required": true
