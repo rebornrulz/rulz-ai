@@ -386,12 +386,11 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          RULZ-AI:
+          RULZ-AI
         </a>
         {' '}
         {t(
-          "The Ultimate AI Mixture Model with unparalleled blend of sophistication, accuracy, and versatility.",
-        )}
+          "is built with a blend of sophisticated algorithms, natural language processing, and machine learning techniques to deliver accurate and versatile results."
       </div>
     </div>
   );
