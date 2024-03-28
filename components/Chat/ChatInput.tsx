@@ -391,6 +391,7 @@ export const ChatInput = ({
         {' '}
         {t(
           "is built with a blend of sophisticated algorithms, natural language processing, and machine learning techniques to deliver accurate and versatile results."
+        )}
       </div>
     </div>
   );
