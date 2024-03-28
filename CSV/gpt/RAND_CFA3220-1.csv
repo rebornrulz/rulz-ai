@@ -1,0 +1,570 @@
+Conference Proceedings
+JON MENASTER
+Foundation Model
+Convening
+Conference Summary
+"The rapid evolution of artificial intelligence (AI) technology offers immense opportunityto advance human welfare.1However, this evolution also poses novel threats. Foundationmodels (FMs), unlike other AI, are trained on large datasets that show competence acrossa wide variety of domains and tasks, such as generating text, audio, video, and images. The"
+generalized competence of FMs is the root of their potential. In terms of potential positive out-
+"comes, FMs could provide benefits across a wide variety of sectors, such as education. For example,"
+"classroom lessons could be made more personalized and interactive.2 In terms of negative outcomes,"
+FMs could enable the creation of chemical and biological weapons or amplify disinformation cam-
+"paigns that undermine democratic elections. For example, biosecurity experts have partnered with a"
+"leading AI company to demonstrate that current models can produce sophisticated, accurate, useful,"
+"and detailed information about how to design and acquire a biological weapon.3 Additionally, AI"
+"could exacerbate the volume, velocity, variety, and virality of disinformation, leading to automation"
+of disinformation campaigns.4
+"Reflecting these concerns, RAND and the Carnegie Endowment for International Peace hosted"
+"a convening in November 2023 with AI industry, academic, and think-tank leaders to discuss a vari-"
+ety of topics relating to FM safety and security.5 We held a preconvening discussion with a subset
+"of participants to exchange views on advances in FMs, potential risks, and desired governance"
+solutions. This meeting led to a principal-level convening of approximately 30 people whose back-
+"grounds were split among industry, think tanks, and academia. Participants identified concerns"
+"about AI’s impact on national security, potential policies to mitigate such risks, and key questions to"
+"inform future research and analysis. The convening involved a wide variety of sessions, including a"
+"fireside chat, a historical presentation, small-group workshops, brief-outs from the workshops to a"
+"larger all-convening setting, panel discussions, and remarks from a special guest."
+"These conference proceedings capture the industry, academic, and think-tank perspectives"
+emerging from the workshops we held. These workshops occurred during the broader convening
+to inform policymakers and the broader public discussion about AI safety and security.6 The work-
+shops were held under the Chatham House Rule to foster open communication and frank feedback
+by not attributing views to individuals in discussions of the workshops.7 Views that participants
+expressed were their own and did not reflect their formal organizational affiliations.
+Short-Term Policy Actions,and socially viable. Steps to improve plan viability
+,may include ensuring that the economy and critical
+Participants identified two areas of focus for policy,
+,infrastructure are not so dependent on vulnerable AI
+actions and changes that could be taken now to,
+,models that plan implementation is delayed.
+meaningfully increase the safety and security of FM,
+development.,
+,Conduct Regular Tabletop Exercises
+,and Wargames to Prepare Responses
+Use Government-Industry Partnerships,
+,to a Variety of Scenarios
+to Develop an Action Plan for Threat,
+Response,Participants discussed the need to prepare for a wide
+,variety of potential scenarios involving FM safety
+Participants noted the importance of developing,
+,and security and how tabletop exercises or wargames
+and testing plans in advance of serious crises. One,
+,might be useful ideation and training activities.
+participant suggested creating a strong default of,
+,These mechanisms could be used to test the potential
+automatic shutdown in the event of a crisis without,
+,emergency powers that a government could exercise
+"affirmative human control (i.e., a deadman solution).",
+,"in the case of loss of control of an AI system, such"
+"For example, multiple keys could be distributed to",
+,as the ability to shut down a data center or cut off
+"people around the world, and an automatic shutdown",
+,internet access. This testing might also help highlight
+of an AI model could occur if the keys were not used,
+,the types of additional resources government actors
+within a specified time. Another participant sug-,
+,may need to properly protect the public from safety
+gested on-chip governance mechanisms that could be,
+,and security concerns that might arise during FM
+triggered to shut down computer hardware if a cer-,
+,development.
+tain event did or did not happen.,
+"Participants noted that, regardless of the specific",
+"plan ultimately used, it is important to reduce the",Workshop Insights
+cost of implementing the plan by making it politically,
+,The workshops held during this convening advanced
+,the group’s collective understanding of AI safety and
+,security and identified insights for policymakers
+,"to consider. Additionally, we asked each session to"
+Participants discussed,
+,outline potential next steps to address any concerns
+the need to prepare,identified. Each header in this section represents a
+,workshop held during the convening. Participants
+for a wide variety of,could decide which workshops they wished to attend.
+,The workshops were moderated and did not incorpo-
+potential scenarios,rate insights from the larger group sessions.
+involving FM safety,
+,Be Prepared for a Wide Variety of
+and security and how,Loss-of-Control Scenarios from
+,Agentic Systems
+tabletop exercises or,
+,"First, participants disagreed about what constituted"
+wargames might be,an AI agent or AI agentic system. One definition
+,"focused on agents as falling within a spectrum, with"
+useful ideation and,an agentic level centered around the degree to which
+,a system can adaptively achieve goals in complex
+training activities.,environments without human supervision. Another
+2,
+set of definitions attempted to simply describe,
+"whether a system was an agent or not, potentially by",
+labeling it either as fully autonomous or as requiring,The conversation
+a human copilot.,
+,highlighted the
+"From there, participants discussed loss of con-",
+"trol and agreed on several concepts. In particular,",importance of using
+attempts by an AI agent to spend or accrue money,
+should be reviewed carefully and not allowed to,defensive cybersecurity
+occur independently. This could entail setting up,
+processes such that an AI agent would be required,to successfully protect
+to receive human approval if it wants to spend more,
+than a certain amount of money. Another sugges-,model weights.
+tion participants discussed was limiting the plan-,
+"ning window of agents during the training process,",
+so developers never reward the ability to plan many,Participants agreed that other industries use
+steps ahead. There was also discussion about the,frameworks that could increase FM cybersecurity.
+"danger of agents colluding with one another, with",One example is the Department of Energy’s Cyber-
+potential solutions for collusion revolving around,"security Risk Information Sharing Program, which"
+limiting agents from spawning new agents and/or,is used in the U.S. electricity industry. This public-
+being constrained in how they communicate with,private partnership delivers relevant and actionable
+one another.,cybersecurity information to electricity industry par-
+"In terms of next steps, participants discussed","ticipants. Other, analogous cybersecurity approaches"
+how loss-of-control concerns would be hard to coun-,from such industries as life sciences and nuclear
+ter from a policymaking perspective unless policy-,energy and from such organizations as the Cyberse-
+makers are given realistic demonstrations of how,curity and Infrastructure Security Agency can help
+"such issues could occur—therefore, such demonstra-",organize information-sharing and analysis centers.
+tions should be scheduled more often.,Participants noted that a key question remains
+,about the best way to make hardware safe against
+,"model-weight exfiltration, with tamperproof self-"
+Strong Cybersecurity and Information,
+,limiting chips being one option that could decrease
+Sharing Are Required to Protect Model,risk and provide more regulatory flexibility in ways
+Weights,to govern the possession and use of AI hardware.8 
+The conversation highlighted the importance of,Another promising approach that remains theoreti-
+using defensive cybersecurity to successfully protect,cal is the development of machine learning–specific
+model weights. These defensive efforts would have,variants of hardware security modules.9 A forthcom-
+the dual effect of restricting human-driven prolifera-,ing RAND report on FM cybersecurity will offer
+tion and hampering models that could potentially,recommendations on securing model weights against
+"self-exfiltrate, e.g., escape model controls. Addition-","advanced attackers, which will be useful to both poli-"
+"ally, participants raised concerns about the need",cymakers and AI developers. An interim report was
+for important debates on the relative consequences,released in October 2023.10 Another is for all involved
+of moving cybersecurity toward a national security,"entities (academia, nonprofits, industry, govern-"
+"direction. For example, AI developers may be unwill-","ments, think tanks) to continue working together to"
+ing to increase their cybersecurity posture to one that,ensure a strong government-industry relationship to
+resembles a Sensitive Compartmented Information,help maintain the strongest possible security posture
+"Facility, in which certain types of classified informa-",against emerging cybersecurity threats.
+tion are processed.,
+3,
+,the costs and benefits of the various research and col-,
+,laboration options. Another important future direc-,
+Specific capabilities,,
+,tion of research would be to identify specific capabili-,
+likely to emerge,ties that would act as a threshold that society would,
+,not want to cross and that would result in the end of,
+from new models,that line of work or its movement into the classified,
+,space.,
+are deemed critical,,
+trade secrets by AI,Developer Ethical Norms Should,
+,Emerge from the Technical Community,
+"developers, presenting",Participants agreed that AI is a very young field that,
+,does not have broad professional norms like other,
+regulators with a,,
+,engineering disciplines. Professional norms are an,
+dilemma about how to,"important part of any field, and it will be important",
+,for norms to emerge from within the technical com-,
+be informed enough to,munity. While participants did not discuss this in,
+,"more depth, this could happen either organically or",
+properly regulate the,"through other methods, such as the creation of pro-",
+,"fessional associations. For example, running bench-",
+capabilities.,marks on models is a norm that quasi-organically,
+,developed from within the technical community.,
+,"As these norms emerge, there will need to be con-",
+Research and Collaboration Are,sequences or other cost impositions on norm vio-,
+Needed to Address Dangerous,"lators. For example, working for companies that",
+Capabilities,violate norms should carry negative professional,
+,implications.,
+The conversation involved (1) questions about what,,
+,Participants discussed the following potential,
+dangerous capabilities require regulatory interven-,,
+,norms:,
+tion and (2) whether systems being built to manage,,
+AI risk are robust against unexpected risks or major,• ,building systems that aim to augment humans
+increases in threats. High-level categories of danger-,,instead of replace them
+"ous capabilities include recursive self-improvement,",• ,"conceiving of AI models as tools, not a new"
+"autonomy, and self-goal setting. Some participants",,species of conscious beings
+felt AI developers were already close to realizing,• ,not deceiving people about the extent to which
+some of these capabilities. Specific capabilities likely,,"AI is used, which could include watermarking"
+to emerge from new models are deemed critical trade,,AI-generated content11
+"secrets by AI developers, presenting regulators with a",• ,rolling back deployed AI systems that are
+dilemma about how to be informed enough to prop-,,shown to have negative or dangerous effects.
+erly regulate the capabilities.,,
+"To help resolve these concerns, participants",International Governance Must Occur,
+generally agreed that government and AI develop-,Across Multiple Independent Tracks,
+ers need to collaborate more closely to prepare for,,
+potentially disruptive capabilities. A useful next step,There need to be multiple tracks of international,
+to achieve this goal would be to create mechanisms,governance that span the sharing of scientific infor-,
+to game out how the development of dangerous AI,mation and coordination on regulation.12 To success-,
+capabilities could be communicated and determine,"fully implement these tracks, it will be paramount",
+4,,
+to understand the relevant current AI safety actors,
+and those who are likely to become the next genera-,
+"tion of emergent actors. Furthermore, governance",How current liability
+success will be difficult because of the conflicting,
+,rules apply to AI is
+geopolitical interests and national security concerns,
+"of key countries. For example, participants worried","unclear; thus, there"
+about one country’s newly established stance on AI,
+"regulation, which seems nationalistic and opposed to",is significant risk for
+important constraints on open-source model release.,
+Participants agreed on three generally useful,developers if large-
+"next steps. First, the wide variety of existing diplo-",
+macy and dialogue taking place about international,scale harms occur
+governance should be shaped to proceed in a positive,
+direction. This could include better understand-,and are adjudicated in
+ing which efforts are the most promising and where,
+there are gaps in the dialogue that need to be filled.,court.
+"Second, national AI safety institutes (such as the",
+newly announced United Kingdom and U.S. AI,
+,"liability and AI, and (3) the extent to which insurers"
+safety institutes) need to be adequately scoped and,
+,will act as a key check on safe AI development. How
+"promoted. Third, international governance could be",
+,"current liability rules apply to AI is unclear; thus,"
+achieved by using existing organizations (such as the,
+,there is significant risk for developers if large-scale
+"United Nations), creating new multilateral institu-",
+,harms occur and are adjudicated in court. Some
+"tions, or using some combination of these, depending",
+,participants suggested that liability rules could be
+on practical considerations. Some examples of poten-,
+,clarified and that liability shields could be created
+tial new multilateral institutions include a group,
+,that require developers to follow certain safety pre-
+akin to the International Atomic Energy Agency;,
+,cautions in exchange for greater liability protections.
+the European Organization for Nuclear Research;,
+,"With regard to insurance, the panel explained that"
+"or, potentially, a smaller entity composed primar-",
+,insurers will have the opportunity to play a major
+ily of countries that maintain treaty alliances with,
+,role in incentivizing safe AI development because
+"one another (e.g., the “Five Eyes”: Australia, Canada,",
+,they can refuse to underwrite policies to protect com-
+"New Zealand, the United Kingdom, and the United",
+,panies that are not engaging in safe AI development
+States).,
+,"and, hence, increase companies’ risk of having to pay"
+,large damage claims.
+Developers Face Substantial Legal,The participants framed the discussion by
+Risk in the Absence of Clear Laws or,observing that software is not a good analogy for AI
+Legal Precedents,because the AI harms that most concerned partici-
+,pants are those to third parties (such as members of
+The convening held two separate sessions discussing,"the public who are affected by AI use), while much of"
+legal risks: The first was a panel featuring distin-,the law around software liability focuses on end-user
+guished legal academics discussing liability issues,harm. There were several areas of broad agreement in
+"related to AI, and the second was a specific dialogue","the liability conversation, including that liability will"
+track for discussing liability for AI-caused harms.,"be used as a means of setting precedent, absent more-"
+The legal scholar panel discussed (1) how cur-,"comprehensive regulation. However, participants"
+rent liability rules affect AI development and how,did not see any clear guidance from past doctrine on
+such rules describe liability distribution in the event,how courts might apply liability rules to novel issues
+"of harms, (2) what success looks like with regard to","raised by AI, and AI liability cases are just beginning"
+5,
+to be filed. Some participants also noted that social,versation highlighted the importance of balancing
+"feelings about AI (e.g., does the risk outweigh the",scientific rigor against practical application needs.
+benefit) will help determine how much liability AI,"For example, successful red-teaming will require"
+developers are likely to face. Creating industry stan-,a scientifically rigorous approach that enables the
+dards and norms will help clarify liability risks for,development of high-quality and reproducible meth-
+"developers by offering them a clearer path to follow,","odologies. In particular, participants agreed that"
+which might reduce their liability exposure. In the,red-teaming requires clear definitions and standard-
+"interim, AI developers currently face substantial legal",ized methodologies to be effective across different
+risk as they deploy AI more broadly.,"domains and risk scenarios. However, because of"
+Participants agreed on two significant next steps.,"the varying domains, the role and effectiveness of"
+"First, legal scholars should develop analyses of poten-","red-teaming remains context dependent, requiring"
+tial precedents in the legal system that could apply to,tailored approaches for specific model evaluations.
+"AI, then use these analyses to help determine what","Given the difficulty of solving the these problems,"
+"new laws, rules, or other forms of change might be",there was disagreement about the usefulness of red-
+"necessary to address legal gaps. Second, liability law,","teaming. Specifically, because of the current lack of"
+as created by the courts through the accumulation,scientific consensus on what constitutes good red-
+"of precedent, and common law, which emerges from","teaming, it would be premature to heavily weight"
+"judicial decisions, should be written to encourage the","any particular red-teaming result. Therefore, it could"
+development of industry norms and customs of safe,be better to move from a heavy emphasis on red-
+AI development and to clearly punish developers who,teaming to balancing red-teaming with an increase
+ignore such customs and cause harm.,in funding for interpretability research.13 
+,"There was agreement on several key next steps,"
+,including a need to promote and fund research in the
+Funding Research and Developing,
+,development of advanced red-teaming methodologies
+Guidelines Are Key Next Steps for,
+,to establish a more scientific standing for the field.
+Red-Teaming,"Furthermore, it will be important to develop com-"
+"The discussion focused on the current state, chal-","prehensive guidelines and standards for red-teaming,"
+"lenges, and future directions of red-teaming for",including scientific protocols for different types of
+threat assessment and model evaluation. The con-,risks and models.
+,Reporting and Information-Sharing Will
+,Shape the Government Response to AI
+The government has,Development
+a legitimate national,Participants agreed on several key areas of a success-
+,"ful reporting and information-sharing regime. First,"
+security interest in,the government has a legitimate national security
+,interest in collecting information from private actors
+collecting information,and should use reporting requirements to fulfill that
+,"interest. Second, the government will need to make"
+from private actors and,significant policy decisions throughout all phases of
+,"AI development, from pretraining to deployment,"
+should use reporting,and should collect information from private entities
+,"to make the best possible policy choices. Third, par-"
+requirements to fulfill,ticipants recommended that the government review
+,policies for voluntary collection of sensitive informa-
+that interest.,
+6,
+"tion, such as trade secrets, and consider collecting",,,
+only the information necessary for policy deci-,,,
+"sions, such as export controls or security and safety",,Participants mostly,
+"requirements. Fourth, it is desirable to establish a",,,
+,,"agreed that, while",
+high-trust information-sharing regime between gov-,,,
+"ernment and AI developers, which could encourage",,compute is not the,
+sharing of relevant information while allowing AI,,,
+developers to protect their most sensitive intellectual,,"perfect tripwire solution,",
+property. This could involve carefully posing ques-,,,
+tions for AI developers that strike a balance between,,it is the best currently,
+being specific enough to elicit useful information,,,
+"while not being too specific, such that a developer is",,available.,
+required to divulge trade secrets.,,,
+Participants differed regarding the tone of the,,,
+relationship the government should strike when col-,,Participants did agree that different groups,
+"lecting information using mandatory instruments,",,should have varied levels of access to different types,
+such as the reporting requirements authorized in,,of model information (similar to the national secu-,
+section 4.2 of the Biden administration’s executive,,rity concept of need to know). This differing level of,
+order on AI.14,Participants agreed that a high-trust,access will help alleviate developer concerns about,
+"information-sharing regime is best for all parties, but",,intellectual property theft and related privacy issues.,
+some expressed skepticism that private actors would,,"However, because of the tension between what",
+be willing to share useful information. Because of,,AI developers want to protect and what external,
+"this view, some participants suggested that the gov-",,"researchers and evaluators want to access, opinions",
+ernment require greater information-sharing as soon,,differ on exactly what level of access is necessary and,
+as possible. This might involve making more-forceful,,appropriate.,
+requests for information without waiting for volun-,,"Several next steps were discussed, including the",
+tary compliance.,,creation of a safe harbor setup that would alleviate,
+,,developer legal concerns around granting model,
+,,access to third-party evaluators.16,More work is
+Structured Access to Foundation,,,
+,,also needed on how model weight inspection might,
+Models Will Be Key for Research and,,work—this could result in something similar to a,
+Evaluation Efforts,,"Sensitive Compartmented Information Facility, but",
+AI developers granting structured access to their,,participants were unclear on how best to operational-,
+models will be a key component of successful inter-,,ize this concept. Participants also thought a valuable,
+"pretability and alignment research, as well as various",,next step would be to develop a stronger empirical,
+types of evaluation and auditing.15 There was general,,sense of specifically which levels of access would,
+agreement that application programming interfaces,,provide what research or evaluation benefits.,
+will be a key mechanism for enabling structured,,,
+"access, but it remained unclear who should be",,Measuring Compute Is the Best,
+responsible for building the interfaces. Developers,,Currently Available Tripwire Solution,
+"have more expertise but less independence, while",,,
+third parties who might use the application program-,,"Participants mostly agreed that, while compute is",
+ming interface (such as researchers and evaluators),,"not the perfect tripwire solution, it is the best cur-",
+are more independent but are not experts in any,,rently available.17 Participants agreed that compute,
+particular model. Neither option is perfect.,,"is clearly better than parameter count, which is not",
+,,"a robust tripwire.18 Further, when governments use",
+,,existing authorities to request information from AI,
+,7,,
+"developers, it will be important to recognize what",tives could lead to falsification of records or evading
+"they will willingly give. For example, the training",information-sharing by combining smaller models.
+data would be considered important intellectual,To combat these perverse incentives and ensure that
+property that developers will likely not want to,the executive order and Defense Production Act
+report. There was slight disagreement over whether,"provisions are implemented smoothly, stakeholders"
+smaller training runs (less than 1026 FLOPs per,should establish clear standards and tools for mea-
+second) with science corpuses in training data should,"suring training compute, and the government can"
+be reported and whether the reporting threshold,consider deploying Bureau of Industry and Security
+should be lowered over time. Political tractability will,investigators to ensure that companies are not falsify-
+play an important role in determining any changes to,ing information.20
+"reporting thresholds. Over time, greater algorithmic",
+efficiency or the development of powerful narrow,
+models may render compute thresholds irrelevant.19 ,Conclusion
+"In addition to quantitative measures, participants",The speed of the evolution of AI technology has illu-
+"discussed qualitative measurements, which could be",minated an urgent need for decisive policy action to
+assessed with reference to the developer’s own mar-,ensure that the technology’s benefits are enhanced
+"keting materials or internal communications. There,",while its potential risks are mitigated.21 Workshop
+qualitative measurements could be used indepen-,participants regularly disagreed on a variety of
+dently or in conjunction with quantitative thresholds.,"issues, but there was consensus that communication"
+"In terms of next steps, one way to operational-",and collaboration on AI policy issues were essential
+ize tripwires could be to use a ledger (or some other,moving forward. This spirit of collaboration can be
+internal accounting system) to mandate reporting,augmented by trust-building exercises and quick wins
+about training runs and compute spent and about,for AI governance through government-industry
+"when a threshold is hit, triggering a reporting require-",partnerships and tabletop exercises and wargames.
+ment. Doing so may be difficult because it is difficult,Such efforts could help create a foundation for more-
+to determine who and for what purposes compute is,extensive governance of AI to ensure that the technol-
+being used and because there are obvious incentives,ogy’s potential risks are appropriately managed.
+to provide misleading information. These incen-,
+8,
+,"14 Biden, “Executive Order on the Safe, Secure, and Trustworthy"
+Notes,
+,Development and Use of Artificial Intelligence.”
+"1 Smith et al., Industry and Government Collaboration on Secu-",
+,"15 As with interpretability, there is no concrete definition for"
+rity Guardrails for AI Systems. ,
+,alignment. Alignment research is generally defined as attempting
+"2 Harris, Artificial Intelligence.",to find ways to ensure that AI is aligned with human values and
+,"follows human intent. See Leike et al., “Our Approach to Align-"
+"3 Anthropic, “Frontier Threats Red Teaming for AI Safety.”",
+,"ment Research,” for more on this topic."
+"4 Sedova et al., AI and the Future of Disinformation Campaigns.",
+,16 According to Cornell Law School’s Legal Information Insti-
+5 This report uses the term we to signify RAND and the Carn-,"tute, safe harbor is a provision granting protection from liability"
+egie Endowment’s collaboration across the preconvening work,or penalty if certain conditions are met. A safe harbor provision
+and the convening itself,may be included in statutes or regulations to give peace of mind
+,to good-faith actors who might otherwise violate the law on tech-
+6 Participants have not reviewed and approved this document.,
+,nicalities beyond their reasonable control. See Legal Information
+This represents a RAND synthesis of workshop participants’,"Institute, “Safe Harbor.”"
+statements.,
+,17 Compute can be thought of as the number of computations
+"7 When a meeting, or part thereof, is held under the Chatham",
+,"needed to perform a particular task, such as training an AI"
+"House Rule, participants are free to use the information received,",model. The amount of compute used is measured in floating
+"but neither the identity nor the affiliation of the speaker(s), or",point operations (FLOPs). A FLOP is a mathematical operation
+"that of any other participant, may be revealed. See Chatham",that enables the representation of extremely large numbers with
+"House, “Chatham House Rule,” for more information.",greater precision. Compute performance is measured in FLOPs
+8 If hardware-enabled governance mechanisms on AI hard-,"per second, or how many computations a given resource can"
+"ware can be secured against tampering, it might enable selective","carry out in a second. See Vipra and Myers West, Computational"
+performance limitation of advanced chips needed to develop,"Power and AI, for more information. Tripwires are mechanisms"
+dangerous FMs. The selective nature of the process would enable,for determining when a particular model meets a threshold for
+the chips to still be used for other commercial or consumer appli-,elevated oversight.
+"cations. See Kulp et al., “Hardware-Enabled Governance Mecha-","18 According to Our World in Data, parameters are variables"
+nisms.” Model weight “exfiltration attacks allow attackers to steal,in an AI system whose values are adjusted during training to
+details about a model such as its architecture or weights.” See,establish how input data gets transformed into the desired output
+"Google Security Blog, “Increasing Transparency in AI Security.”","(Our World in Data, “Parameters in Notable Artificial Intelli-"
+"9 According to a RAND interim report, hardware security mod-",gence Systems”). Google’s Chinchilla AI model showed how the
+ules could be used to aggressively isolate model weight storage.,combination of fewer parameters and more training data could
+"However, more research and development is needed to achieve","lead to increased performance. Because of this, parameter counts"
+"these goals. See Nevo et al., “Securing Artificial Intelligence","are not a useful way to compare model performance. See Lohn,"
+Model Weights.”,“Scaling AI.”
+"10 See Nevo et al., “Securing Artificial Intelligence Model",19 One example of a narrow model would be one used for biolog-
+Weights.”,ical design. The Congressional Research Service defines biologi-
+,cal design tools as “the tools and methods that enable the design
+11 The term watermarking means the act of embedding infor-,
+,"and understanding of biological processes (e.g., DNA sequences/"
+mation that is typically difficult to remove into outputs created,"synthesis or the design of novel organisms).” See Kuiken, Artifi-"
+"by AI—including into such outputs as photos, videos, audio",cial Intelligence in the Biological Sciences.
+"clips, and text—for the purposes of verifying the authenticity of",
+,"20 As defined by the Congressional Research Service,"
+"the output or the identity or characteristics of its provenance,",
+"modifications, or conveyance (Biden, “Executive Order on the",
+"Safe, Secure, and Trustworthy Development and Use of Artificial",[t]he Defense Production Act (DPA) of 1950 (P.L.
+Intelligence).,"81-774, 50 U.S.C. §§4501 et seq.), as amended, confers"
+,upon the President a broad set of authorities to influ-
+12 Multitrack diplomacy involves diplomatic exchanges made,ence domestic industry in the interest of national
+across three tracks. Track 1 diplomacy refers to official diplo-,defense. The authorities can be used across the federal
+"macy, where communication is directly between or among",government to shape the domestic industrial base
+governments. Track 1.5 diplomacy occurs when government,"so that, when called upon, it is capable of providing"
+representatives and nongovernmental experts engage in dia-,essential materials and goods needed for the national
+logue or meetings. Track 2 diplomacy denotes a wholly unofficial,"defense. (Neenan and Nicastro, The Defense Produc-"
+"channel for dialogue among nongovernmental experts, without","tion Act of 1950: History, Authorities, and Consider-"
+"government involvement. See Sokol, “Multi-Track Diplomacy",ations for Congress)
+Explained.”,"21 Smith et al., Industry and Government Collaboration on Secu-"
+13 There is no concrete definition for interpretability. How-,rity Guardrails for AI Systems.
+"ever, it can be thought of as the ability to explain or present in",
+"understandable terms to a human the output of AI (Linardatos,",
+"Papastefanopoulos, and Kotsiantis, “Explainable AI”).",
+9,
+References,"Linardatos, Pantelis, Vasilis Papastefanopoulos, and Sotiris"
+,"Kotsiantis, “Explainable AI: A Review of Machine Learning"
+"Anthropic, “Frontier Threats Red Teaming for AI Safety,”","Interpretability Methods,” Entropy, Vol. 23, No. 1, December 25,"
+"webpage, July 26, 2023, As of February 22, 2024:",2020
+https://www.anthropic.com/news/,
+frontier-threats-red-teaming-for-ai-safety,"Lohn, Andrew, “Scaling AI: Cost and Performance of AI at the"
+,"Leading Edge,” Center for Security and Emerging Technology,"
+"Biden, Joseph R., Jr., “Executive Order on the Safe, Secure, and",December 2023.
+"Trustworthy Development and Use of Artificial Intelligence,”",
+"Executive Order 14110, October 30, 2023.","Neenan, Alexandra G., and Luke A. Nicastro, The Defense"
+,"Production Act of 1950: History, Authorities, and Considerations"
+"Chatham House, “Chatham House Rule,” webpage, undated. As","for Congress, Congressional Research Service, R43767, October 6,"
+"of February 7, 2024:",2023
+https://www.chathamhouse.org/about-us/chatham-house-rule,
+,"Nevo, Sella, Dan Lahav, Ajay Karpur, Jeff Alstott, and Jason"
+"Google Security Blog, “Increasing Transparency in AI Security,”","Matheny, “Securing Artificial Intelligence Model Weights:"
+"webpage, October 26, 2023. As of March 6, 2024:","Interim Report,” RAND Corporation, WR-A2849-1, 2023. As of"
+https://security.googleblog.com/2023/10/,"February 22, 2024:"
+,https://www.rand.org/pubs/working_papers/WRA2849-1.html
+"Harris, Laurie A., Artificial Intelligence: Overview, Recent",
+"Advances, and Considerations for the 118th Congress,","Our World in Data, “Parameters in Notable Artificial"
+"Congressional Research Service, R47644, August 4, 2023.","Intelligence Systems,” webpage, February 12, 2024. As of"
+,"February 22, 2024:"
+"Kulp, Gabriel, Daniel Gonzales, Everett Smith, Lennart Heim,",https://ourworldindata.org/grapher/
+"Prateek Puri, Michael J. D. Vermeer, and Zev Winkelman,",artificial-intelligence-parameter-count
+“Hardware-Enabled Governance Mechanisms: Developing,
+Technical Solutions to Exempt Items Otherwise Classified Under,"Sedova, Katerina, Christine McNeill, Aurora Johnson, Aditi"
+"Export Control Classification Numbers 3A090 and 4A090,”","Joshi, and Ido Wulkan, AI and the Future of Disinformation"
+"RAND Corporation, WR-A3056-1, 2024. As of February 23,","Campaigns: Part 1, The RICHDATA Framework, Center for"
+2024:,"Security and Emerging Technology, December 2021."
+https://www.rand.org/pubs/working_papers/WRA3056-1.html,
+,"Smith, Gregory, Sydney Kessler, Jeff Alstott, and Jim Mitre,"
+"Kuiken, Todd, Artificial Intelligence in the Biological Sciences:",Industry and Government Collaboration on Security Guardrails
+"Uses, Safety, Security and Oversight, Congressional Research","for AI Systems: Summary of the AI Safety and Security Workshops,"
+"Service, R47849, November 22, 2023.","RAND Corporation, CF-A2949-1, 2023. As of January 25, 2024:"
+,https://www.rand.org/pubs/conf_proceedings/CFA2949-1.html
+"Legal Information Institute, “Safe Harbor,” webpage, Cornell",
+"Law School, undated. As of February 22, 2024:","Sokol, Lia, “Multi-Track Diplomacy Explained,” Nuclear Threat"
+https://www.law.cornell.edu/wex/safe_harbor,"Initiative, April 19, 2022. As of February 22, 2024:"
+,https://www.nti.org/atomic-pulse/
+"Leike, Jan, John Schulman, and Jeffrey Wu, “Our Approach",multi-track-diplomacy-explained/
+"to Alignment Research,” Open AI blog, August 24, 2022. As of",
+"February 7, 2024:","Vipra, Jai, and Sarah Myers West, Computational Power and AI,"
+https://openai.com/blog/our-approach-to-alignment-research,"AI Now Institute, September 27, 2023."
+10,
+About the Author
+"Jon Menaster is a technology and security policy fellow at RAND, where he conducts research on broadly capable artificial"
+intelligence (AI) systems and the policy ramifications of their diffusion. Jon previously worked for the U.S. Government
+Accountability Office and led programmatic audits and evaluations of executive branch agencies focused on financial
+"market and science and technology areas. He also led project management, research, drafting, and external communica-"
+tions efforts for various issues within GAO’s non-audit technology assessment portfolio. Jon received a MA in International
+Economic Relations from American University. He grew up in Los Angeles and currently lives in the Bay Area.
+11
+,RAND is a research organization that,
+,develops solutions to public policy,
+,challenges to help make communities,
+,throughout the world safer and more,
+,"secure, healthier and more prosperous.",
+,"RAND is nonprofit, nonpartisan, and",
+,committed to the public interest.,
+,Research Integrity,
+,Our mission to help improve policy and,
+,decisionmaking through research and,
+,analysis is enabled through our core,
+,values of quality and objectivity and our,
+,unwavering commitment to the highest,
+,level of integrity and ethical behavior. To,
+About This Report,help ensure our research and analysis,
+,"are rigorous, objective, and nonpartisan,",
+RAND and the Carnegie Endowment for International Peace hosted a Founda-,we subject our research publications to,
+"tion Model Convening from November 10–12, 2023. These conference proceed-",a robust and exacting quality-assurance,
+,process; avoid both the appearance and,
+"ings capture the industry, academic, and think-tank perspectives emerging from",reality of financial and other conflicts of,
+"the workshops to inform government, civil society, industry, and the broader","interest through staff training, project",
+,"screening, and a policy of mandatory",
+public discussion about artificial intelligence safety and security.,disclosure; and pursue transparency,
+,in our research engagements,
+,through our commitment to the open,
+RAND Global and Emerging Risk Division,publication of our research findings and,
+,"recommendations, disclosure of the",
+Technology and Security Policy Center,"source of funding of published research,",
+RAND Global and Emerging Risks is a division at RAND that develops novel,and policies to ensure intellectual,
+,"independence. For more information, visit",
+methods and delivers rigorous research on potential catastrophic risks confront-,www.rand.org/about/research-integrity.,
+ing humanity. This work was undertaken by the division’s Technology and Secu-,,
+,RAND’s publications do not necessarily,
+"rity Policy Center, which explores how high-consequence, dual-use technologies",,
+,reflect the opinions of its research clients,
+"change the global competition and threat environment, then develops policy and",and sponsors.,is a registered
+,trademark.,
+"technology options to advance the security of the United States, its allies and",,
+"partners, and the world. For more information, contact tasp@rand.org.",Limited Print and Electronic,
+,Distribution Rights,
+Funding,This publication and trademark(s),
+Funding for this work was provided by gifts from RAND supporters.,contained herein are protected by law.,
+,This representation of RAND intellectual,
+,property is provided for noncommercial,
+,use only. Unauthorized posting of this,
+Acknowledgements,publication online is prohibited; linking,
+The author would like to thank everyone from RAND and the Carnegie,directly to its webpage on rand.org is,
+,encouraged. Permission is required from,
+Endowment for International Peace who collaborated to make this publi-,"RAND to reproduce, or reuse in another",
+,"form, any of its research products for",
+cation and the conference that it describes possible.,,
+,commercial purposes. For information on,
+Special thanks go to the conference participants and to Lori Matsu-,"reprint and reuse permissions, please visit",
+,www.rand.org/pubs/permissions.,
+"naga, and Emily Kampe, without whom the conference would not have",,
+"taken place. The author wishes to thank Jeff Alstott, Jason Matheny,","For more information on this publication,",
+,visit www.rand.org/t/CFA3220-1.,
+"Emma Westerman, and Tino Cuèllar for their help in structuring the",,
+conference and in recruiting participants. Thanks also go to our peer,© 2024 RAND Corporation,
+"reviewer, Mike Vermeer, for their comments and constructive criticism.",,
+Any errors that may remain the author’s sole responsibility.,www.rand.org,
+,,CF-A3220-1
