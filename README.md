@@ -1,4 +1,4 @@
-# RULZ-AI
+# RULZ-AI v5.0.0
 
 ![Rulz-AI](./public/page.png)
 
