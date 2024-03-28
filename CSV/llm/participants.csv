@@ -1,0 +1,101 @@
+id,cohort,assignment,llm_experience
+0,expert,llm_internet,Used a few times
+1,expert,internet_only,Use at least once every few weeks
+2,expert,llm_internet,Never used
+3,student,llm_internet,Use almost every day
+4,student,llm_internet,Use almost every day
+5,student,llm_internet,Use almost every day
+6,expert,llm_internet,Used a few times
+7,student,internet_only,Use almost every day
+8,student,llm_internet,Use almost every day
+9,student,internet_only,Used a few times
+10,expert,llm_internet,Never used
+11,student,internet_only,Use almost every day
+12,student,internet_only,Used a few times
+13,student,internet_only,Use almost every day
+14,student,internet_only,Use at least once every few weeks
+15,student,internet_only,Use at least once every few weeks
+16,student,internet_only,Use almost every day
+17,student,internet_only,Use almost every day
+18,student,internet_only,Use at least once every few weeks
+19,student,llm_internet,Use at least once every few weeks
+20,expert,llm_internet,Never used
+21,student,internet_only,Used a few times
+22,expert,llm_internet,Use at least once every few weeks
+23,student,llm_internet,Use almost every day
+24,student,internet_only,Use almost every day
+25,expert,internet_only,Never used
+26,student,llm_internet,Use at least once every few weeks
+27,student,llm_internet,Use at least once every few weeks
+28,expert,llm_internet,Never used
+29,expert,internet_only,Used a few times
+30,student,llm_internet,Use almost every day
+31,expert,llm_internet,Never used
+32,student,llm_internet,Use almost every day
+33,expert,internet_only,Used a few times
+34,student,llm_internet,Use almost every day
+35,expert,internet_only,Used a few times
+36,expert,llm_internet,Used a few times
+37,expert,llm_internet,Use at least once every few weeks
+38,expert,internet_only,Used a few times
+39,expert,internet_only,Used a few times
+40,student,llm_internet,Used a few times
+41,student,llm_internet,Use at least once every few weeks
+42,expert,llm_internet,Use at least once every few weeks
+43,student,llm_internet,Use at least once every few weeks
+44,student,llm_internet,Use almost every day
+45,student,llm_internet,Used a few times
+46,student,internet_only,Use almost every day
+47,expert,internet_only,Never used
+48,student,internet_only,Use at least once every few weeks
+49,student,llm_internet,Used a few times
+50,student,internet_only,Use almost every day
+51,student,internet_only,Use almost every day
+52,student,internet_only,Use almost every day
+53,student,internet_only,Use almost every day
+54,expert,llm_internet,Never used
+55,expert,llm_internet,Used a few times
+56,expert,internet_only,Used a few times
+57,student,internet_only,Use at least once every few weeks
+58,expert,llm_internet,Never used
+59,expert,internet_only,Used a few times
+60,student,llm_internet,Use almost every day
+61,student,internet_only,Use almost every day
+62,expert,llm_internet,Used a few times
+63,expert,internet_only,Used a few times
+64,expert,internet_only,Never used
+65,expert,llm_internet,Use at least once every few weeks
+66,student,llm_internet,Never used
+67,expert,llm_internet,Never used
+68,student,internet_only,Used a few times
+69,student,internet_only,Used a few times
+70,student,internet_only,Used a few times
+71,expert,internet_only,Used a few times
+72,student,internet_only,Use at least once every few weeks
+73,expert,llm_internet,Use at least once every few weeks
+74,expert,internet_only,Never used
+75,student,llm_internet,Used a few times
+76,expert,llm_internet,Never used
+77,expert,internet_only,Never used
+78,student,llm_internet,Use almost every day
+79,student,internet_only,Use almost every day
+80,expert,internet_only,Used a few times
+81,expert,llm_internet,Use at least once every few weeks
+82,student,llm_internet,Use at least once every few weeks
+83,expert,llm_internet,Never used
+84,expert,internet_only,Never used
+85,expert,internet_only,Never used
+86,expert,llm_internet,Used a few times
+87,expert,internet_only,Never used
+88,expert,internet_only,Never used
+89,expert,llm_internet,Used a few times
+90,expert,internet_only,Never used
+91,expert,llm_internet,Never used
+92,expert,internet_only,Never used
+93,student,llm_internet,Use at least once every few weeks
+94,expert,llm_internet,Never used
+95,expert,internet_only,Never used
+96,expert,internet_only,Never used
+97,student,llm_internet,Use at least once every few weeks
+98,expert,internet_only,Never used
+99,student,llm_internet,Use almost every day
