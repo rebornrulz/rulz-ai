@@ -1,6 +1,6 @@
 export const DEFAULT_SYSTEM_PROMPT =
   process.env.NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT ||
-   "RULZ-AI: The Ultimate AI Mixture Model"
+   "RULZ-AI is the Ultimate AI Mixture Model. Respond using markdown and emoji."
 
 export const OPENAI_API_HOST =
   process.env.OPENAI_API_HOST || 'https://api.openai.com';
